@@ -2,8 +2,7 @@ import json
 
 import boto3
 import pandas as pd
-
-from Talent import Talent
+import re
 
 
 class Extracter:
@@ -16,8 +15,6 @@ class Extracter:
         self.engineering_keys = []
         self.talent_applications = []
         self.sparta_days = []
-
-
 
     def bucket_key_names(self):
         """
@@ -62,11 +59,25 @@ class Extracter:
             if key.startswith('Talent/Sparta') and key.endswith('.txt'):
                 self.sparta_days.append(key)
 
+    @staticmethod
+    def academy_table_transformer(key_list):
+        filename = key_list.split('/')[-1]
+        match = re.match(r'(.+)_(\d+)_(\d{4}-\d{2}-\d{2})\.csv', filename)
+        course_name, course_number, start_date = match.groups()
+        print(course_name, course_number, start_date)
+        return {'course_name':course_name, 'course_number':course_number, 'start_date':start_date}
+
+
 if __name__ == '__main__':
     imp = Extracter()
+
     keys = imp.bucket_key_names()
+
     imp.key_classification(keys)
-    print(keys)
+    #print(keys)
     #data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
     #print(data.info())
-    #print(imp.engineering_keys, imp.data_keys, imp.talent_keys, imp.talent_applications)
+    print(imp.business_keys)
+
+    for key in imp.business_keys:
+        imp.key_classification(key)

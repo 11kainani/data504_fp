@@ -5,8 +5,8 @@ from Extracter import Extracter
 
 
 def main():
-    imp = Extracter()
-    imp.import_s3_file('Talent/10391.json')
+    ext = Extracter()
+
 
 if __name__ == "__main__":
     main()
