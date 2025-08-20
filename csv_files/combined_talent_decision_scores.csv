@@ -1,0 +1,1001 @@
+name,date,strengths,weaknesses,self_development,geo_flex,financial_support_self,result,course_interest,tech_self_score.C#,tech_self_score.Java,tech_self_score.R,tech_self_score.JavaScript,tech_self_score.Python,tech_self_score.C++,tech_self_score.Ruby,tech_self_score.SPSS,tech_self_score.PHP
+Stillmann Castano,22/08/2019,['Charisma'],"['Distracted', 'Impulsive', 'Introverted']",Yes,Yes,Yes,Pass,Business,6.0,5.0,2.0,2.0,,,,,
+Hilary Willmore,01/08/2019,"['Patient', 'Curious', 'Problem Solving']","['Overbearing', 'Chatty', 'Indifferent']",No,Yes,Yes,Fail,Data,4.0,2.0,,,1.0,4.0,,,
+Efrem Whipple,22/08/2019,"['Courteous', 'Independent', 'Patient']","['Introverted', 'Impulsive', 'Anxious']",Yes,Yes,Yes,Pass,Business,,,,,,4.0,4.0,,
+Sydel Fenne,28/08/2019,['Passionate'],"['Perfectionist', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,3.0,,,,,,4.0,
+Michel Lebarree,07/08/2019,['Versatile'],"['Controlling', 'Perfectionist', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,,4.0,2.0,,3.0,3.0,1.0,,2.0
+Cooper Ingraham,14/08/2019,"['Versatile', 'Rational']",['Immature'],Yes,Yes,No,Fail,Business,3.0,1.0,,,,,,,4.0
+Bird Le Count,22/08/2019,['Collaboration'],"['Impatient', 'Conventional', 'Undisciplined']",Yes,Yes,Yes,Fail,Business,,,,,,2.0,,3.0,3.0
+Orly Lorens,01/08/2019,"['Ambitious', 'Independent', 'Passionate']","['Conventional', 'Passive']",No,Yes,Yes,Fail,Business,,,5.0,1.0,,,2.0,1.0,
+Hannah Messum,29/08/2019,"['Reliable', 'Passionate']",['Intolerant'],Yes,Yes,Yes,Fail,Data,,,,2.0,8.0,,2.0,,
+Gavin Lambregts,21/08/2019,"['Altruism', 'Empathy', 'Problem Solving']","['Chaotic', 'Selfish']",Yes,Yes,Yes,Pass,Data,2.0,,,1.0,3.0,5.0,,,
+Letta Halston,08/08/2019,"['Listening', 'Passionate']","['Perfectionist', 'Immature', 'Passive']",Yes,Yes,Yes,Fail,Business,,,,4.0,,,,,3.0
+Rivalee Eagleton,08/08/2019,"['Organisation', 'Passionate', 'Versatile']","['Conventional', 'Sensitive', 'Introverted']",Yes,Yes,No,Fail,Engineering,,,,2.0,3.0,,4.0,,
+Neda Marmyon,15/08/2019,"['Curious', 'Ambitious', 'Consistent']",['Sensitive'],Yes,Yes,Yes,Pass,Data,,,7.0,,4.0,1.0,5.0,,
+Kermy Caves,29/08/2019,"['Versatile', 'Ambitious']","['Slow', 'Overbearing', 'Conventional']",Yes,No,Yes,Fail,Business,,,,,,,,,2.0
+Edithe Dimitrov,07/08/2019,"['Passionate', 'Versatile']",['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,3.0,3.0,,,4.0,,,,
+Aubert Cicerone,06/08/2019,"['Efficient', 'Independent']","['Indifferent', 'Sensitive', 'Introverted']",Yes,Yes,No,Fail,Data,3.0,,,3.0,4.0,,3.0,,
+Erastus Mcelrath,14/08/2019,"['Problem Solving', 'Altruism']",['Indifferent'],Yes,No,No,Fail,Data,3.0,,,,3.0,,,2.0,1.0
+Edgar Annesley,28/08/2019,['Independent'],"['Controlling', 'Impulsive']",No,Yes,Yes,Fail,Data,7.0,,,2.0,2.0,,4.0,,
+Haslett Steet,07/08/2019,"['Problem Solving', 'Efficient', 'Patient']",['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,,,,,,,,,
+Kirbee Clementet,08/08/2019,['Determined'],['Anxious'],Yes,Yes,No,Fail,Engineering,,,,,,1.0,,,
+Marcellina Ping,21/08/2019,"['Composure', 'Independent']","['Impulsive', 'Competitive', 'Controlling']",Yes,Yes,Yes,Pass,Business,4.0,5.0,,,,,,,
+Violet Luscombe,14/08/2019,"['Competitive', 'Empathy']",['Impulsive'],Yes,Yes,Yes,Pass,Data,1.0,,,,2.0,3.0,2.0,,
+Phillis Wabey,06/08/2019,['Problem Solving'],"['Overbearing', 'Impatient']",Yes,Yes,Yes,Pass,Data,3.0,,2.0,,1.0,,,2.0,
+Maurice Yakhin,29/08/2019,"['Composure', 'Problem Solving', 'Efficient']","['Impatient', 'Critical']",Yes,Yes,Yes,Pass,Engineering,,,4.0,3.0,,2.0,6.0,4.0,
+Wesley Tolerton,13/08/2019,"['Determined', 'Problem Solving', 'Patient']","['Indecisive', 'Undisciplined']",No,Yes,Yes,Fail,Business,,,,,,,,,
+Brittaney Roughey,15/08/2019,"['Perfectionism', 'Charisma']","['Overbearing', 'Conventional', 'Immature']",Yes,Yes,Yes,Pass,Engineering,,,4.0,,,,,2.0,
+Saree Daens,15/08/2019,['Reliable'],['Passive'],Yes,Yes,Yes,Pass,Engineering,1.0,,2.0,,,,,,
+Mona Willimott,08/08/2019,['Passionate'],"['Passive', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,1.0,3.0,1.0,2.0,,,2.0,,2.0
+Alvie Bleackly,01/08/2019,['Perfectionism'],"['Impatient', 'Selfish', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,,
+Drud Tellenbrok,06/08/2019,"['Empathy', 'Charisma']","['Slow', 'Anxious', 'Chatty']",Yes,Yes,Yes,Pass,Data,3.0,,,,1.0,,3.0,,
+Deck Itzchaki,01/08/2019,['Reliable'],['Indifferent'],Yes,Yes,Yes,Pass,Business,,,,,,,,,1.0
+Charlie Danelut,14/08/2019,"['Efficient', 'Empathy', 'Independent']","['Indecisive', 'Chaotic']",Yes,No,Yes,Fail,Data,,,2.0,,3.0,,,1.0,
+Wilt Penritt,01/08/2019,"['Collaboration', 'Curious']","['Slow', 'Sensitive']",No,Yes,Yes,Fail,Data,,,,5.0,,,,,
+Stevie Houliston,15/08/2019,['Reliable'],['Overbearing'],Yes,Yes,Yes,Pass,Engineering,2.0,4.0,1.0,,,,,6.0,
+Fairlie Cogzell,14/08/2019,"['Independent', 'Ambitious']","['Perfectionist', 'Introverted', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,5.0,2.0,1.0,3.0,,,4.0,1.0
+Beckie Aveling,22/08/2019,['Curious'],['Slow'],Yes,Yes,Yes,Fail,Business,4.0,6.0,,3.0,,,,1.0,
+Axe Mckall,15/08/2019,"['Rational', 'Innovative', 'Collaboration']","['Impatient', 'Distracted']",Yes,Yes,Yes,Pass,Business,,3.0,,,2.0,,4.0,,2.0
+Marcela Pass,27/08/2019,"['Curious', 'Passionate']",['Selfish'],Yes,No,Yes,Fail,Business,,,,,3.0,1.0,,,
+Sauncho Aveson,13/08/2019,"['Rational', 'Innovative', 'Passionate']","['Immature', 'Competitive', 'Indifferent']",Yes,Yes,Yes,Pass,Data,,2.0,,,,,1.0,,1.0
+Shamus Mccomish,15/08/2019,['Versatile'],"['Distracted', 'Slow']",No,Yes,Yes,Fail,Engineering,,,1.0,2.0,,2.0,6.0,,
+Andy Lown,22/08/2019,"['Ambitious', 'Independent']","['Perfectionist', 'Procrastination']",Yes,Yes,Yes,Pass,Business,,,,,,,,,
+Arny Coorington,14/08/2019,['Efficient'],['Competitive'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,,,,,
+Devondra Blabey,15/08/2019,"['Creative', 'Passionate', 'Reliable']",['Distracted'],No,Yes,Yes,Fail,Engineering,,,3.0,2.0,4.0,,,,2.0
+Irita Lyptrit,07/08/2019,['Problem Solving'],['Perfectionist'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,,,2.0,,
+Jae Rennolds,29/08/2019,"['Consistent', 'Collaboration']",['Stubborn'],Yes,Yes,Yes,Pass,Data,2.0,,3.0,,,5.0,,3.0,2.0
+Marion Consadine,15/08/2019,"['Independent', 'Passionate']",['Overbearing'],Yes,Yes,Yes,Pass,Business,,,,4.0,5.0,,,3.0,
+Leonore Pettiford,13/08/2019,['Passionate'],"['Indifferent', 'Anxious']",Yes,Yes,Yes,Pass,Data,,,,,3.0,4.0,,,
+Edvard Northen,07/08/2019,['Competitive'],['Controlling'],Yes,Yes,Yes,Pass,Data,,,,,,,,7.0,
+Oralla Peasgood,07/08/2019,"['Versatile', 'Consistent', 'Passionate']","['Intolerant', 'Distracted', 'Impulsive']",Yes,No,Yes,Fail,Business,6.0,5.0,,,,,5.0,6.0,
+Ly Ferro,13/08/2019,"['Curious', 'Perfectionism', 'Determined']","['Selfish', 'Conventional']",Yes,No,Yes,Fail,Business,,,,1.0,,,1.0,,4.0
+Lindsey Gerwood,29/08/2019,"['Courteous', 'Ambitious', 'Versatile']","['Sensitive', 'Introverted']",Yes,Yes,Yes,Fail,Data,,1.0,4.0,,1.0,6.0,4.0,,
+Gianna Clevely,01/08/2019,"['Independent', 'Competitive', 'Determined']","['Immature', 'Chaotic']",Yes,Yes,Yes,Pass,Business,,4.0,,,3.0,,,,
+Celine Doree,15/08/2019,"['Reliable', 'Curious', 'Courteous']",['Impatient'],Yes,Yes,Yes,Pass,Data,8.0,4.0,,,,,,,
+Karlene Hughill,21/08/2019,"['Courteous', 'Determined']","['Controlling', 'Intolerant', 'Conventional']",Yes,Yes,Yes,Pass,Data,2.0,,,1.0,,2.0,1.0,,
+Sayre Webberley,14/08/2019,['Independent'],"['Perfectionist', 'Distracted']",Yes,Yes,No,Fail,Engineering,3.0,1.0,,,5.0,5.0,,,2.0
+Phyllys Baelde,15/08/2019,"['Charisma', 'Collaboration', 'Listening']",['Indecisive'],Yes,Yes,Yes,Pass,Data,,,3.0,,1.0,,,,3.0
+Samuele Whear,20/08/2019,"['Rational', 'Passionate']","['Stubborn', 'Impulsive']",Yes,No,Yes,Fail,Business,,2.0,,,4.0,1.0,,,
+Darcey Mordin,27/08/2019,"['Curious', 'Empathy', 'Creative']","['Anxious', 'Slow', 'Competitive']",Yes,Yes,Yes,Pass,Business,,1.0,,,,,,1.0,
+Pamelina Itzkovsky,13/08/2019,"['Curious', 'Perfectionism', 'Determined']","['Impatient', 'Passive', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,,,5.0,,
+Pamelina Itzkovsky,13/08/2019,"['Curious', 'Perfectionism', 'Determined']","['Impatient', 'Passive', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,,,5.0,,
+Laurel Gillogley,21/08/2019,['Ambitious'],"['Chatty', 'Distracted', 'Slow']",Yes,No,Yes,Fail,Engineering,,,,2.0,,3.0,4.0,,
+Quinta Cowdray,28/08/2019,['Consistent'],"['Conventional', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,,,,3.0,1.0,,,2.0,
+Cecile Lates,15/08/2019,['Perfectionism'],"['Slow', 'Impulsive']",Yes,Yes,Yes,Fail,Engineering,,,,,,4.0,,5.0,
+Seumas Lemonby,14/08/2019,"['Altruism', 'Empathy', 'Innovative']",['Distracted'],Yes,Yes,Yes,Pass,Engineering,1.0,,,,,1.0,,,2.0
+Gale Quartley,13/08/2019,"['Rational', 'Organisation', 'Consistent']",['Procrastination'],Yes,Yes,Yes,Pass,Data,,7.0,2.0,,,,2.0,,
+Dorrie Srutton,22/08/2019,['Charisma'],"['Introverted', 'Sensitive']",No,Yes,Yes,Fail,Engineering,1.0,,,,,,,,
+Benny Tichelaar,21/08/2019,['Problem Solving'],"['Impulsive', 'Stubborn']",No,No,Yes,Fail,Data,,1.0,,4.0,,,,1.0,
+Avrit Gawith,15/08/2019,['Versatile'],"['Introverted', 'Chaotic']",Yes,Yes,Yes,Pass,Business,2.0,,,3.0,,,,4.0,
+Berti Dennehy,22/08/2019,['Consistent'],"['Stubborn', 'Anxious', 'Competitive']",Yes,Yes,Yes,Fail,Data,,,,,,8.0,,2.0,5.0
+Rockey Robarts,14/08/2019,"['Composure', 'Charisma', 'Rational']","['Indifferent', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,,3.0,,,6.0,,,,
+Eloisa Ewert,21/08/2019,['Efficient'],"['Anxious', 'Chatty']",Yes,Yes,No,Fail,Business,2.0,,,,,,2.0,,1.0
+Mireille Risom,21/08/2019,"['Passionate', 'Reliable', 'Altruism']","['Chatty', 'Critical', 'Passive']",Yes,Yes,Yes,Pass,Data,,,,,,,,3.0,2.0
+Sharl Daggett,22/08/2019,"['Efficient', 'Perfectionism']",['Controlling'],Yes,Yes,Yes,Pass,Engineering,,,1.0,3.0,,,1.0,1.0,
+Nikolos Yashin,15/08/2019,"['Empathy', 'Curious']","['Chaotic', 'Stubborn']",Yes,Yes,Yes,Fail,Business,,2.0,5.0,3.0,,2.0,,,
+Shela Mccall,14/08/2019,"['Courteous', 'Curious', 'Organisation']","['Stubborn', 'Procrastination']",Yes,Yes,Yes,Fail,Engineering,,,,,,1.0,,3.0,1.0
+Sonnie Malenfant,14/08/2019,"['Organisation', 'Courteous']",['Perfectionist'],Yes,Yes,Yes,Pass,Business,,,,,4.0,6.0,2.0,3.0,
+Mahmud Molineux,20/08/2019,"['Rational', 'Charisma']","['Chatty', 'Distracted', 'Sensitive']",Yes,Yes,Yes,Pass,Business,,,,1.0,7.0,2.0,7.0,,
+Dylan Llewellen,29/08/2019,"['Perfectionism', 'Ambitious']","['Undisciplined', 'Intolerant', 'Perfectionist']",Yes,Yes,No,Fail,Data,1.0,,5.0,,2.0,,,1.0,
+Yvor Phalip,01/08/2019,"['Charisma', 'Creative', 'Curious']","['Intolerant', 'Procrastination', 'Immature']",Yes,Yes,No,Fail,Data,2.0,3.0,1.0,,,,7.0,,
+Berry Freed,29/08/2019,"['Competitive', 'Versatile']",['Immature'],Yes,Yes,Yes,Pass,Business,,,,,,,,,3.0
+Marielle Knivett,01/08/2019,['Critical Thinking'],"['Overbearing', 'Indecisive']",Yes,No,Yes,Fail,Business,5.0,,5.0,,,,4.0,7.0,1.0
+Emmanuel Deniske,15/08/2019,"['Passionate', 'Altruism', 'Courteous']","['Overbearing', 'Procrastination']",Yes,Yes,Yes,Pass,Data,,3.0,,,1.0,1.0,,,
+Kerr Coucha,07/08/2019,['Curious'],"['Controlling', 'Sensitive', 'Distracted']",Yes,Yes,Yes,Pass,Data,1.0,,2.0,,7.0,6.0,,3.0,
+Dulci Mcgrayle,21/08/2019,"['Versatile', 'Creative']","['Chatty', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,2.0,3.0,6.0,,,,,1.0
+Shandee Blaschke,21/08/2019,['Critical Thinking'],['Stubborn'],No,Yes,Yes,Fail,Engineering,3.0,,,,3.0,1.0,4.0,,
+Paul Chislett,14/08/2019,"['Composure', 'Organisation']","['Procrastination', 'Impatient', 'Conventional']",Yes,Yes,No,Fail,Engineering,,4.0,,,,,,,
+Florri Loughton,01/08/2019,['Ambitious'],"['Indifferent', 'Critical', 'Conventional']",No,Yes,Yes,Fail,Engineering,1.0,,,,,,,,
+Hildy Landre,08/08/2019,"['Perfectionism', 'Courteous']",['Indifferent'],No,Yes,Yes,Fail,Data,3.0,,1.0,3.0,,,,,
+Berny Botler,06/08/2019,"['Altruism', 'Collaboration']",['Impulsive'],Yes,Yes,Yes,Pass,Data,,6.0,,,4.0,,2.0,3.0,4.0
+Merell Tremmil,13/08/2019,"['Perfectionism', 'Collaboration', 'Patient']",['Indifferent'],Yes,Yes,Yes,Fail,Engineering,,,,,,6.0,,4.0,
+Ileana Chewter,21/08/2019,"['Passionate', 'Versatile']",['Competitive'],Yes,Yes,Yes,Pass,Business,,2.0,,2.0,4.0,6.0,5.0,,
+Ilario Yeates,13/08/2019,['Listening'],['Procrastination'],No,Yes,Yes,Fail,Engineering,1.0,,3.0,,4.0,,,,
+Winnie Lewerenz,06/08/2019,['Patient'],['Indecisive'],Yes,No,Yes,Fail,Business,4.0,,2.0,2.0,,,,,
+Garwood Strowan,20/08/2019,"['Consistent', 'Creative']","['Chatty', 'Impulsive']",No,Yes,Yes,Fail,Data,,3.0,,2.0,,3.0,,,
+Herb Mcilmorie,08/08/2019,['Determined'],"['Sensitive', 'Passive']",Yes,Yes,Yes,Pass,Data,,3.0,2.0,,,1.0,2.0,4.0,7.0
+Ingunna Adin,01/08/2019,"['Charisma', 'Altruism', 'Perfectionism']","['Competitive', 'Indifferent', 'Chaotic']",Yes,Yes,Yes,Pass,Data,,6.0,4.0,3.0,,3.0,,,
+Frazier Bayston,29/08/2019,['Altruism'],['Impulsive'],Yes,No,Yes,Fail,Data,2.0,,,5.0,,1.0,4.0,3.0,
+Hewett Lamputt,13/08/2019,"['Rational', 'Determined', 'Organisation']","['Slow', 'Controlling', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,1.0,,6.0,3.0,,5.0,2.0,,1.0
+Rodger Bendelow,22/08/2019,"['Courteous', 'Rational']","['Selfish', 'Impatient']",Yes,Yes,Yes,Pass,Data,,,,,6.0,,,3.0,
+Archer Hobben,14/08/2019,"['Independent', 'Problem Solving']","['Critical', 'Indecisive']",Yes,Yes,Yes,Fail,Business,,,,,2.0,,4.0,,
+Stephani Prettyman,22/08/2019,"['Listening', 'Independent', 'Organisation']",['Selfish'],Yes,Yes,Yes,Pass,Engineering,,1.0,,1.0,1.0,4.0,,2.0,
+Pepi Bome,20/08/2019,"['Competitive', 'Charisma']","['Slow', 'Indifferent', 'Selfish']",Yes,Yes,Yes,Pass,Engineering,1.0,,,2.0,,,5.0,2.0,1.0
+Loella Lonnon,06/08/2019,['Empathy'],"['Introverted', 'Conventional', 'Undisciplined']",Yes,Yes,No,Fail,Data,,,,,,6.0,,,
+Darrin Stoffel,08/08/2019,['Altruism'],"['Conventional', 'Introverted']",Yes,Yes,Yes,Pass,Business,,,,,,,,3.0,2.0
+Mitchel Bates,14/08/2019,['Problem Solving'],['Stubborn'],Yes,Yes,No,Fail,Engineering,2.0,3.0,,3.0,2.0,,,2.0,
+Miles Water,08/08/2019,"['Charisma', 'Passionate', 'Creative']","['Slow', 'Intolerant', 'Sensitive']",Yes,Yes,Yes,Pass,Business,2.0,2.0,,4.0,,,,,2.0
+Fanni Polhill,28/08/2019,"['Perfectionism', 'Efficient', 'Listening']","['Indecisive', 'Indifferent', 'Undisciplined']",Yes,Yes,Yes,Fail,Engineering,3.0,,,,2.0,,,6.0,
+Genvieve Arnke,22/08/2019,"['Reliable', 'Patient', 'Rational']","['Selfish', 'Chatty']",No,Yes,Yes,Fail,Business,,,,,,,3.0,,2.0
+Alicia Hruska,28/08/2019,"['Altruism', 'Competitive', 'Charisma']",['Indifferent'],Yes,Yes,Yes,Pass,Business,3.0,4.0,4.0,,,,,,
+Mella Aubin,15/08/2019,['Listening'],['Introverted'],Yes,Yes,Yes,Pass,Data,,,3.0,,,,6.0,4.0,
+George Huckstepp,06/08/2019,"['Perfectionism', 'Listening', 'Ambitious']","['Anxious', 'Indifferent']",No,Yes,Yes,Fail,Engineering,1.0,2.0,2.0,,,,,,
+Joelie Elfitt,29/08/2019,['Problem Solving'],['Chatty'],Yes,Yes,No,Fail,Business,4.0,,,,1.0,,,,
+Omar Rodrigo,27/08/2019,"['Composure', 'Versatile']","['Impatient', 'Slow', 'Critical']",Yes,No,Yes,Fail,Engineering,,,,1.0,,,3.0,,
+Cal Loache,15/08/2019,"['Ambitious', 'Reliable', 'Determined']","['Sensitive', 'Indifferent']",Yes,Yes,Yes,Fail,Business,3.0,,7.0,1.0,3.0,,2.0,1.0,2.0
+Tully Mcdoual,07/08/2019,['Rational'],"['Stubborn', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,4.0,,3.0,,
+Molli Brayfield,22/08/2019,['Listening'],"['Perfectionist', 'Conventional']",Yes,Yes,Yes,Pass,Data,,4.0,3.0,,,,,3.0,3.0
+Janaya Mawford,01/08/2019,"['Problem Solving', 'Efficient']","['Stubborn', 'Indecisive', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,,1.0,,7.0,,,,
+Lazarus Hooke,29/08/2019,"['Independent', 'Perfectionism']",['Immature'],No,Yes,Yes,Fail,Data,,1.0,1.0,,,,,,
+Sidney Le Batteur,08/08/2019,['Listening'],"['Intolerant', 'Conventional', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,,,1.0,,,,,
+Maryellen Vasovic,20/08/2019,"['Problem Solving', 'Altruism', 'Patient']","['Indecisive', 'Procrastination', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,3.0,,4.0,,,4.0,,1.0
+Winona Rubinowitz,29/08/2019,['Courteous'],['Controlling'],Yes,Yes,Yes,Pass,Engineering,1.0,,,3.0,,,3.0,,
+Dur Plom,14/08/2019,"['Consistent', 'Innovative']","['Indifferent', 'Indecisive', 'Controlling']",Yes,Yes,Yes,Fail,Engineering,1.0,,4.0,,,3.0,2.0,4.0,1.0
+Gisela Aisbett,15/08/2019,"['Efficient', 'Critical Thinking', 'Creative']","['Chaotic', 'Conventional']",Yes,Yes,Yes,Pass,Engineering,,1.0,,1.0,,,,3.0,
+Appolonia Jovis,29/08/2019,"['Passionate', 'Composure', 'Determined']",['Anxious'],Yes,No,No,Fail,Business,,7.0,5.0,,,4.0,,7.0,1.0
+Diandra Dyhouse,27/08/2019,"['Collaboration', 'Determined', 'Consistent']","['Slow', 'Conventional']",Yes,Yes,Yes,Pass,Business,,3.0,,,6.0,3.0,,,
+Cornall Offer,01/08/2019,['Creative'],"['Distracted', 'Overbearing']",Yes,No,Yes,Fail,Data,,1.0,,,,4.0,,,
+Dominique Narbett,20/08/2019,"['Competitive', 'Critical Thinking', 'Courteous']","['Immature', 'Chatty', 'Critical']",Yes,Yes,Yes,Pass,Business,,,6.0,,,,4.0,6.0,
+Gusti Horrod,27/08/2019,"['Empathy', 'Courteous']",['Indifferent'],Yes,Yes,Yes,Pass,Data,,3.0,3.0,,,,,,1.0
+Brnaby Bownes,01/08/2019,"['Efficient', 'Passionate']",['Introverted'],Yes,Yes,Yes,Pass,Engineering,5.0,5.0,,,4.0,2.0,4.0,3.0,
+Berky Bailey,28/08/2019,"['Competitive', 'Empathy']","['Distracted', 'Passive', 'Stubborn']",Yes,Yes,Yes,Pass,Business,5.0,,,5.0,2.0,,,,
+Harriett Saffin,28/08/2019,"['Innovative', 'Consistent', 'Collaboration']",['Impulsive'],Yes,Yes,Yes,Pass,Business,2.0,,1.0,,1.0,,4.0,,
+Pooh Christy,28/08/2019,"['Curious', 'Perfectionism', 'Critical Thinking']",['Perfectionist'],Yes,Yes,Yes,Pass,Data,2.0,2.0,,,5.0,1.0,,,
+Tris Landrean,29/08/2019,"['Innovative', 'Empathy']","['Passive', 'Selfish', 'Chaotic']",Yes,Yes,Yes,Pass,Data,,1.0,,,,1.0,,1.0,
+Derk Andress,13/08/2019,"['Curious', 'Altruism', 'Collaboration']","['Perfectionist', 'Chatty', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,,4.0,,,2.0,,,
+Engelbert Vahl,21/08/2019,"['Courteous', 'Reliable']","['Chaotic', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,2.0,,3.0,,4.0,,,
+Prentiss Godman,20/08/2019,"['Altruism', 'Collaboration']","['Controlling', 'Impulsive']",Yes,Yes,Yes,Fail,Engineering,,3.0,,,,1.0,3.0,,
+Angel Hulson,14/08/2019,"['Consistent', 'Independent']","['Chaotic', 'Controlling', 'Critical']",Yes,Yes,Yes,Fail,Business,5.0,,2.0,,,2.0,1.0,,
+Mike Milliere,06/08/2019,"['Patient', 'Perfectionism']","['Selfish', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,2.0,2.0,,,,,,
+Gayleen Petru,14/08/2019,"['Versatile', 'Problem Solving']",['Distracted'],Yes,Yes,Yes,Pass,Business,,,,,1.0,,1.0,,
+Jozef Burr,07/08/2019,"['Organisation', 'Patient', 'Problem Solving']","['Chatty', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,,2.0,1.0,,,,,2.0,1.0
+Allina Grelka,28/08/2019,"['Courteous', 'Empathy', 'Organisation']",['Critical'],Yes,Yes,Yes,Pass,Engineering,,3.0,4.0,,,1.0,,5.0,3.0
+Carr Kensall,20/08/2019,"['Creative', 'Reliable']",['Chatty'],Yes,No,Yes,Fail,Business,4.0,,1.0,3.0,,,2.0,3.0,2.0
+Nil Macpaike,06/08/2019,"['Problem Solving', 'Courteous']","['Controlling', 'Introverted', 'Overbearing']",Yes,Yes,Yes,Pass,Business,2.0,1.0,1.0,,,,,,
+Jessie Petriello,06/08/2019,"['Passionate', 'Versatile']",['Critical'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,,,,,2.0
+George O'Duane,06/08/2019,"['Altruism', 'Efficient', 'Competitive']","['Controlling', 'Critical', 'Competitive']",Yes,Yes,Yes,Pass,Data,,,1.0,4.0,1.0,,,,
+Mendie Mcbean,15/08/2019,"['Composure', 'Independent', 'Innovative']","['Impulsive', 'Conventional', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,,,,,,5.0,,,
+Roze Yepiskopov,21/08/2019,['Perfectionism'],['Chatty'],Yes,Yes,Yes,Pass,Engineering,2.0,,,,,8.0,,5.0,3.0
+Boote Moan,20/08/2019,['Altruism'],['Chaotic'],Yes,Yes,Yes,Pass,Business,5.0,1.0,,,1.0,2.0,,,
+Tito Greiswood,20/08/2019,"['Composure', 'Independent']","['Conventional', 'Passive', 'Chaotic']",Yes,Yes,Yes,Pass,Engineering,,,,4.0,,4.0,2.0,,3.0
+Reg Vandenhoff,27/08/2019,['Independent'],"['Competitive', 'Overbearing']",Yes,Yes,Yes,Pass,Data,,,5.0,3.0,,,7.0,4.0,
+Ravid Leyninye,06/08/2019,"['Efficient', 'Competitive']","['Undisciplined', 'Stubborn']",Yes,Yes,Yes,Pass,Data,,1.0,,2.0,,,,,
+Ninetta Joyce,06/08/2019,"['Collaboration', 'Perfectionism']","['Selfish', 'Critical', 'Stubborn']",Yes,Yes,Yes,Pass,Data,2.0,,,4.0,1.0,,,,
+Rozalin Summerscales,28/08/2019,"['Altruism', 'Collaboration', 'Empathy']","['Chaotic', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,,5.0,,5.0,,,,
+Rafi Andrzejczak,07/08/2019,"['Critical Thinking', 'Innovative']","['Chatty', 'Undisciplined', 'Selfish']",Yes,No,Yes,Fail,Business,,2.0,,,6.0,,,,
+Rafi Andrzejczak,07/08/2019,"['Critical Thinking', 'Innovative']","['Chatty', 'Undisciplined', 'Selfish']",Yes,No,Yes,Fail,Business,,2.0,,,6.0,,,,
+Mead Stolting,29/08/2019,"['Courteous', 'Efficient']","['Sensitive', 'Indifferent']",Yes,No,Yes,Fail,Data,,1.0,2.0,,,,,7.0,2.0
+Chickie Kezar,21/08/2019,"['Problem Solving', 'Altruism', 'Ambitious']","['Undisciplined', 'Procrastination']",Yes,Yes,No,Fail,Business,,,,5.0,,2.0,,7.0,
+Cornall Wastall,15/08/2019,"['Innovative', 'Efficient']","['Indifferent', 'Critical', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,,,,,1.0,,3.0,
+Carlin Stellino,20/08/2019,"['Consistent', 'Efficient']","['Chatty', 'Overbearing']",Yes,Yes,No,Fail,Engineering,,,,,5.0,,,,
+Sherline Cudihy,01/08/2019,['Perfectionism'],['Sensitive'],Yes,Yes,Yes,Pass,Data,,3.0,2.0,,1.0,,2.0,5.0,
+Burnard Fielden,21/08/2019,['Independent'],"['Slow', 'Indifferent', 'Selfish']",Yes,No,Yes,Fail,Data,2.0,,,,5.0,,,2.0,
+Valle Humby,21/08/2019,['Competitive'],"['Perfectionist', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,1.0,,,2.0,2.0,,2.0,5.0,
+Jillie Howles,27/08/2019,"['Consistent', 'Independent', 'Composure']",['Chaotic'],Yes,Yes,No,Fail,Data,,5.0,,,,,2.0,4.0,1.0
+Chucho Galfour,13/08/2019,"['Problem Solving', 'Ambitious', 'Courteous']","['Chatty', 'Procrastination', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,2.0,7.0,,1.0,,,2.0,
+Orland Glaisner,13/08/2019,"['Charisma', 'Courteous', 'Collaboration']","['Distracted', 'Critical', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,,,2.0,,,,,
+Luz Gasparro,08/08/2019,"['Creative', 'Listening', 'Altruism']","['Anxious', 'Critical']",Yes,Yes,Yes,Pass,Engineering,,,,,3.0,,,,1.0
+Melesa Mault,07/08/2019,"['Altruism', 'Problem Solving', 'Versatile']",['Competitive'],Yes,No,Yes,Fail,Data,,5.0,,,,,,1.0,
+Trudie Kiellor,06/08/2019,"['Collaboration', 'Curious', 'Passionate']",['Intolerant'],Yes,Yes,Yes,Pass,Data,,,,,3.0,,,,
+Nancie Sazio,15/08/2019,['Altruism'],"['Overbearing', 'Selfish']",Yes,Yes,Yes,Pass,Engineering,,,3.0,,,,,,4.0
+Welby Wishkar,14/08/2019,"['Problem Solving', 'Passionate']",['Competitive'],Yes,Yes,Yes,Fail,Business,,7.0,,,,3.0,3.0,,4.0
+Carce Capel,28/08/2019,"['Courteous', 'Versatile', 'Organisation']",['Undisciplined'],No,Yes,Yes,Fail,Business,,,1.0,2.0,5.0,3.0,,2.0,1.0
+Oralia Barrat,27/08/2019,"['Composure', 'Patient']",['Introverted'],Yes,Yes,Yes,Pass,Data,2.0,,3.0,,,,,,
+Katuscha Ransfield,07/08/2019,"['Altruism', 'Innovative']",['Introverted'],Yes,No,Yes,Fail,Engineering,5.0,4.0,,2.0,,3.0,3.0,,
+Norene Fierro,01/08/2019,"['Efficient', 'Empathy']",['Stubborn'],Yes,No,Yes,Fail,Business,,,,,6.0,3.0,,,
+Mylo Sudell,06/08/2019,"['Creative', 'Critical Thinking']",['Passive'],Yes,Yes,Yes,Pass,Data,,,1.0,,,,,,
+Shannon Hartman,21/08/2019,"['Collaboration', 'Problem Solving']",['Indecisive'],Yes,Yes,Yes,Fail,Engineering,1.0,,,1.0,,2.0,2.0,2.0,
+Blakeley Strood,06/08/2019,"['Empathy', 'Competitive']",['Procrastination'],Yes,Yes,Yes,Pass,Data,,,,,3.0,,,3.0,
+Rafi Downse,21/08/2019,"['Rational', 'Innovative', 'Versatile']","['Introverted', 'Undisciplined', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering,,1.0,8.0,1.0,2.0,,3.0,3.0,
+Demetrius Tunstall,07/08/2019,['Collaboration'],"['Competitive', 'Introverted', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,2.0,,,,,,,2.0,
+Melinde Darton,21/08/2019,['Courteous'],"['Controlling', 'Critical', 'Conventional']",Yes,Yes,Yes,Pass,Business,,,,4.0,,,,,
+Dulcea Perl,22/08/2019,"['Creative', 'Empathy', 'Innovative']",['Distracted'],Yes,Yes,Yes,Pass,Engineering,4.0,,,5.0,,,,,
+Milton Conaghan,08/08/2019,"['Collaboration', 'Consistent']","['Distracted', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,5.0,2.0,1.0,1.0,,4.0,,,4.0
+Chere Siddens,29/08/2019,"['Competitive', 'Listening', 'Curious']","['Sensitive', 'Competitive']",No,Yes,No,Fail,Business,,5.0,,,,,,,
+Putnem Hessing,08/08/2019,"['Independent', 'Critical Thinking']","['Chatty', 'Perfectionist', 'Critical']",Yes,Yes,Yes,Pass,Data,4.0,,,,,1.0,5.0,1.0,
+Timmi Haveline,22/08/2019,"['Curious', 'Reliable', 'Competitive']",['Sensitive'],Yes,Yes,Yes,Pass,Business,3.0,,,,,,,,
+Garald Banasevich,08/08/2019,['Creative'],"['Selfish', 'Perfectionist', 'Anxious']",Yes,Yes,Yes,Pass,Data,2.0,3.0,5.0,,,3.0,3.0,,
+Anselma Pavelin,21/08/2019,['Organisation'],['Distracted'],Yes,Yes,Yes,Fail,Business,,5.0,,1.0,,,,,2.0
+Querida Antonacci,29/08/2019,['Problem Solving'],['Introverted'],Yes,Yes,Yes,Pass,Data,,,7.0,1.0,6.0,4.0,1.0,,
+Leda Aharoni,13/08/2019,"['Competitive', 'Consistent']","['Immature', 'Impatient', 'Distracted']",Yes,Yes,Yes,Pass,Business,4.0,,,3.0,4.0,,,,3.0
+Norri Temby,27/08/2019,"['Listening', 'Organisation', 'Consistent']","['Controlling', 'Passive']",Yes,Yes,Yes,Pass,Engineering,,5.0,,,,,,5.0,
+Margery Winspur,07/08/2019,['Independent'],"['Impulsive', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,1.0,4.0,,,1.0,,,,1.0
+Bord Ollin,14/08/2019,['Innovative'],"['Stubborn', 'Competitive', 'Passive']",Yes,Yes,No,Fail,Business,2.0,,5.0,5.0,,,,,
+Dodie Lassells,27/08/2019,['Critical Thinking'],"['Stubborn', 'Immature']",Yes,Yes,Yes,Pass,Data,,1.0,2.0,2.0,2.0,3.0,2.0,,
+Corie Snodin,22/08/2019,"['Reliable', 'Determined', 'Consistent']","['Anxious', 'Conventional']",Yes,Yes,No,Fail,Data,1.0,,,3.0,,4.0,,1.0,
+Arron Cuerdall,08/08/2019,"['Efficient', 'Creative']","['Indifferent', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,1.0,,,,,,,3.0
+Josh Youens,08/08/2019,['Listening'],"['Sensitive', 'Anxious', 'Indecisive']",Yes,Yes,Yes,Pass,Engineering,,5.0,,,4.0,,,3.0,
+Aldo Bradnum,27/08/2019,['Consistent'],"['Distracted', 'Conventional', 'Chaotic']",Yes,Yes,Yes,Pass,Engineering,1.0,,2.0,,,3.0,3.0,2.0,2.0
+Xymenes Pretor,07/08/2019,"['Organisation', 'Ambitious']","['Selfish', 'Sensitive', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,,1.0,,1.0,,3.0,,,
+Heinrik Allwell,08/08/2019,"['Collaboration', 'Efficient', 'Organisation']","['Critical', 'Competitive']",Yes,Yes,Yes,Pass,Business,,2.0,,,,,,1.0,
+Bob Rogerson,07/08/2019,['Efficient'],"['Stubborn', 'Introverted']",Yes,Yes,Yes,Pass,Data,1.0,2.0,,3.0,4.0,,1.0,6.0,
+Neall Mayor,07/08/2019,"['Independent', 'Competitive', 'Consistent']",['Overbearing'],Yes,Yes,No,Fail,Data,1.0,3.0,1.0,,,4.0,,,2.0
+Ilysa Kiggel,07/08/2019,['Consistent'],"['Slow', 'Indecisive', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,2.0,,,,4.0,,,,3.0
+Melisse Craze,20/08/2019,"['Rational', 'Courteous', 'Efficient']",['Selfish'],Yes,Yes,Yes,Fail,Data,5.0,5.0,,,3.0,4.0,,,
+Petronille Dougharty,29/08/2019,"['Courteous', 'Passionate']","['Introverted', 'Immature', 'Sensitive']",No,Yes,Yes,Fail,Business,,6.0,,4.0,,,,,
+Urbano Reinisch,13/08/2019,"['Courteous', 'Ambitious', 'Organisation']","['Immature', 'Perfectionist', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,,3.0,,,1.0,,,3.0,
+Noami Edworthye,20/08/2019,"['Collaboration', 'Patient', 'Determined']",['Impatient'],No,Yes,Yes,Fail,Business,4.0,2.0,2.0,3.0,3.0,,2.0,,
+Cynthia Jenny,06/08/2019,"['Ambitious', 'Empathy']","['Immature', 'Conventional']",Yes,No,Yes,Fail,Business,2.0,,,4.0,,,4.0,,
+Ivett Prop,22/08/2019,"['Organisation', 'Altruism']","['Distracted', 'Immature', 'Overbearing']",Yes,Yes,Yes,Pass,Business,1.0,1.0,,3.0,,,,,
+Lamond Levensky,13/08/2019,['Problem Solving'],"['Anxious', 'Impatient', 'Sensitive']",Yes,Yes,Yes,Pass,Data,1.0,1.0,,6.0,6.0,,,,
+Estevan Bartalini,21/08/2019,"['Altruism', 'Rational', 'Collaboration']",['Stubborn'],Yes,Yes,Yes,Pass,Engineering,,,1.0,,2.0,,,4.0,3.0
+Redford Bubbings,15/08/2019,"['Rational', 'Curious', 'Courteous']",['Procrastination'],No,Yes,Yes,Fail,Engineering,,4.0,2.0,,,,1.0,,
+Redford Bubbings,15/08/2019,"['Rational', 'Curious', 'Courteous']",['Procrastination'],No,Yes,Yes,Fail,Engineering,,4.0,2.0,,,,1.0,,
+Brandais Reiner,22/08/2019,"['Ambitious', 'Determined']",['Indecisive'],Yes,Yes,Yes,Pass,Business,,,3.0,1.0,,,,,1.0
+Correy Clemont,28/08/2019,['Versatile'],"['Conventional', 'Overbearing']",Yes,No,Yes,Fail,Data,,1.0,,,,,,,
+Starr Curcher,15/08/2019,['Consistent'],['Indifferent'],Yes,No,Yes,Fail,Business,,,4.0,4.0,1.0,,3.0,,
+Rosaline Goldsmith,21/08/2019,['Empathy'],"['Selfish', 'Immature']",Yes,Yes,Yes,Pass,Engineering,,,,,,3.0,,4.0,
+Chancey Climer,27/08/2019,"['Versatile', 'Critical Thinking']","['Critical', 'Distracted', 'Perfectionist']",Yes,Yes,Yes,Pass,Business,4.0,,,,1.0,2.0,,2.0,1.0
+Gena Humbles,29/08/2019,"['Collaboration', 'Perfectionism', 'Independent']","['Stubborn', 'Conventional']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,,1.0,,,
+Madeleine Younglove,06/08/2019,['Organisation'],['Controlling'],Yes,No,Yes,Fail,Engineering,,,,2.0,,4.0,7.0,1.0,
+Leonerd Scamel,08/08/2019,['Efficient'],['Controlling'],No,Yes,Yes,Fail,Engineering,,,,,5.0,,,,4.0
+Balduin Culleton,13//08/2019,['Courteous'],"['Chaotic', 'Perfectionist', 'Critical']",Yes,Yes,Yes,Fail,Data,,,2.0,6.0,5.0,,,,
+Oliy Ellar,13/08/2019,"['Rational', 'Courteous']","['Perfectionist', 'Distracted']",Yes,Yes,No,Fail,Engineering,,4.0,,7.0,,,,3.0,
+Carena Nizet,08/08/2019,['Empathy'],['Immature'],Yes,Yes,Yes,Pass,Engineering,2.0,5.0,3.0,5.0,,,,,1.0
+Theo Ottee,21/08/2019,"['Perfectionism', 'Innovative', 'Creative']","['Intolerant', 'Chatty', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,2.0,
+Britt Summergill,28/08/2019,['Curious'],"['Introverted', 'Impatient', 'Stubborn']",Yes,Yes,Yes,Pass,Data,,,2.0,,,,,,
+Nial Oret,13/08/2019,['Versatile'],"['Passive', 'Impatient', 'Introverted']",Yes,No,Yes,Fail,Data,2.0,4.0,,1.0,,,4.0,,1.0
+Pegeen O'Lochan,15/08/2019,"['Independent', 'Patient', 'Passionate']",['Sensitive'],Yes,Yes,No,Fail,Business,,2.0,2.0,,,,3.0,1.0,1.0
+Kingsley Hardaker,28/08/2019,['Altruism'],['Slow'],Yes,Yes,Yes,Pass,Business,,,,,,,,,1.0
+Lorine Bignall,01/08/2019,['Listening'],['Stubborn'],Yes,Yes,Yes,Fail,Business,,,,,,2.0,,1.0,
+Christian Bingley,13/08/2019,"['Independent', 'Listening']","['Anxious', 'Introverted', 'Conventional']",Yes,Yes,Yes,Pass,Data,,,,4.0,,,,,
+Ad Do,21/08/2019,"['Curious', 'Ambitious', 'Patient']",['Perfectionist'],Yes,Yes,Yes,Pass,Engineering,5.0,1.0,1.0,,,1.0,,,
+Beret Devonside,15/08/2019,['Listening'],"['Undisciplined', 'Indifferent', 'Immature']",Yes,Yes,No,Fail,Business,,,,6.0,,3.0,,,1.0
+Denyse Weth,22/08/2019,"['Patient', 'Competitive']",['Perfectionist'],Yes,Yes,Yes,Pass,Business,,,,,,,,2.0,
+Deirdre Van Den Velde,01/08/2019,['Perfectionism'],['Competitive'],Yes,Yes,Yes,Pass,Engineering,3.0,,,,,,3.0,,3.0
+Bevon Mustill,15/08/2019,"['Perfectionism', 'Competitive']","['Chaotic', 'Competitive', 'Controlling']",No,No,Yes,Fail,Engineering,1.0,1.0,2.0,,2.0,1.0,5.0,4.0,
+Ruthe Adolthine,01/08/2019,"['Charisma', 'Creative', 'Curious']","['Selfish', 'Immature']",Yes,Yes,No,Fail,Data,6.0,,,,,2.0,,,
+Vaughn Wallington,27/08/2019,['Curious'],"['Introverted', 'Sensitive', 'Chaotic']",Yes,Yes,Yes,Pass,Business,,,,7.0,3.0,,,,
+Matty Ceney,08/08/2019,"['Ambitious', 'Patient']","['Procrastination', 'Passive', 'Slow']",Yes,Yes,Yes,Pass,Engineering,3.0,2.0,,5.0,,2.0,,2.0,
+Rubia Espy,08/08/2019,"['Determined', 'Collaboration']","['Critical', 'Anxious']",Yes,Yes,Yes,Pass,Business,,1.0,,,1.0,,,,
+Meridel Dearell,21/08/2019,"['Curious', 'Perfectionism']","['Anxious', 'Procrastination']",Yes,Yes,Yes,Pass,Data,,,,,,5.0,1.0,,
+Noelyn Sinkin,21/08/2019,"['Determined', 'Patient', 'Critical Thinking']","['Indifferent', 'Slow']",Yes,Yes,Yes,Pass,Business,,,,,2.0,4.0,,,
+Mozelle Grinnov,20/08/2019,"['Courteous', 'Patient']","['Passive', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,,,,,3.0,,1.0,,
+Christyna Arkill,21/08/2019,['Courteous'],['Conventional'],Yes,Yes,Yes,Pass,Data,2.0,,6.0,3.0,,6.0,,2.0,
+Kain Lowne,29/08/2019,"['Organisation', 'Empathy', 'Innovative']",['Anxious'],Yes,Yes,Yes,Pass,Data,4.0,4.0,,3.0,4.0,,5.0,,2.0
+Mitchel Blackesland,14/08/2019,"['Determined', 'Critical Thinking', 'Ambitious']","['Impatient', 'Intolerant', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,5.0,,7.0,3.0,,3.0,,2.0
+Albie Lyon,22/08/2019,"['Problem Solving', 'Patient', 'Ambitious']","['Controlling', 'Slow', 'Indecisive']",Yes,Yes,Yes,Pass,Data,4.0,,4.0,5.0,,,,,1.0
+Farand Rotlauf,20/08/2019,['Perfectionism'],['Selfish'],Yes,Yes,Yes,Pass,Engineering,6.0,7.0,6.0,1.0,,,,6.0,
+Bo Fargie,28/08/2019,['Altruism'],['Impatient'],Yes,Yes,Yes,Pass,Engineering,,,,,5.0,4.0,2.0,2.0,
+Arch Cookley,20/08/2019,"['Innovative', 'Listening', 'Courteous']","['Competitive', 'Overbearing']",Yes,No,Yes,Fail,Engineering,,,,3.0,3.0,1.0,6.0,,
+Martica Cawse,08/08/2019,['Creative'],"['Introverted', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,1.0,1.0
+Nancie Mehaffey,08/08/2019,"['Efficient', 'Independent', 'Critical Thinking']","['Intolerant', 'Selfish', 'Passive']",Yes,Yes,Yes,Pass,Data,,,,,,6.0,6.0,3.0,
+Donnamarie Schofield,15/08/2019,['Ambitious'],['Passive'],Yes,Yes,Yes,Pass,Data,3.0,,,,2.0,4.0,5.0,,
+Erda Liddel,06/08/2019,['Altruism'],['Anxious'],Yes,No,Yes,Fail,Business,,,,2.0,,3.0,,,
+Alister Bru,07/08/2019,"['Organisation', 'Composure', 'Reliable']","['Critical', 'Distracted', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,,
+Sigismund Izkovici,15/08/2019,"['Problem Solving', 'Charisma', 'Collaboration']",['Overbearing'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,,,,,2.0
+Star Jurges,01/08/2019,"['Patient', 'Listening']","['Competitive', 'Impatient']",Yes,Yes,Yes,Pass,Data,6.0,,,,1.0,,,5.0,
+Pauly Gillbee,28/08/2019,"['Problem Solving', 'Listening']",['Stubborn'],Yes,Yes,Yes,Pass,Business,,,,,2.0,,3.0,,
+Stan Forkan,01/08/2019,"['Creative', 'Versatile']","['Chatty', 'Procrastination', 'Chaotic']",Yes,Yes,Yes,Fail,Data,1.0,,,,,,4.0,,
+Brinn Trewhela,06/08/2019,"['Consistent', 'Altruism']","['Slow', 'Indifferent', 'Anxious']",Yes,Yes,Yes,Pass,Business,4.0,,,,,1.0,,3.0,2.0
+Rodrigo Endrighi,14/08/2019,['Competitive'],"['Competitive', 'Impulsive', 'Conventional']",Yes,Yes,Yes,Pass,Data,3.0,1.0,2.0,,,2.0,,1.0,
+Tansy Dukelow,20/08/2019,"['Altruism', 'Curious']","['Procrastination', 'Indifferent']",Yes,No,Yes,Fail,Engineering,3.0,,,,2.0,3.0,,,2.0
+Sean Ovise,27/08/2019,['Problem Solving'],['Conventional'],Yes,Yes,Yes,Pass,Engineering,,2.0,,,1.0,4.0,,,
+Anselma Pawlett,21/08/2019,['Innovative'],"['Selfish', 'Immature']",Yes,Yes,Yes,Pass,Data,,,1.0,4.0,1.0,5.0,,,
+Kerrie Rosi,22/08/2019,"['Empathy', 'Independent', 'Critical Thinking']","['Competitive', 'Conventional']",Yes,Yes,Yes,Pass,Business,7.0,,4.0,,,,,1.0,
+Dorothy Hailwood,15/08/2019,['Versatile'],['Introverted'],Yes,No,Yes,Fail,Business,5.0,1.0,2.0,7.0,,4.0,5.0,1.0,
+Jodie Kaygill,01/08/2019,"['Consistent', 'Altruism']","['Competitive', 'Overbearing', 'Selfish']",Yes,Yes,Yes,Pass,Data,1.0,,3.0,,1.0,2.0,,1.0,2.0
+Jim Dwerryhouse,27/08/2019,['Problem Solving'],"['Perfectionist', 'Sensitive']",Yes,Yes,Yes,Pass,Business,2.0,3.0,,,3.0,,,,
+Delinda Conybear,01/08/2019,"['Passionate', 'Organisation', 'Critical Thinking']","['Procrastination', 'Controlling', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,,,,3.0,,2.0,,3.0
+Norby Burle,21/08/2019,"['Competitive', 'Versatile']",['Overbearing'],No,No,Yes,Fail,Business,,,5.0,,3.0,,5.0,,
+Robinet Renwick,15/08/2019,['Courteous'],"['Procrastination', 'Distracted', 'Indifferent']",Yes,Yes,Yes,Pass,Business,1.0,4.0,,,2.0,,,,
+Perry Richemond,08/08/2019,"['Problem Solving', 'Rational']","['Perfectionist', 'Overbearing', 'Critical']",Yes,Yes,Yes,Pass,Data,1.0,,,5.0,,,,,4.0
+Carlyn Reisin,14/08/2019,"['Consistent', 'Creative', 'Organisation']","['Immature', 'Impatient', 'Sensitive']",Yes,Yes,Yes,Pass,Business,1.0,4.0,,2.0,5.0,5.0,2.0,3.0,
+Horatius Starking,08/08/2019,['Consistent'],"['Selfish', 'Introverted', 'Slow']",Yes,Yes,No,Fail,Business,3.0,,,2.0,,5.0,,,1.0
+Leoline Vigietti,07/08/2019,"['Determined', 'Patient']","['Intolerant', 'Immature']",Yes,Yes,Yes,Pass,Business,,,1.0,,,,,,1.0
+Rudolf Maple,21/08/2019,['Listening'],"['Chatty', 'Intolerant', 'Passive']",Yes,Yes,Yes,Pass,Data,,,,,4.0,,,,
+Alwin Bullman,07/08/2019,"['Charisma', 'Perfectionism', 'Rational']",['Controlling'],Yes,Yes,Yes,Pass,Data,,2.0,,,4.0,2.0,2.0,2.0,
+Shae Ainslie,15/08/2019,['Innovative'],"['Chaotic', 'Slow']",Yes,Yes,Yes,Pass,Business,3.0,,3.0,,3.0,4.0,4.0,4.0,
+Ciel Poizer,14/08/2019,"['Listening', 'Curious']","['Sensitive', 'Conventional', 'Immature']",No,Yes,Yes,Fail,Business,5.0,,,,,,,2.0,
+Matteo Yeowell,01/08/2019,"['Versatile', 'Empathy']","['Overbearing', 'Sensitive', 'Selfish']",Yes,Yes,Yes,Pass,Business,,,4.0,,,6.0,2.0,,3.0
+Saundra Fuzzens,28//08/2019,"['Passionate', 'Efficient', 'Charisma']","['Procrastination', 'Slow', 'Overbearing']",Yes,Yes,Yes,Fail,Business,3.0,,5.0,,6.0,,3.0,,
+Denise Oppy,21/08/2019,"['Courteous', 'Independent']",['Sensitive'],Yes,Yes,Yes,Pass,Engineering,4.0,,6.0,7.0,,,,,2.0
+Didi Stronough,29/08/2019,['Reliable'],"['Slow', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,2.0,,,,1.0,,,,
+Tarrah Bunny,07/08/2019,['Altruism'],"['Perfectionist', 'Distracted']",Yes,Yes,Yes,Pass,Business,6.0,,,,,,,,
+Bondon Josselson,15/08/2019,['Innovative'],"['Introverted', 'Chatty']",Yes,No,Yes,Fail,Engineering,,2.0,6.0,,,,,,
+Denny Begg,08/08/2019,"['Altruism', 'Charisma']",['Introverted'],Yes,Yes,Yes,Pass,Data,6.0,7.0,,,2.0,,4.0,3.0,4.0
+Clim Lovie,29/08/2019,"['Creative', 'Empathy']","['Undisciplined', 'Slow']",Yes,Yes,Yes,Fail,Business,,,,3.0,,,1.0,,
+Wolf Radolf,08/08/2019,"['Listening', 'Determined']","['Indifferent', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,4.0,3.0,2.0,,,,1.0,4.0,
+Ferrel Lissandrini,29/08/2019,"['Creative', 'Ambitious']",['Slow'],Yes,Yes,Yes,Fail,Business,,,2.0,,2.0,,,,
+Carlos Gerckens,01/08/2019,"['Collaboration', 'Ambitious']","['Intolerant', 'Stubborn', 'Anxious']",Yes,Yes,Yes,Pass,Data,,4.0,,7.0,,1.0,,,
+Blake Nunson,01/08/2019,"['Reliable', 'Determined']","['Competitive', 'Indifferent', 'Controlling']",Yes,Yes,Yes,Pass,Engineering,,1.0,,,1.0,3.0,,,
+Paula Danielsen,22/08/2019,"['Altruism', 'Listening', 'Problem Solving']",['Impulsive'],Yes,Yes,No,Fail,Business,,2.0,,,,3.0,1.0,,2.0
+Brose Menghi,06/08/2019,"['Rational', 'Listening', 'Organisation']","['Passive', 'Slow']",Yes,Yes,Yes,Pass,Engineering,3.0,3.0,,,,,,,
+Junia Collins,29/08/2019,"['Composure', 'Collaboration']",['Slow'],Yes,Yes,Yes,Pass,Data,,4.0,,,2.0,,,,1.0
+Jule Corke,29/08/2019,"['Listening', 'Reliable', 'Passionate']",['Undisciplined'],Yes,Yes,No,Fail,Engineering,1.0,1.0,2.0,,1.0,,,,
+Matteo Cornewell,27/08/2019,['Composure'],"['Impatient', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,1.0,,,,,,,
+Sid Libbie,01/08/2019,"['Competitive', 'Ambitious']","['Chaotic', 'Sensitive']",Yes,Yes,No,Fail,Engineering,,,,2.0,,1.0,3.0,,
+Rhody Cushion,27/08/2019,"['Listening', 'Reliable', 'Efficient']","['Passive', 'Introverted']",Yes,Yes,Yes,Pass,Business,2.0,8.0,,,,,,1.0,
+Chester Hanselmann,07/08/2019,['Creative'],"['Passive', 'Controlling']",Yes,Yes,No,Fail,Data,,1.0,1.0,,4.0,2.0,5.0,2.0,3.0
+Courtney Wenman,28/08/2019,"['Composure', 'Innovative']","['Passive', 'Indifferent', 'Competitive']",No,Yes,Yes,Fail,Engineering,,2.0,2.0,,,1.0,1.0,1.0,5.0
+Vaclav Ortler,20/08/2019,['Composure'],"['Indifferent', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,,,,1.0,4.0,1.0,3.0,
+Mariquilla Cowope,14/08/2019,['Rational'],"['Impulsive', 'Anxious', 'Sensitive']",Yes,Yes,Yes,Fail,Business,,2.0,,,,,,3.0,1.0
+Joey Macgeffen,14/08/2019,['Organisation'],"['Intolerant', 'Overbearing']",Yes,Yes,Yes,Pass,Data,,,,,4.0,,,,
+Cora Klausewitz,15/08/2019,"['Problem Solving', 'Competitive', 'Versatile']","['Slow', 'Sensitive', 'Intolerant']",Yes,Yes,Yes,Pass,Data,3.0,5.0,3.0,3.0,,5.0,1.0,,
+Gris Brame,14/08/2019,"['Consistent', 'Innovative', 'Rational']","['Slow', 'Anxious']",Yes,Yes,No,Fail,Business,,1.0,4.0,,,4.0,3.0,,
+Berty Huban,18/07/2019,"['Competitive', 'Listening']","['Passive', 'Anxious']",Yes,Yes,Yes,Pass,Business,2.0,,,,,,,,
+Matthieu Dulake,31/07/2019,"['Collaboration', 'Creative', 'Rational']",['Introverted'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,,4.0,,,
+Darwin Sambiedge,10/07/2019,"['Altruism', 'Efficient', 'Critical Thinking']",['Passive'],Yes,Yes,Yes,Fail,Data,,,,,3.0,5.0,1.0,,3.0
+Sim Bacchus,23/07/2019,['Passionate'],"['Procrastination', 'Stubborn', 'Critical']",Yes,Yes,Yes,Pass,Data,,,,,,,,,6.0
+Anabal Teese,09/07/2019,"['Curious', 'Passionate', 'Listening']","['Selfish', 'Intolerant', 'Anxious']",Yes,No,Yes,Fail,Business,,2.0,,,,7.0,,,1.0
+Sybila Bragge,23/07/2019,"['Courteous', 'Altruism', 'Independent']","['Passive', 'Procrastination', 'Introverted']",Yes,No,Yes,Fail,Data,,9.0,2.0,,2.0,,,,5.0
+Donalt Gummoe,16/07/2019,"['Independent', 'Problem Solving', 'Passionate']","['Conventional', 'Introverted', 'Sensitive']",No,Yes,Yes,Fail,Data,,,3.0,,5.0,4.0,2.0,,
+Romola Coldtart,17/07/2019,['Reliable'],"['Sensitive', 'Impulsive', 'Conventional']",Yes,Yes,Yes,Pass,Data,1.0,4.0,,,2.0,,,,1.0
+Shea Chasmoor,17/07/2019,"['Empathy', 'Consistent', 'Patient']","['Passive', 'Impulsive', 'Stubborn']",Yes,Yes,Yes,Fail,Business,,,2.0,,1.0,,,,4.0
+Nora Akers,24/07/2019,['Organisation'],"['Impatient', 'Sensitive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,3.0,4.0,,1.0,,,,
+Sander Rewbottom,25/07/2019,"['Altruism', 'Problem Solving', 'Listening']","['Sensitive', 'Slow']",Yes,Yes,Yes,Pass,Data,2.0,,,4.0,2.0,5.0,1.0,,
+Francklyn Leyninye,24/07/2019,"['Problem Solving', 'Passionate', 'Altruism']","['Selfish', 'Passive']",Yes,Yes,Yes,Pass,Business,2.0,1.0,3.0,1.0,,,2.0,1.0,
+Julissa Dumbleton,24/07/2019,['Courteous'],"['Critical', 'Intolerant', 'Controlling']",Yes,Yes,Yes,Pass,Data,,2.0,,,4.0,,5.0,,
+Zacharias Restorick,11/07/2019,['Curious'],['Intolerant'],Yes,Yes,Yes,Pass,Business,,,2.0,,,,5.0,,
+Andriana Uc,02/07/2019,['Problem Solving'],['Impatient'],Yes,Yes,Yes,Pass,Business,1.0,,5.0,,,,,,1.0
+Benita Enefer,11/07/2019,"['Empathy', 'Organisation']",['Distracted'],Yes,Yes,Yes,Pass,Data,,,,,,2.0,,1.0,
+Isacco Teese,02/07/2019,"['Versatile', 'Critical Thinking']","['Indifferent', 'Immature', 'Stubborn']",Yes,Yes,Yes,Pass,Business,,,,2.0,,8.0,2.0,,
+Farlee Baalham,16/07/2019,"['Determined', 'Critical Thinking']",['Overbearing'],Yes,No,Yes,Fail,Data,,,,3.0,,,6.0,,1.0
+Zsa Zsa Rounsefull,16/07/2019,"['Problem Solving', 'Reliable', 'Charisma']","['Immature', 'Undisciplined', 'Passive']",Yes,Yes,Yes,Fail,Data,,,,,,,,,2.0
+Amanda Minto,18/07/2019,['Determined'],"['Impulsive', 'Indecisive', 'Perfectionist']",No,Yes,Yes,Fail,Business,,,,,,6.0,,,4.0
+Annie Ibbotson,25/07/2019,"['Independent', 'Competitive']",['Indifferent'],Yes,No,Yes,Fail,Business,,2.0,,,,,,,
+Roana Sanger,11/07/2019,"['Rational', 'Composure']",['Impatient'],Yes,No,Yes,Fail,Business,,1.0,3.0,,2.0,,,,1.0
+Elise Soppeth,24/07/2019,['Critical Thinking'],"['Conventional', 'Chaotic']",Yes,Yes,Yes,Pass,Data,1.0,2.0,,1.0,4.0,9.0,,,
+Betty Lamlin,10/07/2019,"['Problem Solving', 'Ambitious', 'Perfectionism']",['Chaotic'],No,Yes,Yes,Fail,Data,,,,,5.0,,3.0,4.0,
+Verena Townes,16/07/2019,['Critical Thinking'],['Procrastination'],Yes,Yes,Yes,Pass,Business,,,1.0,,1.0,2.0,1.0,,1.0
+Constance Fellibrand,09/07/2019,['Innovative'],"['Indifferent', 'Immature']",Yes,Yes,Yes,Pass,Engineering,,,2.0,,,,2.0,5.0,1.0
+Joannes Yurshev,18/07/2019,"['Determined', 'Curious']","['Slow', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,1.0,,1.0,,,,2.0,1.0
+Brunhilde Zellick,03/07/2019,"['Creative', 'Perfectionism', 'Consistent']","['Chaotic', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,,,,1.0,
+Mathilde Keppin,02/07/2019,"['Creative', 'Efficient', 'Ambitious']","['Indifferent', 'Selfish', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,4.0,,,2.0,3.0,1.0,3.0,
+Aili Bursnoll,30/07/2019,"['Ambitious', 'Passionate']",['Intolerant'],Yes,No,Yes,Fail,Engineering,5.0,,2.0,,,,,,
+Kerr Allanson,24/07/2019,"['Curious', 'Composure', 'Independent']","['Procrastination', 'Conventional', 'Chaotic']",No,Yes,Yes,Fail,Data,2.0,,3.0,,,,,,
+Eldin Broster,17/07/2019,"['Creative', 'Innovative']","['Controlling', 'Stubborn', 'Slow']",Yes,Yes,Yes,Fail,Data,4.0,,3.0,,,2.0,,,
+Cherrita Mcgilleghole,11/07/2019,"['Efficient', 'Empathy', 'Curious']","['Indifferent', 'Slow', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering,,,2.0,10.0,,,,3.0,
+Ortensia Winscomb,11/07/2019,"['Versatile', 'Competitive', 'Rational']","['Slow', 'Introverted', 'Procrastination']",Yes,Yes,Yes,Pass,Data,,,6.0,1.0,,,4.0,,
+Fleming Mcmurdo,09/07/2019,['Organisation'],['Impatient'],Yes,No,Yes,Fail,Data,5.0,2.0,3.0,3.0,,2.0,,,2.0
+Brigid Blabber,23/07/2019,"['Problem Solving', 'Innovative', 'Critical Thinking']","['Selfish', 'Introverted', 'Stubborn']",Yes,Yes,Yes,Pass,Business,6.0,,3.0,,,,2.0,1.0,
+Ludvig Grzes,16/07/2019,"['Organisation', 'Collaboration', 'Altruism']","['Procrastination', 'Immature', 'Impatient']",Yes,Yes,Yes,Pass,Data,,3.0,,,,,1.0,,
+Hurley Collyer,24/07/2019,['Perfectionism'],"['Chaotic', 'Slow', 'Chatty']",Yes,No,Yes,Fail,Engineering,,,,,,,3.0,,
+Kitty Allen,02/07/2019,"['Determined', 'Creative']",['Sensitive'],Yes,Yes,Yes,Pass,Business,5.0,4.0,3.0,,5.0,,,,
+Bary Fendlen,18/07/2019,['Listening'],['Immature'],Yes,Yes,Yes,Fail,Business,,1.0,,1.0,4.0,3.0,3.0,,2.0
+Horten Goble,24/07/2019,"['Courteous', 'Critical Thinking', 'Innovative']",['Immature'],Yes,Yes,Yes,Pass,Business,4.0,1.0,,,,,,1.0,
+Natassia Pawle,03/07/2019,"['Altruism', 'Empathy', 'Perfectionism']","['Intolerant', 'Impulsive', 'Passive']",Yes,Yes,Yes,Pass,Engineering,1.0,5.0,,3.0,3.0,,,,
+Karoly Skates,16/07/2019,"['Determined', 'Critical Thinking']",['Competitive'],Yes,Yes,Yes,Pass,Engineering,,4.0,,,5.0,2.0,4.0,1.0,2.0
+Albina Alves,02/07/2019,"['Altruism', 'Creative', 'Problem Solving']","['Selfish', 'Procrastination']",Yes,Yes,Yes,Pass,Business,,1.0,,,2.0,,1.0,,1.0
+Evered Giovanizio,04/07/2019,"['Competitive', 'Listening']","['Chaotic', 'Intolerant', 'Undisciplined']",No,Yes,Yes,Fail,Business,,,5.0,,6.0,2.0,,,
+Elliot Yarnley,23/07/2019,"['Collaboration', 'Consistent']","['Sensitive', 'Chatty', 'Distracted']",Yes,Yes,Yes,Fail,Engineering,,3.0,,8.0,,,,5.0,
+Vanessa Gives,30/07/2019,['Perfectionism'],"['Chatty', 'Critical']",No,Yes,Yes,Fail,Data,,,3.0,1.0,5.0,,,,1.0
+Fremont Oxlee,18/07/2019,"['Independent', 'Collaboration', 'Creative']","['Slow', 'Conventional', 'Competitive']",Yes,Yes,Yes,Fail,Business,,1.0,,,,3.0,1.0,,2.0
+Fan Hember,04/07/2019,"['Determined', 'Independent', 'Courteous']","['Passive', 'Impatient']",Yes,No,Yes,Fail,Business,5.0,1.0,,,,,,,
+Fee Karpe,17/07/2019,"['Creative', 'Efficient']","['Procrastination', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,,2.0,,,7.0,,2.0,,
+Fee Karpe,17/07/2019,"['Creative', 'Efficient']","['Procrastination', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,,2.0,,,7.0,,2.0,,
+Katrine Westley,24/07/2019,['Perfectionism'],"['Chaotic', 'Competitive']",Yes,No,Yes,Fail,Engineering,3.0,,,,,,,3.0,
+Quill Tompkinson,10/07/2019,['Courteous'],"['Indecisive', 'Critical']",Yes,Yes,Yes,Fail,Data,2.0,,,,2.0,,5.0,,2.0
+Donavon Glazebrook,23/07/2019,"['Altruism', 'Collaboration', 'Composure']","['Slow', 'Intolerant', 'Stubborn']",Yes,Yes,Yes,Pass,Business,,2.0,,,,,,,
+Gisele Beetham,25/07/2019,"['Independent', 'Problem Solving']","['Indifferent', 'Chaotic', 'Sensitive']",No,No,Yes,Fail,Data,3.0,,,3.0,,,3.0,,
+Hilliard Reinard,18/07/2019,['Problem Solving'],"['Passive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,5.0,2.0
+Ira Rathbourne,18/07/2019,"['Patient', 'Ambitious', 'Passionate']","['Competitive', 'Controlling', 'Slow']",Yes,Yes,Yes,Pass,Data,,,,,,5.0,,3.0,
+Shaun Dowley,10/07/2019,['Determined'],['Indecisive'],Yes,Yes,No,Fail,Business,,3.0,2.0,,2.0,,,,2.0
+Hartwell Silver,30/07/2019,"['Determined', 'Listening']","['Chaotic', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,6.0,5.0,,,,,,3.0
+Shoshanna Janicek,18/07/2019,['Rational'],"['Intolerant', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,3.0,4.0,,,
+Ingrid Cradick,24/07/2019,"['Determined', 'Passionate']","['Overbearing', 'Conventional']",Yes,No,Yes,Fail,Data,,,,1.0,5.0,2.0,,2.0,1.0
+Chevy Pyburn,02/07/2019,"['Perfectionism', 'Patient', 'Organisation']","['Overbearing', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering,1.0,,,1.0,,,,,
+Bertram Esgate,30/07/2019,"['Independent', 'Composure', 'Altruism']","['Selfish', 'Chatty', 'Controlling']",Yes,Yes,Yes,Pass,Data,4.0,,3.0,2.0,,,,1.0,
+Larisa Warrington,02/07/2019,"['Independent', 'Consistent']","['Distracted', 'Anxious']",No,Yes,Yes,Fail,Business,,3.0,,,2.0,,,,
+Lissa Pumfrett,11/07/2019,"['Empathy', 'Perfectionism']",['Impulsive'],Yes,Yes,Yes,Pass,Data,,,,,,4.0,,,
+Demetrius Dunbavin,02/07/2019,"['Versatile', 'Passionate', 'Efficient']","['Stubborn', 'Passive']",Yes,Yes,Yes,Pass,Business,,,1.0,,,,,1.0,
+Morgen Lilywhite,09/07/2019,"['Composure', 'Versatile', 'Problem Solving']","['Impatient', 'Immature', 'Selfish']",Yes,Yes,Yes,Pass,Data,,,,,,,,,
+Rickard Blakes,09/07/2019,"['Collaboration', 'Empathy']","['Undisciplined', 'Indecisive', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,,,3.0,3.0,,,8.0,1.0,1.0
+Emily Barras,30/07/2019,['Altruism'],"['Conventional', 'Indifferent', 'Impatient']",Yes,Yes,Yes,Pass,Business,,,,,,,2.0,1.0,
+Tonye Ambrogio,18/07/2019,['Listening'],"['Critical', 'Procrastination']",Yes,Yes,Yes,Pass,Data,5.0,4.0,,3.0,,5.0,,,1.0
+Robers Gentner,09/07/2019,['Perfectionism'],"['Anxious', 'Conventional']",Yes,Yes,Yes,Fail,Data,,2.0,,,,1.0,,,6.0
+Kellyann Yorkston,16/07/2019,['Courteous'],"['Intolerant', 'Controlling']",Yes,Yes,No,Fail,Data,,3.0,,,3.0,1.0,4.0,2.0,2.0
+Olly Mougenel,16/07/2019,"['Problem Solving', 'Perfectionism']","['Perfectionist', 'Slow', 'Undisciplined']",Yes,Yes,No,Fail,Business,,3.0,7.0,,,2.0,2.0,2.0,1.0
+Merrill Mckie,23/07/2019,"['Versatile', 'Ambitious']","['Perfectionist', 'Intolerant', 'Overbearing']",Yes,Yes,Yes,Pass,Business,,,5.0,1.0,2.0,4.0,,,5.0
+Kass Castellan,03/07/2019,"['Creative', 'Listening']",['Indecisive'],Yes,Yes,Yes,Pass,Engineering,4.0,,,,,,3.0,,
+Marlon Reside,30/07/2019,"['Courteous', 'Altruism']",['Undisciplined'],Yes,Yes,Yes,Pass,Data,,,,3.0,,,,4.0,
+Oswald Lyndon,10/07/2019,"['Competitive', 'Independent']","['Procrastination', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,,9.0,5.0,,3.0,,4.0,
+Arty Indruch,02/07/2019,"['Courteous', 'Patient', 'Creative']",['Intolerant'],Yes,Yes,Yes,Pass,Business,3.0,4.0,6.0,,,3.0,5.0,2.0,
+Sharl Shambrooke,04/07/2019,"['Innovative', 'Reliable', 'Curious']",['Undisciplined'],Yes,Yes,Yes,Fail,Engineering,9.0,,2.0,,4.0,,1.0,,
+Antonius Heape,17/07/2019,['Ambitious'],['Procrastination'],Yes,Yes,Yes,Pass,Engineering,2.0,,,,2.0,,8.0,,
+Rad Bench,17/07/2019,"['Independent', 'Critical Thinking', 'Ambitious']","['Indecisive', 'Selfish']",Yes,Yes,Yes,Pass,Data,,,2.0,,,,1.0,,2.0
+Agace O'Shields,30/07/2019,"['Collaboration', 'Innovative']","['Undisciplined', 'Immature', 'Passive']",Yes,Yes,Yes,Pass,Business,,,,,,,,1.0,1.0
+Mela Burgill,09/07/2019,"['Altruism', 'Organisation', 'Collaboration']",['Distracted'],Yes,Yes,Yes,Pass,Business,,,,,,1.0,,3.0,
+Justis Gilham,25/07/2019,"['Altruism', 'Competitive', 'Critical Thinking']","['Competitive', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering,,,,6.0,2.0,,,3.0,4.0
+Valery Delia,24/07/2019,"['Composure', 'Rational']",['Anxious'],No,Yes,Yes,Fail,Engineering,,2.0,3.0,,,2.0,,3.0,
+Kylie Cordell,18/07/2019,['Competitive'],"['Chaotic', 'Impulsive', 'Critical']",Yes,Yes,Yes,Pass,Business,3.0,,,,,,,,
+Emmett Stogill,17/07/2019,"['Consistent', 'Perfectionism']","['Chaotic', 'Introverted']",Yes,Yes,No,Fail,Engineering,1.0,,4.0,,6.0,,,,
+Julianne Neagle,09/07/2019,"['Perfectionism', 'Rational']",['Procrastination'],Yes,Yes,Yes,Fail,Engineering,,2.0,,,5.0,1.0,7.0,,
+Cobbie Wolfinger,30/07/2019,"['Passionate', 'Organisation']","['Perfectionist', 'Immature', 'Indifferent']",No,Yes,Yes,Fail,Data,1.0,,,,,,,2.0,
+Blondy Fearnall,04/07/2019,"['Efficient', 'Innovative']",['Introverted'],Yes,Yes,Yes,Pass,Engineering,3.0,4.0,,4.0,4.0,,,,
+Bowie Endersby,16/07/2019,['Efficient'],['Indifferent'],Yes,Yes,Yes,Pass,Data,1.0,,,,,,,,
+Andrey Cochran,24/07/2019,"['Innovative', 'Listening', 'Competitive']","['Perfectionist', 'Indecisive', 'Impatient']",Yes,Yes,Yes,Pass,Data,2.0,,,,,,3.0,,
+Letizia Mckern,04/07/2019,"['Organisation', 'Charisma', 'Problem Solving']","['Distracted', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,,,4.0,2.0,5.0,,,
+Fons Ghiotto,16/07/2019,"['Listening', 'Collaboration', 'Independent']","['Chaotic', 'Indecisive']",Yes,Yes,Yes,Pass,Engineering,,3.0,,,,,,,2.0
+Sal Inglesent,04/07/2019,"['Perfectionism', 'Efficient', 'Passionate']",['Overbearing'],Yes,Yes,Yes,Pass,Data,3.0,,,1.0,,6.0,6.0,,
+Sela Pavese,25/07/2019,"['Rational', 'Courteous']",['Passive'],Yes,Yes,Yes,Fail,Business,,,4.0,,,5.0,2.0,2.0,1.0
+Alison Tett,10/07/2019,"['Versatile', 'Courteous']","['Overbearing', 'Impulsive']",Yes,Yes,Yes,Pass,Business,2.0,,,,1.0,,,3.0,
+Gabi Ivins,04/07/2019,"['Creative', 'Charisma']","['Undisciplined', 'Indecisive', 'Critical']",Yes,Yes,Yes,Pass,Business,,,2.0,7.0,1.0,,,1.0,3.0
+Noe Fortnam,09/07/2019,['Determined'],"['Competitive', 'Stubborn', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,,,3.0,1.0,1.0,,,,
+Ronny Vasilchenko,23/07/2019,"['Versatile', 'Curious', 'Determined']","['Indecisive', 'Impulsive']",Yes,Yes,Yes,Pass,Business,,,1.0,,,1.0,,,
+Blair Woollhead,18/07/2019,['Organisation'],['Chatty'],Yes,Yes,No,Fail,Engineering,,,,,5.0,,1.0,2.0,
+Henrieta Chatto,04/07/2019,"['Innovative', 'Versatile']","['Conventional', 'Undisciplined', 'Indifferent']",Yes,Yes,Yes,Pass,Business,,3.0,,,,,,,
+Eba Gary,02/07/2019,"['Patient', 'Determined', 'Innovative']","['Indecisive', 'Controlling']",Yes,Yes,Yes,Pass,Engineering,,,,,,,5.0,2.0,
+Marcela Riding,25/07/2019,"['Empathy', 'Competitive']","['Impulsive', 'Introverted']",Yes,Yes,Yes,Pass,Business,,,,4.0,4.0,,,2.0,
+Hewet Derwin,11//07/2019,['Consistent'],"['Chaotic', 'Slow']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,,,3.0,,2.0
+Demetria O' Sullivan,18/07/2019,"['Perfectionism', 'Independent', 'Critical Thinking']",['Perfectionist'],Yes,No,Yes,Fail,Data,,5.0,4.0,2.0,,,,4.0,3.0
+Steffen Marcombe,04/07/2019,"['Listening', 'Rational']","['Immature', 'Overbearing', 'Anxious']",Yes,Yes,Yes,Pass,Business,5.0,,,,,,1.0,,4.0
+Aguste Tann,30/07/2019,"['Perfectionism', 'Charisma']","['Introverted', 'Controlling', 'Distracted']",Yes,Yes,Yes,Pass,Business,,,,1.0,,,,,
+D'Arcy Bover,02/07/2019,['Creative'],"['Indifferent', 'Immature', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,6.0,,,3.0,,,4.0,,
+Chadd Klampt,03/07/2019,"['Patient', 'Perfectionism']",['Indecisive'],Yes,Yes,Yes,Pass,Engineering,1.0,3.0,,2.0,,,,,4.0
+Pren Varcoe,30/07/2019,"['Determined', 'Listening']","['Critical', 'Impatient']",No,Yes,Yes,Fail,Engineering,,,6.0,3.0,,2.0,,2.0,
+Abraham Rockell,02/07/2019,['Independent'],"['Overbearing', 'Critical', 'Controlling']",Yes,Yes,Yes,Pass,Engineering,,,2.0,,3.0,,,3.0,
+Laurette Hembling,09/07/2019,"['Versatile', 'Determined', 'Problem Solving']","['Sensitive', 'Intolerant', 'Impulsive']",No,Yes,Yes,Fail,Data,1.0,,3.0,1.0,2.0,1.0,4.0,,
+Karlis Bottle,18/07/2019,['Composure'],['Sensitive'],No,Yes,No,Fail,Business,,,,,,,,,1.0
+Wilhelm Jouanet,11/07/2019,['Perfectionism'],['Immature'],Yes,Yes,Yes,Pass,Data,,1.0,,,5.0,,,,
+Peterus Bartolomeazzi,25/07/2019,['Independent'],['Intolerant'],Yes,Yes,Yes,Fail,Business,3.0,2.0,,,2.0,,1.0,,
+Bari Streatfield,11/07/2019,['Problem Solving'],"['Indifferent', 'Overbearing']",Yes,Yes,Yes,Pass,Business,,,2.0,,,4.0,,,3.0
+Teriann Matyashev,04/07/2019,['Independent'],"['Undisciplined', 'Conventional']",Yes,Yes,Yes,Pass,Business,,,1.0,,1.0,,1.0,,
+Uriel Eidelman,10/07/2019,"['Innovative', 'Patient']","['Competitive', 'Overbearing']",Yes,Yes,Yes,Pass,Business,,,2.0,4.0,5.0,4.0,,,
+Toddie Rubanenko,03/07/2019,"['Collaboration', 'Organisation', 'Ambitious']",['Procrastination'],Yes,Yes,Yes,Pass,Data,6.0,,,,2.0,,,,
+Drake Northcote,10/07/2019,"['Independent', 'Listening', 'Reliable']",['Indifferent'],Yes,Yes,No,Fail,Engineering,4.0,,,,5.0,1.0,,2.0,
+Engracia Andriolli,30/07/2019,"['Rational', 'Organisation']","['Immature', 'Selfish', 'Impatient']",Yes,No,Yes,Fail,Engineering,5.0,,,,4.0,,,,
+Cristina Finlan,31/07/2019,"['Creative', 'Consistent']","['Introverted', 'Indecisive', 'Procrastination']",Yes,Yes,Yes,Pass,Business,,,,3.0,2.0,,,,1.0
+Markos Walter,16/07/2019,"['Versatile', 'Organisation', 'Critical Thinking']","['Selfish', 'Slow']",Yes,Yes,Yes,Pass,Data,,,,,,,,,
+Ofilia Keizman,17/07/2019,['Courteous'],"['Anxious', 'Sensitive', 'Passive']",Yes,Yes,Yes,Pass,Business,,5.0,,1.0,2.0,,,,1.0
+Chev Spillane,02/07/2019,"['Organisation', 'Creative', 'Consistent']",['Stubborn'],Yes,Yes,Yes,Pass,Engineering,,,,3.0,,7.0,,5.0,
+Beauregard Cornehl,02/07/2019,"['Collaboration', 'Rational']","['Distracted', 'Immature', 'Stubborn']",Yes,Yes,Yes,Pass,Business,3.0,,,,,,,,1.0
+Barclay Morter,30/07/2019,"['Collaboration', 'Competitive']",['Impulsive'],No,Yes,Yes,Fail,Business,3.0,5.0,,,4.0,2.0,,,1.0
+Clary Hertwell,30/07/2019,"['Patient', 'Collaboration', 'Competitive']",['Indifferent'],No,Yes,Yes,Fail,Business,,,,,3.0,2.0,5.0,,
+Jessy Dollman,09/07/2019,"['Versatile', 'Composure']",['Competitive'],Yes,Yes,Yes,Pass,Data,,9.0,,,3.0,,5.0,,
+Sibyl Gilardi,03/07/2019,['Altruism'],['Overbearing'],Yes,Yes,Yes,Fail,Business,,4.0,,4.0,1.0,,,,
+Haywood Teager,03/07/2019,"['Composure', 'Efficient']","['Conventional', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering,,3.0,,,3.0,2.0,1.0,4.0,3.0
+Doretta Henner,18/07/2019,['Altruism'],['Overbearing'],Yes,Yes,Yes,Pass,Business,1.0,,,,,6.0,,,
+Niall Graine,04/07/2019,"['Altruism', 'Perfectionism']","['Perfectionist', 'Controlling']",Yes,Yes,Yes,Pass,Business,,,,,,,,5.0,
+Karel Toulamain,10/07/2019,"['Determined', 'Reliable', 'Creative']","['Anxious', 'Immature', 'Competitive']",No,Yes,Yes,Fail,Data,1.0,,,3.0,,,3.0,,
+Iosep Idle,03/07/2019,"['Collaboration', 'Problem Solving', 'Organisation']","['Distracted', 'Stubborn']",Yes,Yes,Yes,Pass,Data,4.0,5.0,,4.0,4.0,,,2.0,
+Duky Shailer,02/07/2019,"['Empathy', 'Efficient', 'Listening']",['Competitive'],No,Yes,No,Fail,Data,,,1.0,5.0,1.0,,,5.0,
+Christie Blincoe,31/07/2019,"['Innovative', 'Charisma', 'Critical Thinking']","['Critical', 'Indecisive', 'Immature']",Yes,Yes,Yes,Pass,Business,,,,,4.0,,,,2.0
+Rik Waren,11/07/2019,"['Charisma', 'Critical Thinking']","['Chaotic', 'Sensitive']",Yes,Yes,Yes,Pass,Data,1.0,,,,,,3.0,9.0,1.0
+Zelda Prestage,10/07/2019,"['Courteous', 'Organisation', 'Listening']","['Perfectionist', 'Overbearing']",Yes,Yes,Yes,Fail,Business,1.0,,,,,,,,3.0
+Dannel Longmaid,18/07/2019,"['Efficient', 'Consistent']","['Competitive', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering,,,,3.0,,4.0,1.0,8.0,
+Ira Grima,25/07/2019,"['Courteous', 'Passionate', 'Empathy']","['Immature', 'Chaotic']",No,Yes,Yes,Fail,Engineering,2.0,,5.0,2.0,2.0,,,,1.0
+Vivyan Robuchon,11/07/2019,"['Composure', 'Listening']","['Selfish', 'Chaotic']",Yes,No,Yes,Fail,Engineering,,,,1.0,,,4.0,,
+Gardner Estick,31/07/2019,"['Composure', 'Organisation', 'Consistent']",['Introverted'],Yes,Yes,Yes,Pass,Engineering,,,,,,,,3.0,1.0
+Darin Healing,04/07/2019,['Composure'],['Chatty'],Yes,Yes,Yes,Pass,Engineering,3.0,,6.0,,2.0,,3.0,,2.0
+Teena Priel,18/07/2019,"['Determined', 'Curious']","['Sensitive', 'Passive', 'Impulsive']",Yes,No,No,Fail,Business,2.0,4.0,,,,,2.0,,2.0
+Katinka Tyt,18/07/2019,"['Innovative', 'Competitive']","['Slow', 'Chatty']",Yes,Yes,Yes,Pass,Data,,1.0,,,,,,,3.0
+Maxy Bensen,18/07/2019,"['Reliable', 'Rational', 'Independent']",['Indifferent'],Yes,Yes,Yes,Pass,Engineering,3.0,1.0,5.0,,4.0,4.0,,,4.0
+Donnie Sandwick,04/07/2019,['Determined'],['Sensitive'],Yes,Yes,No,Fail,Data,,,2.0,,,3.0,,3.0,
+Natasha Christol,31/07/2019,"['Creative', 'Collaboration']","['Selfish', 'Impatient', 'Chatty']",No,Yes,Yes,Fail,Data,3.0,1.0,,2.0,,,,,2.0
+Scarlett Roarty,23/07/2019,['Curious'],"['Indecisive', 'Anxious', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,,2.0,,,,,,1.0
+Hurlee Hesey,25/07/2019,"['Reliable', 'Versatile', 'Innovative']","['Passive', 'Conventional']",Yes,Yes,No,Fail,Engineering,,,2.0,,2.0,,,,
+Yehudit Killingbeck,30/07/2019,"['Ambitious', 'Determined']",['Sensitive'],Yes,Yes,No,Fail,Engineering,,,1.0,,,5.0,,,2.0
+Riannon Baraclough,31/07/2019,"['Reliable', 'Empathy', 'Curious']",['Controlling'],Yes,Yes,Yes,Pass,Business,,3.0,1.0,,3.0,,3.0,,
+Shay Obee,11/07/2019,"['Determined', 'Empathy', 'Organisation']",['Procrastination'],Yes,Yes,Yes,Pass,Business,,1.0,,,,,,1.0,4.0
+Collete Causbey,03/07/2019,"['Composure', 'Independent']","['Passive', 'Slow']",Yes,Yes,Yes,Pass,Business,1.0,2.0,,,4.0,4.0,,,1.0
+Tallia Rushford,31/07/2019,['Versatile'],['Chaotic'],Yes,Yes,No,Fail,Data,2.0,,,6.0,,5.0,,,
+Angelica Neissen,31/07/2019,"['Collaboration', 'Charisma']",['Distracted'],Yes,Yes,Yes,Fail,Business,1.0,5.0,,,8.0,,1.0,,
+Merwyn Gossop,18/07/2019,"['Consistent', 'Competitive', 'Charisma']",['Competitive'],Yes,Yes,Yes,Pass,Business,,,,3.0,,,,,
+Luca Gokes,09/07/2019,"['Passionate', 'Altruism']",['Procrastination'],No,Yes,Yes,Fail,Data,,5.0,,,2.0,,,,
+Judon Henze,10/07/2019,"['Listening', 'Competitive', 'Charisma']",['Controlling'],Yes,Yes,Yes,Pass,Engineering,,,2.0,,6.0,,,3.0,3.0
+Mirilla Bottinelli,16/07/2019,['Altruism'],['Chatty'],Yes,Yes,Yes,Pass,Data,1.0,,,,,2.0,4.0,3.0,
+Mirilla Bottinelli,16/07/2019,['Altruism'],['Chatty'],Yes,Yes,Yes,Pass,Data,1.0,,,,,2.0,4.0,3.0,
+Cordie Duckering,25/07/2019,"['Problem Solving', 'Reliable', 'Consistent']","['Passive', 'Introverted', 'Anxious']",Yes,Yes,Yes,Pass,Business,,,2.0,,2.0,,,1.0,6.0
+Dorian Hamshar,09/07/2019,"['Curious', 'Organisation', 'Versatile']",['Undisciplined'],Yes,Yes,Yes,Pass,Business,,,,,2.0,4.0,,,
+Anet Satterley,30/07/2019,"['Efficient', 'Charisma']","['Intolerant', 'Chatty', 'Chaotic']",Yes,Yes,Yes,Pass,Business,,,1.0,,,,,,
+Stanislaus Sendley,30/07/2019,"['Innovative', 'Composure']","['Impatient', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering,5.0,,,2.0,,,,,1.0
+Patrizia Wyre,17/07/2019,['Reliable'],['Stubborn'],Yes,Yes,Yes,Pass,Business,,6.0,2.0,,,3.0,,,
+Rodolfo Garret,16/07/2019,"['Curious', 'Passionate']","['Controlling', 'Impatient']",Yes,Yes,Yes,Pass,Data,,,4.0,,7.0,3.0,3.0,4.0,5.0
+Waverley Deacock,02/07/2019,"['Empathy', 'Organisation']","['Impulsive', 'Stubborn', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,1.0,,1.0,3.0,1.0,,,,2.0
+Langston Adamski,31/07/2019,['Listening'],"['Intolerant', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,6.0,,,5.0,3.0
+Annabela Brackenridge,23/07/2019,"['Altruism', 'Passionate', 'Rational']","['Slow', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,4.0,,,,5.0,,,
+Amerigo Heys,31/07/2019,"['Competitive', 'Collaboration']","['Distracted', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,,,3.0,2.0,,4.0,,1.0
+Sorcha Argue,02/07/2019,"['Passionate', 'Empathy']","['Anxious', 'Indifferent']",Yes,Yes,Yes,Pass,Data,,3.0,,2.0,,,,,3.0
+Miguelita Smedley,10/07/2019,"['Listening', 'Altruism', 'Problem Solving']","['Indifferent', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,3.0,,,,,3.0,,
+Weylin Comolli,10/07/2019,"['Creative', 'Perfectionism', 'Passionate']",['Overbearing'],Yes,Yes,Yes,Pass,Business,,3.0,,,1.0,,,,
+Raimondo Mellodey,24/07/2019,"['Organisation', 'Passionate', 'Consistent']",['Passive'],Yes,Yes,Yes,Pass,Business,,,3.0,,4.0,,,,1.0
+Courtnay Duiged,17/07/2019,"['Competitive', 'Collaboration', 'Courteous']",['Immature'],Yes,Yes,No,Fail,Business,,,,,,1.0,4.0,5.0,
+Sarena Weatherill,17/07/2019,"['Altruism', 'Efficient', 'Rational']","['Competitive', 'Distracted', 'Impatient']",Yes,Yes,No,Fail,Business,,,4.0,,,3.0,,,1.0
+Celina Polley,18/07/2019,"['Empathy', 'Listening', 'Competitive']","['Sensitive', 'Intolerant', 'Overbearing']",Yes,Yes,Yes,Pass,Data,,2.0,,,3.0,,4.0,1.0,
+Daloris Cotesford,10/07/2019,['Versatile'],['Intolerant'],Yes,Yes,Yes,Pass,Business,,,2.0,2.0,,,1.0,,
+Natalie Norwich,31/07/2019,"['Problem Solving', 'Critical Thinking']","['Intolerant', 'Chatty', 'Indecisive']",Yes,Yes,Yes,Pass,Data,7.0,1.0,,,,,6.0,,
+Kerstin Couper,23/07/2019,['Courteous'],['Overbearing'],Yes,Yes,Yes,Pass,Data,,,1.0,1.0,,4.0,4.0,,2.0
+Keen Tripony,03/07/2019,['Efficient'],"['Chaotic', 'Anxious']",Yes,Yes,Yes,Pass,Business,,,,,,,,,
+Ody Paroni,18/07/2019,"['Composure', 'Reliable', 'Creative']","['Conventional', 'Chatty']",Yes,Yes,Yes,Pass,Data,,,4.0,,,,,,
+Rodolfo Drillot,03/07/2019,['Listening'],"['Passive', 'Chatty', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,1.0,,,3.0,,5.0,,1.0
+Derward Wyllt,03/07/2019,"['Collaboration', 'Independent', 'Ambitious']","['Procrastination', 'Perfectionist']",Yes,No,No,Fail,Business,,6.0,1.0,,5.0,,,,1.0
+Amil Lidden,09/07/2019,['Charisma'],['Competitive'],No,Yes,Yes,Fail,Data,,,,,,,,,
+Salim Sarra,10/07/2019,"['Courteous', 'Rational', 'Problem Solving']","['Slow', 'Competitive', 'Indecisive']",Yes,Yes,Yes,Pass,Data,,,8.0,5.0,,,,,
+Horatius Branch,11/07/2019,"['Composure', 'Courteous', 'Passionate']",['Intolerant'],Yes,Yes,Yes,Pass,Data,6.0,2.0,,,,3.0,3.0,,3.0
+Frankie Boseley,02/07/2019,"['Problem Solving', 'Patient']",['Impatient'],Yes,Yes,Yes,Pass,Engineering,,,3.0,,,,2.0,,
+Bayard Stuckow,09/07/2019,['Curious'],"['Critical', 'Conventional']",Yes,Yes,Yes,Pass,Data,,,,,4.0,,,,
+Babita Tabourin,18/07/2019,"['Innovative', 'Listening', 'Perfectionism']","['Critical', 'Slow', 'Indifferent']",No,Yes,Yes,Fail,Engineering,3.0,,3.0,,,,3.0,2.0,3.0
+Job Restall,10/07/2019,"['Rational', 'Perfectionism', 'Curious']","['Competitive', 'Distracted', 'Selfish']",Yes,Yes,Yes,Pass,Data,,1.0,,,3.0,,,,
+Evin De Roeck,17/07/2019,"['Perfectionism', 'Patient', 'Creative']","['Anxious', 'Slow', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,,,,,
+Leopold Boichat,25/07/2019,['Critical Thinking'],"['Impatient', 'Slow', 'Selfish']",Yes,Yes,Yes,Pass,Engineering,,,,,,4.0,,,
+Nevil Penhaligon,24/07/2019,"['Creative', 'Problem Solving']","['Sensitive', 'Perfectionist', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,,1.0,,,1.0,,,
+Thorin Eskriet,10/07/2019,"['Innovative', 'Patient']",['Impatient'],Yes,Yes,Yes,Fail,Business,,,7.0,,,3.0,,,1.0
+Kathy Capstack,18/07/2019,"['Organisation', 'Competitive', 'Reliable']","['Indifferent', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,,,,,
+Floris Rizzetti,11/07/2019,"['Altruism', 'Problem Solving', 'Versatile']","['Conventional', 'Indecisive', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering,,,3.0,,,1.0,,,
+Ollie Pinniger,09/07/2019,['Perfectionism'],"['Controlling', 'Stubborn']",Yes,Yes,Yes,Pass,Business,1.0,3.0,,6.0,,,6.0,,1.0
+Rancell Lill,18/07/2019,"['Collaboration', 'Charisma', 'Critical Thinking']",['Competitive'],Yes,Yes,Yes,Pass,Engineering,,,,,,,,,
+Van Chesshyre,09/07/2019,['Independent'],"['Indecisive', 'Sensitive', 'Anxious']",Yes,Yes,Yes,Pass,Business,2.0,,,,,,4.0,,5.0
+Vivienne Blakelock,10/07/2019,"['Problem Solving', 'Patient']","['Slow', 'Chatty', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,,,,,,,3.0,
+Brad Coleyshaw,30/07/2019,"['Listening', 'Versatile']",['Anxious'],Yes,Yes,Yes,Pass,Engineering,,,,1.0,,,,,
+Adelaida Pirson,11/07/2019,"['Versatile', 'Reliable', 'Consistent']",['Undisciplined'],Yes,Yes,Yes,Pass,Data,,,,6.0,3.0,4.0,,,
+Alli Ludewig,16/07/2019,['Courteous'],"['Passive', 'Overbearing', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,3.0,,2.0,,,2.0,,7.0,
+Elnore Schwandner,16/07/2019,"['Composure', 'Competitive']","['Indecisive', 'Distracted']",Yes,Yes,Yes,Pass,Business,,,,,,,5.0,,2.0
+Sandor Swatradge,18/07/2019,"['Organisation', 'Problem Solving']","['Slow', 'Conventional']",Yes,Yes,Yes,Fail,Business,,,4.0,3.0,,,,2.0,
+Benjamin Chastand,31/07/2019,"['Creative', 'Patient', 'Composure']","['Conventional', 'Indecisive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,,,5.0,,2.0,,,
+Coleman Martynka,25/07/2019,"['Empathy', 'Collaboration']","['Impulsive', 'Immature', 'Selfish']",Yes,Yes,Yes,Pass,Data,,4.0,,2.0,7.0,3.0,,,
+Alistair Scanes,23/07/2019,['Problem Solving'],['Controlling'],Yes,Yes,Yes,Pass,Engineering,2.0,4.0,2.0,,4.0,,,,1.0
+Gradeigh Hamblin,16/07/2019,"['Innovative', 'Altruism', 'Determined']","['Distracted', 'Selfish']",Yes,Yes,No,Fail,Engineering,2.0,,,5.0,7.0,2.0,1.0,,
+Clementine Greedier,24/07/2019,"['Collaboration', 'Efficient']",['Selfish'],Yes,Yes,Yes,Pass,Engineering,,,,3.0,3.0,2.0,5.0,,
+Dyna Sange,04/07/2019,['Reliable'],"['Slow', 'Chatty', 'Introverted']",Yes,Yes,No,Fail,Engineering,1.0,,4.0,,,,6.0,,3.0
+Aggie Remmers,30/07/2019,"['Composure', 'Reliable', 'Consistent']",['Overbearing'],Yes,Yes,Yes,Pass,Business,1.0,,,4.0,,3.0,,5.0,
+Randie Klimashevich,10/07/2019,"['Consistent', 'Composure']",['Undisciplined'],Yes,Yes,Yes,Pass,Data,,1.0,,,,,,,2.0
+Laird Grece,17/07/2019,"['Composure', 'Innovative']","['Conventional', 'Procrastination']",No,Yes,Yes,Fail,Engineering,,2.0,,,6.0,,,,1.0
+Abelard Cardenas,09/07/2019,"['Courteous', 'Composure']","['Procrastination', 'Indecisive']",Yes,Yes,Yes,Fail,Business,,4.0,,2.0,,,,,1.0
+Maje Vallis,10/07/2019,['Competitive'],['Impatient'],Yes,Yes,Yes,Pass,Engineering,,1.0,,1.0,,,,,
+Thoma Bolesworth,04/07/2019,"['Courteous', 'Problem Solving', 'Rational']",['Competitive'],Yes,Yes,Yes,Pass,Data,,3.0,,3.0,,,,,
+Kris Whaley,30/07/2019,"['Altruism', 'Consistent']","['Slow', 'Indecisive']",No,Yes,Yes,Fail,Business,,,,,3.0,6.0,,,
+Elsworth Bendtsen,31/07/2019,"['Determined', 'Charisma', 'Composure']","['Procrastination', 'Controlling']",Yes,Yes,Yes,Pass,Engineering,2.0,,,5.0,,,6.0,,
+Honor Huntall,02/07/2019,"['Composure', 'Patient']",['Conventional'],Yes,Yes,Yes,Pass,Engineering,,,,,2.0,,2.0,,
+Paulina Tear,17/07/2019,"['Courteous', 'Rational', 'Creative']","['Intolerant', 'Anxious']",No,Yes,Yes,Fail,Business,,,,,,,,,3.0
+Kirsten Spelman,30/07/2019,['Composure'],"['Stubborn', 'Procrastination', 'Passive']",Yes,Yes,Yes,Pass,Data,,,,,1.0,3.0,,,
+Yankee Northing,02/07/2019,"['Critical Thinking', 'Versatile']",['Controlling'],Yes,Yes,Yes,Pass,Data,5.0,2.0,3.0,,,1.0,,,
+Noby Vacher,04/07/2019,"['Composure', 'Collaboration', 'Versatile']",['Controlling'],Yes,Yes,No,Fail,Business,,,,2.0,,,5.0,,1.0
+Bevon Detoile,03/07/2019,"['Ambitious', 'Charisma']",['Indecisive'],Yes,Yes,Yes,Pass,Business,,,4.0,,,4.0,,,
+Weylin Swatradge,03/07/2019,['Patient'],['Impatient'],No,Yes,No,Fail,Business,,2.0,1.0,,,,4.0,,
+Berti Nayer,02/07/2019,"['Creative', 'Consistent']",['Indifferent'],Yes,Yes,Yes,Pass,Data,1.0,3.0,5.0,,1.0,,,,2.0
+Adaline Durtnell,30/07/2019,"['Patient', 'Organisation', 'Efficient']",['Perfectionist'],Yes,No,No,Fail,Data,4.0,2.0,,1.0,4.0,,4.0,,
+Oralia Chaikovski,25/07/2019,"['Versatile', 'Courteous', 'Listening']","['Indifferent', 'Distracted', 'Chaotic']",No,Yes,Yes,Fail,Engineering,,,,,3.0,,,,
+Ester Mcterrelly,11/07/2019,['Organisation'],"['Anxious', 'Indecisive', 'Passive']",No,Yes,Yes,Fail,Data,,2.0,4.0,3.0,3.0,,4.0,3.0,2.0
+Lee Bernocchi,03/07/2019,"['Rational', 'Composure']","['Intolerant', 'Controlling']",Yes,No,Yes,Fail,Engineering,2.0,,,,4.0,2.0,,2.0,
+Clarke Cradoc,25/07/2019,"['Critical Thinking', 'Organisation', 'Perfectionism']","['Perfectionist', 'Indifferent', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,,1.0,,,3.0,,3.0,,1.0
+Dun Kurth,09/07/2019,"['Listening', 'Courteous']","['Overbearing', 'Undisciplined']",Yes,Yes,No,Fail,Data,,1.0,,,,,,,
+Drusy Benny,02/07/2019,['Competitive'],"['Impulsive', 'Undisciplined']",Yes,Yes,Yes,Pass,Data,,4.0,,,,4.0,3.0,,
+Maxie Thairs,03/07/2019,['Problem Solving'],['Critical'],No,Yes,No,Fail,Business,,,2.0,3.0,,3.0,4.0,,1.0
+Lurline Stirtle,11/07/2019,['Ambitious'],"['Conventional', 'Intolerant', 'Chatty']",Yes,Yes,Yes,Pass,Business,,,5.0,,,1.0,,,
+Marna Matskevich,30/07/2019,['Rational'],['Slow'],Yes,Yes,Yes,Pass,Business,,2.0,,,,4.0,,3.0,
+Ara Loggie,02/07/2019,"['Ambitious', 'Collaboration']",['Undisciplined'],Yes,Yes,Yes,Pass,Data,,1.0,4.0,,,,,,
+Brewer Calderbank,16/07/2019,"['Reliable', 'Rational', 'Charisma']","['Immature', 'Undisciplined', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering,,3.0,,2.0,,,,,1.0
+Eberhard Cattemull,30/07/2019,"['Altruism', 'Composure']",['Selfish'],Yes,Yes,Yes,Pass,Data,1.0,4.0,,,1.0,4.0,,,
+Tuesday Tasseler,09/07/2019,"['Charisma', 'Critical Thinking', 'Problem Solving']",['Overbearing'],Yes,Yes,Yes,Pass,Data,,,1.0,,3.0,,,,
+Brodie Chipperfield,24/07/2019,"['Efficient', 'Competitive']","['Slow', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,,,,,2.0,4.0,2.0,4.0,1.0
+Hill Tiplady,03/07/2019,['Patient'],['Procrastination'],No,Yes,Yes,Fail,Data,3.0,,,,,,,,
+Briggs Logsdail,18/07/2019,['Consistent'],['Impatient'],Yes,No,Yes,Fail,Data,,4.0,,,,,,,
+Adela Paley,23/07/2019,"['Ambitious', 'Efficient', 'Versatile']",['Anxious'],Yes,Yes,Yes,Pass,Data,,4.0,,,2.0,,3.0,2.0,
+Meyer Dobbison,30/07/2019,"['Rational', 'Listening']","['Chaotic', 'Competitive']",Yes,Yes,No,Fail,Engineering,2.0,5.0,,,1.0,,3.0,,
+Sherlocke Baselio,02/07/2019,"['Creative', 'Innovative', 'Collaboration']","['Controlling', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,,,2.0,,6.0,3.0,,
+Amalea Ughi,02/07/2019,"['Innovative', 'Altruism', 'Consistent']","['Introverted', 'Passive']",Yes,Yes,Yes,Pass,Business,,,,,,,2.0,5.0,1.0
+Julia Taile,02/07/2019,['Consistent'],"['Procrastination', 'Conventional']",Yes,No,Yes,Fail,Business,,,,,,,4.0,,1.0
+Eden Chattock,09/07/2019,"['Listening', 'Composure']","['Impulsive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,,,,1.0,3.0,,,
+Rois Covey,25/07/2019,"['Composure', 'Determined']","['Controlling', 'Competitive', 'Conventional']",Yes,Yes,Yes,Fail,Business,6.0,2.0,2.0,,,4.0,3.0,,1.0
+Avictor Moorey,17/07/2019,"['Empathy', 'Versatile', 'Organisation']",['Slow'],Yes,No,Yes,Fail,Business,3.0,2.0,,,,4.0,,,2.0
+Regina Calver,31/07/2019,"['Organisation', 'Curious']",['Sensitive'],Yes,Yes,Yes,Pass,Data,2.0,,2.0,,,3.0,3.0,,
+Lonnard O'Neill,18/07/2019,"['Charisma', 'Determined']","['Procrastination', 'Competitive']",Yes,Yes,Yes,Pass,Data,,4.0,,2.0,,1.0,,,2.0
+Ardis Staniland,02/07/2019,['Altruism'],['Chaotic'],Yes,Yes,No,Fail,Data,3.0,,3.0,,,,7.0,,
+Bill Pendlebury,18/07/2019,['Creative'],"['Chatty', 'Distracted', 'Impulsive']",Yes,Yes,No,Fail,Business,6.0,,2.0,,5.0,,,,3.0
+Allyce Attwill,25/07/2019,"['Rational', 'Competitive']","['Conventional', 'Slow', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,,1.0,3.0,,,,2.0,,1.0
+Belle Catherall,11/07/2019,"['Efficient', 'Patient']","['Chatty', 'Competitive']",Yes,Yes,Yes,Pass,Data,2.0,4.0,4.0,,1.0,7.0,5.0,,
+Layne Mcaline,25/07/2019,['Rational'],"['Introverted', 'Perfectionist', 'Critical']",Yes,Yes,No,Fail,Business,4.0,1.0,5.0,2.0,2.0,,1.0,1.0,
+Ulrikaumeko Bowsher,16/07/2019,"['Curious', 'Problem Solving']","['Chatty', 'Impatient', 'Controlling']",Yes,Yes,Yes,Pass,Data,3.0,,2.0,7.0,,,,,
+Lory Bruckman,11/07/2019,"['Problem Solving', 'Creative', 'Versatile']","['Slow', 'Anxious']",Yes,Yes,Yes,Pass,Data,3.0,2.0,,,,,,4.0,
+Rufe Devon,11/07/2019,['Consistent'],"['Controlling', 'Impatient', 'Critical']",Yes,Yes,Yes,Pass,Data,3.0,,,,,4.0,,,2.0
+Abbott Dodgshon,18/07/2019,"['Innovative', 'Creative']","['Indifferent', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,,5.0,,,
+Antonie Coram,25/07/2019,"['Efficient', 'Reliable', 'Perfectionism']","['Chatty', 'Impatient']",Yes,Yes,Yes,Pass,Data,,2.0,,3.0,2.0,1.0,,,
+Cinnamon Gilkison,09/07/2019,['Rational'],['Overbearing'],Yes,Yes,Yes,Fail,Business,,,,2.0,2.0,1.0,,,3.0
+Dewitt Milborn,24/07/2019,['Independent'],"['Distracted', 'Perfectionist', 'Indecisive']",Yes,Yes,Yes,Pass,Data,,,,,,,,1.0,
+Claude Duran,02/07/2019,['Curious'],"['Immature', 'Impulsive']",Yes,No,Yes,Fail,Data,5.0,,,,1.0,,,1.0,
+Nadya Pineaux,23/07/2019,"['Ambitious', 'Altruism', 'Reliable']",['Indecisive'],Yes,Yes,Yes,Pass,Data,3.0,,1.0,,,,3.0,3.0,
+Nani Measom,25/07/2019,"['Composure', 'Efficient']","['Passive', 'Conventional', 'Indecisive']",Yes,Yes,No,Fail,Data,,,1.0,,,,1.0,1.0,
+Ches Wahlberg,23/07/2019,['Courteous'],"['Overbearing', 'Critical', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,,,,,,1.0,4.0,6.0,2.0
+Zacherie Beswell,11/07/2019,"['Patient', 'Altruism', 'Creative']",['Sensitive'],Yes,Yes,Yes,Pass,Business,,,,1.0,,,2.0,,
+Karla Windridge,31/07/2019,['Composure'],['Undisciplined'],Yes,No,Yes,Fail,Business,2.0,,,,,2.0,,,
+Lannie Minister,31/07/2019,"['Consistent', 'Independent', 'Curious']","['Indecisive', 'Anxious']",Yes,Yes,Yes,Pass,Data,,,,,,,,,
+Andree Romeo,02/07/2019,['Collaboration'],"['Impatient', 'Anxious', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,,,,1.0,,,,
+Roch De Courcy,09/07/2019,"['Collaboration', 'Determined']",['Impulsive'],Yes,Yes,Yes,Pass,Data,3.0,,2.0,,,,,,
+Maggie Dolden,11/07/2019,"['Reliable', 'Consistent']","['Overbearing', 'Chatty', 'Anxious']",Yes,Yes,Yes,Pass,Data,,1.0,,,,,3.0,,
+Gage Feveryear,11/07/2019,['Altruism'],"['Indecisive', 'Selfish', 'Chaotic']",Yes,Yes,Yes,Pass,Business,,,,2.0,,,,4.0,1.0
+Virginia Burdge,11/07/2019,"['Passionate', 'Ambitious', 'Reliable']","['Chaotic', 'Conventional']",No,Yes,Yes,Fail,Engineering,,,5.0,,,,,,
+Melodee Crippen,04/07/2019,['Versatile'],['Procrastination'],Yes,Yes,Yes,Pass,Business,,,4.0,,3.0,6.0,2.0,,
+Raven Derx,24/07/2019,"['Independent', 'Collaboration']","['Procrastination', 'Chatty']",Yes,No,Yes,Fail,Business,,,,,,,4.0,5.0,
+Joseito Duiged,17//07/2019,"['Composure', 'Patient', 'Charisma']",['Sensitive'],Yes,Yes,Yes,Pass,Business,,,,,,,,,
+Merline Rickell,23/07/2019,"['Problem Solving', 'Ambitious', 'Patient']","['Selfish', 'Conventional', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,,,,,,2.0,,5.0,
+Vina Flott,16/07/2019,"['Ambitious', 'Consistent']","['Chaotic', 'Impatient', 'Indecisive']",Yes,Yes,No,Fail,Data,,3.0,,1.0,,,,,
+Hastie Hantusch,17/07/2019,"['Reliable', 'Patient']","['Slow', 'Procrastination', 'Stubborn']",No,Yes,Yes,Fail,Engineering,,,,,,,3.0,,
+Ines Plaschke,24/07/2019,"['Innovative', 'Curious', 'Problem Solving']","['Chaotic', 'Impatient']",Yes,Yes,No,Fail,Data,5.0,,,2.0,,,,,
+Burnaby Mackay,17/07/2019,"['Rational', 'Reliable', 'Critical Thinking']","['Introverted', 'Chaotic']",Yes,Yes,Yes,Fail,Business,6.0,,1.0,,2.0,,,7.0,2.0
+Linc Ridgway,17/07/2019,"['Independent', 'Altruism']",['Impulsive'],Yes,No,Yes,Fail,Engineering,,,,,,,,1.0,
+Darcy Handrahan,09/07/2019,"['Competitive', 'Rational']","['Indecisive', 'Chatty']",Yes,Yes,No,Fail,Data,4.0,4.0,,2.0,,3.0,,,
+Towny Povall,31/07/2019,"['Altruism', 'Charisma']",['Slow'],Yes,No,Yes,Fail,Data,,2.0,2.0,3.0,3.0,2.0,,7.0,
+Beauregard Hould,30/07/2019,['Consistent'],"['Indifferent', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,,,,7.0,,,,
+Joletta Kalinowsky,31/07/2019,['Ambitious'],['Anxious'],Yes,Yes,Yes,Pass,Business,,4.0,,4.0,,,2.0,,3.0
+Lock Ellerker,04/07/2019,"['Problem Solving', 'Listening']","['Procrastination', 'Impatient']",No,Yes,No,Fail,Data,6.0,2.0,,7.0,,,,2.0,
+Freddie Samber,10/07/2019,"['Ambitious', 'Patient']","['Conventional', 'Overbearing']",Yes,Yes,Yes,Pass,Data,1.0,2.0,3.0,2.0,,,,3.0,
+Arlette Pickles,11//07/2019,['Listening'],"['Chaotic', 'Impatient', 'Indecisive']",Yes,Yes,No,Fail,Data,,3.0,,4.0,,,,,
+Simonette Mawson,31/07/2019,['Composure'],['Impatient'],Yes,Yes,Yes,Pass,Data,,,,,1.0,2.0,2.0,,3.0
+Micheal Di Matteo,30/07/2019,"['Problem Solving', 'Empathy', 'Altruism']","['Competitive', 'Slow']",Yes,Yes,Yes,Pass,Data,,,2.0,1.0,,,,5.0,
+Madeleine Brunicke,11/07/2019,['Organisation'],"['Undisciplined', 'Chatty', 'Competitive']",Yes,Yes,No,Fail,Data,,8.0,2.0,,6.0,3.0,2.0,3.0,
+Ashby Capener,18/07/2019,['Independent'],['Impulsive'],Yes,Yes,Yes,Fail,Business,,5.0,3.0,,2.0,1.0,,,
+Rachele Bracknell,18/07/2019,"['Perfectionism', 'Independent']","['Indifferent', 'Procrastination']",Yes,Yes,Yes,Pass,Data,,,,,,,,,
+Portia Farfalameev,16/07/2019,['Competitive'],"['Introverted', 'Undisciplined', 'Impatient']",Yes,Yes,Yes,Pass,Business,,3.0,,1.0,1.0,5.0,1.0,,
+Grant Kilban,10/07/2019,"['Passionate', 'Ambitious']",['Conventional'],Yes,Yes,No,Fail,Business,3.0,5.0,,,4.0,3.0,,5.0,2.0
+Sinclair Bonder,11/07/2019,['Perfectionism'],['Anxious'],Yes,Yes,Yes,Pass,Engineering,2.0,,1.0,,,,,3.0,
+Harmonia Winspare,04/07/2019,['Problem Solving'],['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,3.0,,4.0,1.0,,,,2.0,
+Milly Ison,31/07/2019,"['Composure', 'Empathy']","['Immature', 'Slow']",Yes,Yes,Yes,Pass,Engineering,,,,,4.0,,1.0,,
+Evvy Allcock,25/07/2019,"['Versatile', 'Perfectionism']",['Slow'],Yes,Yes,Yes,Pass,Engineering,2.0,,5.0,2.0,3.0,,3.0,,
+Con Haxley,31/07/2019,"['Determined', 'Problem Solving']","['Controlling', 'Immature', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,4.0,2.0,,,3.0,3.0,,,2.0
+Bryanty Greenacre,31/07/2019,['Perfectionism'],['Procrastination'],Yes,Yes,Yes,Pass,Business,,1.0,,,3.0,,,,
+Vivianne Shills,31/07/2019,"['Problem Solving', 'Organisation']",['Indifferent'],Yes,Yes,Yes,Pass,Data,5.0,5.0,4.0,1.0,,,,,
+Renado Bulfoot,31/07/2019,['Efficient'],['Perfectionist'],Yes,No,Yes,Fail,Engineering,,,3.0,,,,2.0,,2.0
+Sinclair Breissan,12/07/2019,"['Independent', 'Efficient']",['Anxious'],No,Yes,Yes,Fail,Engineering,1.0,1.0,1.0,5.0,,,1.0,3.0,1.0
+Conn Dobson,18/07/2019,['Courteous'],"['Procrastination', 'Impulsive']",Yes,Yes,No,Fail,Business,,5.0,5.0,,,,,,
+Nicolle Radford,04/07/2019,"['Versatile', 'Charisma']",['Intolerant'],Yes,Yes,Yes,Pass,Business,,,,5.0,2.0,4.0,3.0,,
+Marquita Forrington,20/07/2019,"['Organisation', 'Independent', 'Altruism']","['Stubborn', 'Controlling']",Yes,Yes,Yes,Pass,Data,1.0,,,,,,1.0,,
+Ingaborg Pitblado,18/07/2019,['Ambitious'],"['Chatty', 'Anxious']",No,Yes,Yes,Fail,Business,2.0,,5.0,,,,6.0,7.0,1.0
+Bethanne Este,06/07/2019,"['Patient', 'Innovative']","['Indifferent', 'Competitive']",Yes,No,Yes,Fail,Business,,4.0,,3.0,2.0,,,6.0,
+Ingelbert Clench,27/07/2019,"['Critical Thinking', 'Creative', 'Courteous']","['Controlling', 'Overbearing']",Yes,Yes,Yes,Pass,Data,2.0,,,,,6.0,,3.0,
+Aura Louche,04/07/2019,"['Determined', 'Creative', 'Rational']",['Indifferent'],Yes,Yes,Yes,Pass,Data,,,2.0,,2.0,2.0,,3.0,
+Cully Seward,05/07/2019,['Determined'],"['Undisciplined', 'Controlling', 'Critical']",Yes,No,Yes,Fail,Data,,,,,,,,1.0,
+Lenna Daulby,13/07/2019,['Composure'],"['Anxious', 'Slow', 'Controlling']",Yes,Yes,Yes,Pass,Engineering,2.0,,,,3.0,5.0,3.0,,
+Billi Narraway,18/07/2019,['Independent'],"['Conventional', 'Selfish']",Yes,Yes,Yes,Fail,Engineering,2.0,3.0,,,4.0,,1.0,,
+Aurelea Leason,25/07/2019,"['Creative', 'Independent', 'Organisation']","['Intolerant', 'Competitive', 'Chatty']",Yes,Yes,Yes,Pass,Data,,6.0,,,,,2.0,1.0,1.0
+Lucius Buswell,04/07/2019,"['Perfectionism', 'Efficient', 'Creative']","['Anxious', 'Conventional', 'Intolerant']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,5.0,,,2.0,3.0
+Esdras Pires,13/07/2019,['Competitive'],['Passive'],Yes,No,Yes,Fail,Data,,,2.0,1.0,5.0,6.0,1.0,3.0,
+Siouxie Rogan,11/07/2019,"['Organisation', 'Curious']",['Immature'],Yes,Yes,Yes,Pass,Engineering,,,,,,,5.0,,2.0
+Marchall Pocklington,25/07/2019,"['Composure', 'Competitive', 'Independent']","['Indecisive', 'Conventional', 'Distracted']",Yes,Yes,Yes,Fail,Engineering,3.0,,3.0,1.0,,3.0,,3.0,2.0
+Granthem Long,05/07/2019,['Organisation'],"['Passive', 'Chaotic', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering,,,2.0,2.0,2.0,,,,3.0
+Charlean Balston,11/07/2019,"['Listening', 'Altruism', 'Competitive']",['Indecisive'],Yes,No,Yes,Fail,Data,,,,3.0,,,,3.0,
+Jimmie Durker,06/07/2019,"['Listening', 'Ambitious']",['Perfectionist'],Yes,Yes,Yes,Pass,Engineering,,,,,,,,3.0,1.0
+Jeanette Wankel,12/07/2019,['Rational'],"['Introverted', 'Indifferent', 'Controlling']",Yes,Yes,Yes,Fail,Data,1.0,,,,,,5.0,3.0,3.0
+Giulietta Dissman,25/07/2019,"['Passionate', 'Creative']",['Chaotic'],Yes,Yes,No,Fail,Data,6.0,,,1.0,,1.0,,,
+Joanna Thwaite,06/07/2019,"['Competitive', 'Collaboration', 'Problem Solving']","['Perfectionist', 'Impatient', 'Impulsive']",Yes,Yes,Yes,Pass,Business,,,,,,,2.0,,
+Salim Edmundson,13/07/2019,"['Listening', 'Independent']",['Controlling'],Yes,No,Yes,Fail,Data,2.0,3.0,,,1.0,,,,1.0
+Jan Manilo,26/07/2019,"['Competitive', 'Versatile', 'Determined']","['Chaotic', 'Overbearing']",Yes,Yes,Yes,Pass,Data,3.0,,4.0,1.0,2.0,,,,
+Suzette Glander,20/07/2019,"['Empathy', 'Creative', 'Patient']",['Sensitive'],Yes,Yes,Yes,Pass,Engineering,,3.0,,,,5.0,,,
+Bambi See,04/07/2019,"['Composure', 'Consistent']","['Impatient', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,1.0,2.0,,4.0,2.0,,,,
+Ainslee Paice,18/07/2019,"['Collaboration', 'Charisma', 'Curious']","['Critical', 'Indifferent']",Yes,Yes,Yes,Fail,Engineering,,,1.0,,,,,8.0,
+Fernanda Hendrich,06/07/2019,"['Perfectionism', 'Courteous', 'Composure']","['Sensitive', 'Indifferent']",Yes,No,Yes,Fail,Engineering,,,,4.0,,5.0,,2.0,2.0
+Virge Insole,20/07/2019,"['Reliable', 'Critical Thinking']",['Chaotic'],Yes,No,Yes,Fail,Engineering,3.0,4.0,,4.0,,,5.0,2.0,5.0
+Kathy Meeking,26/07/2019,"['Curious', 'Versatile', 'Ambitious']","['Conventional', 'Intolerant', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,3.0,,,1.0,,,,
+Lind Ferebee,25/07/2019,['Independent'],"['Passive', 'Distracted', 'Perfectionist']",Yes,Yes,Yes,Pass,Business,,,,,4.0,,,,
+Aguie Morrad,27/07/2019,"['Competitive', 'Rational', 'Reliable']",['Distracted'],Yes,Yes,Yes,Pass,Data,,3.0,,,,,3.0,,
+Vania Ingray,13/07/2019,['Courteous'],"['Distracted', 'Indifferent', 'Chaotic']",Yes,Yes,Yes,Pass,Business,1.0,,,,,,,,
+Ola Robelet,19/07/2019,"['Ambitious', 'Rational', 'Consistent']","['Impatient', 'Overbearing', 'Procrastination']",Yes,Yes,No,Fail,Data,,,3.0,,,,1.0,1.0,
+Leoline Stelli,19/07/2019,"['Determined', 'Patient']",['Impulsive'],Yes,No,Yes,Fail,Data,,,2.0,,,,3.0,,
+Malia Checcucci,25/07/2019,"['Perfectionism', 'Versatile']","['Sensitive', 'Perfectionist', 'Distracted']",Yes,Yes,Yes,Pass,Business,,4.0,2.0,,5.0,,,1.0,3.0
+Antoni Caney,11/07/2019,['Competitive'],"['Critical', 'Sensitive', 'Indifferent']",Yes,Yes,Yes,Pass,Business,,2.0,,,1.0,2.0,4.0,2.0,
+Alanah Matfin,27/07/2019,['Organisation'],"['Critical', 'Chaotic', 'Stubborn']",Yes,Yes,Yes,Pass,Business,3.0,4.0,,,,,,3.0,2.0
+Nickolaus Jeacocke,06/07/2019,['Reliable'],"['Anxious', 'Undisciplined', 'Conventional']",Yes,Yes,Yes,Pass,Data,,5.0,3.0,,,,,,
+Briano Nissle,13/07/2019,['Consistent'],['Controlling'],Yes,Yes,Yes,Pass,Business,3.0,2.0,,,,3.0,,2.0,1.0
+Temple Plumridege,20/07/2019,['Composure'],"['Indifferent', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,,,,,,,3.0,
+Adeline Ordidge,19/07/2019,"['Empathy', 'Rational', 'Reliable']",['Procrastination'],Yes,No,Yes,Fail,Data,4.0,,4.0,,4.0,,,2.0,1.0
+Stanleigh Huson,19/07/2019,"['Rational', 'Determined', 'Independent']","['Undisciplined', 'Impulsive', 'Chatty']",Yes,Yes,Yes,Pass,Engineering,,1.0,,,,3.0,,,
+Lyell Sandell,06/07/2019,['Consistent'],"['Chaotic', 'Procrastination', 'Selfish']",Yes,Yes,Yes,Pass,Engineering,3.0,,4.0,,4.0,1.0,,,
+Putnem Ericsson,18/07/2019,"['Versatile', 'Ambitious']","['Indecisive', 'Passive']",Yes,Yes,Yes,Fail,Engineering,,2.0,1.0,,4.0,3.0,3.0,,2.0
+Dodie Mcgowran,27/07/2019,"['Versatile', 'Critical Thinking']",['Slow'],Yes,Yes,Yes,Pass,Engineering,,7.0,,1.0,2.0,,7.0,,
+Freddie Ludlam,05/07/2019,['Curious'],"['Impatient', 'Introverted']",Yes,No,Yes,Fail,Data,5.0,,,,2.0,,,5.0,2.0
+Fancie Coster,25/07/2019,"['Reliable', 'Ambitious', 'Curious']",['Impatient'],Yes,Yes,Yes,Pass,Business,2.0,,,,1.0,,,,3.0
+Abran Odams,12/07/2019,"['Perfectionism', 'Ambitious', 'Innovative']","['Intolerant', 'Anxious', 'Critical']",No,No,Yes,Fail,Engineering,,,,5.0,,5.0,,,4.0
+Brod Blunden,18/07/2019,['Passionate'],"['Controlling', 'Impulsive']",Yes,Yes,Yes,Pass,Business,,,,,2.0,2.0,,,
+Shel Bolzen,25/07/2019,"['Empathy', 'Perfectionism', 'Consistent']","['Indecisive', 'Conventional', 'Slow']",Yes,Yes,Yes,Pass,Data,,,5.0,,1.0,,2.0,,
+Matilda Mattiessen,25/07/2019,"['Charisma', 'Independent', 'Patient']","['Perfectionist', 'Overbearing']",Yes,Yes,Yes,Pass,Data,5.0,,,,,,,1.0,
+Georgette Giacomo,18/07/2019,"['Organisation', 'Charisma']","['Slow', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering,,,,1.0,,,,,
+Hanni Katt,20/07/2019,"['Perfectionism', 'Charisma']",['Controlling'],Yes,Yes,Yes,Pass,Business,,2.0,3.0,,,3.0,,,
+Jeanne Brayne,12/07/2019,"['Listening', 'Collaboration']",['Passive'],Yes,Yes,Yes,Pass,Business,5.0,9.0,3.0,,3.0,,,,2.0
+Joana Frawley,04/07/2019,['Problem Solving'],['Indifferent'],Yes,Yes,Yes,Pass,Business,,,4.0,,3.0,2.0,,,4.0
+Kingston Comsty,06/07/2019,"['Reliable', 'Problem Solving', 'Innovative']","['Impatient', 'Competitive', 'Stubborn']",Yes,Yes,Yes,Pass,Data,2.0,2.0,,,,,,2.0,
+York Sygroves,18/07/2019,['Patient'],"['Critical', 'Competitive', 'Anxious']",Yes,No,Yes,Fail,Business,,2.0,,3.0,4.0,,,,3.0
+Camel Miguet,12/07/2019,['Critical Thinking'],"['Procrastination', 'Passive']",Yes,Yes,Yes,Pass,Business,4.0,,,,,,,,
+Vina Fodden,20/07/2019,"['Consistent', 'Competitive']","['Immature', 'Controlling']",Yes,Yes,Yes,Fail,Engineering,,4.0,,,1.0,,2.0,,1.0
+Sawyere Paskell,05/07/2019,"['Organisation', 'Problem Solving', 'Collaboration']","['Passive', 'Undisciplined', 'Immature']",Yes,Yes,Yes,Pass,Engineering,3.0,3.0,1.0,,,,,1.0,3.0
+Zeb Tippings,12/07/2019,"['Altruism', 'Competitive']","['Impatient', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,,,2.0,3.0,,,,,
+Nil Iacovo,18/07/2019,"['Independent', 'Collaboration']","['Sensitive', 'Indecisive', 'Procrastination']",Yes,Yes,Yes,Fail,Business,,1.0,,,,2.0,,,2.0
+Aurora Jimson,27/07/2019,"['Versatile', 'Curious', 'Organisation']",['Distracted'],Yes,Yes,Yes,Pass,Engineering,5.0,,1.0,2.0,,,1.0,,
+Helena Swire,18/07/2019,"['Listening', 'Problem Solving']","['Chaotic', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,,,2.0,3.0,1.0,,,
+Francklin Warrington,25/07/2019,"['Altruism', 'Listening']","['Impulsive', 'Critical']",Yes,Yes,Yes,Pass,Data,,6.0,,5.0,,3.0,4.0,,
+Dorene Franschini,12/07/2019,"['Creative', 'Determined', 'Altruism']","['Slow', 'Overbearing']",Yes,Yes,Yes,Pass,Data,3.0,,,,,2.0,,,
+Diana Webby,11/07/2019,"['Courteous', 'Listening']","['Intolerant', 'Introverted']",No,Yes,Yes,Fail,Business,,1.0,,,,3.0,1.0,3.0,
+Ginevra Paice,18/07/2019,['Independent'],"['Impatient', 'Selfish', 'Undisciplined']",Yes,No,Yes,Fail,Data,,,4.0,,2.0,1.0,,4.0,
+Chane Wetwood,18/07/2019,"['Rational', 'Reliable', 'Passionate']","['Impatient', 'Introverted', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,4.0,,,,,,,
+Barbra Polleye,18/07/2019,"['Perfectionism', 'Determined']","['Anxious', 'Slow', 'Distracted']",Yes,Yes,Yes,Pass,Business,4.0,,,,,,3.0,,
+Shelbi Waddingham,18/07/2019,['Competitive'],"['Slow', 'Indecisive']",Yes,Yes,Yes,Pass,Engineering,,,,,,,1.0,,5.0
+Lenora Gannicott,19/07/2019,['Organisation'],"['Perfectionist', 'Procrastination']",Yes,Yes,No,Fail,Engineering,,,,1.0,,1.0,1.0,,
+Aindrea Normanvill,18/07/2019,"['Collaboration', 'Courteous', 'Versatile']","['Slow', 'Introverted']",Yes,Yes,Yes,Pass,Business,5.0,,,,,5.0,,2.0,1.0
+Annamaria Redhole,26/07/2019,"['Rational', 'Versatile', 'Charisma']","['Anxious', 'Chatty']",Yes,No,Yes,Fail,Engineering,3.0,,,,,,3.0,,4.0
+Sarah Magor,20/07/2019,['Critical Thinking'],['Overbearing'],Yes,Yes,Yes,Pass,Engineering,2.0,,5.0,2.0,,,,,
+Zacharie Bann,27/07/2019,['Problem Solving'],"['Intolerant', 'Controlling', 'Indifferent']",Yes,Yes,Yes,Pass,Data,4.0,,,1.0,,,2.0,,1.0
+Vernon Curl,04/07/2019,"['Determined', 'Reliable', 'Creative']","['Overbearing', 'Undisciplined', 'Impatient']",Yes,Yes,Yes,Pass,Data,,2.0,,2.0,,,,2.0,1.0
+Savina Phythien,27/07/2019,"['Collaboration', 'Competitive', 'Rational']","['Introverted', 'Impatient', 'Passive']",Yes,Yes,Yes,Pass,Data,4.0,3.0,,2.0,,,1.0,,4.0
+Cleveland Vasyukhin,19/07/2019,"['Determined', 'Independent', 'Versatile']","['Conventional', 'Intolerant', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,2.0,2.0,,1.0,,5.0,,
+Katherina Bowton,26/07/2019,['Empathy'],['Overbearing'],Yes,No,Yes,Fail,Business,6.0,,,1.0,,,,,
+Giustina Catford,06/07/2019,"['Patient', 'Listening']","['Impatient', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering,5.0,2.0,,,,,,,
+Fidel Norval,19/07/2019,"['Innovative', 'Determined']","['Selfish', 'Controlling', 'Introverted']",No,Yes,Yes,Fail,Engineering,,,,,,,,4.0,
+Fidel Norval,19/07/2019,"['Innovative', 'Determined']","['Selfish', 'Controlling', 'Introverted']",No,Yes,Yes,Fail,Engineering,,,,,,,,4.0,
+Kim Bester,26/07/2019,['Empathy'],"['Stubborn', 'Chatty']",Yes,Yes,Yes,Fail,Engineering,3.0,3.0,2.0,2.0,4.0,4.0,1.0,,1.0
+Nomi Verne,05/07/2019,['Ambitious'],"['Passive', 'Immature']",Yes,Yes,Yes,Pass,Data,,1.0,,4.0,,2.0,,3.0,
+Verla Di Antonio,05/07/2019,"['Problem Solving', 'Composure', 'Collaboration']","['Sensitive', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,1.0,1.0,,,,7.0,1.0,6.0,
+Cherrita Allchorne,26/07/2019,"['Problem Solving', 'Competitive', 'Rational']",['Intolerant'],No,Yes,Yes,Fail,Engineering,,2.0,6.0,,,,2.0,,1.0
+Charmain Diben,12/07/2019,['Composure'],"['Stubborn', 'Critical']",Yes,Yes,Yes,Pass,Engineering,3.0,,2.0,,4.0,7.0,,4.0,
+Hulda Bales,25/07/2019,['Composure'],"['Distracted', 'Impatient']",No,Yes,Yes,Fail,Data,,2.0,,,4.0,1.0,,,2.0
+Bunny Barns,13/07/2019,['Perfectionism'],"['Critical', 'Indecisive', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering,6.0,,,,,,,1.0,
+Malvina Whiteford,11/07/2019,"['Organisation', 'Consistent', 'Determined']",['Selfish'],Yes,Yes,Yes,Pass,Data,2.0,1.0,,4.0,,4.0,,,4.0
+Elsie Fursland,04/07/2019,"['Organisation', 'Passionate', 'Patient']","['Competitive', 'Conventional', 'Selfish']",Yes,Yes,Yes,Pass,Business,,4.0,,,,6.0,,,2.0
+Ebeneser Handy,05/07/2019,"['Determined', 'Ambitious']",['Overbearing'],Yes,Yes,Yes,Pass,Data,1.0,3.0,,2.0,5.0,,5.0,,1.0
+Marvin Gorger,19/07/2019,['Innovative'],"['Anxious', 'Introverted', 'Procrastination']",Yes,Yes,Yes,Pass,Business,,,2.0,1.0,3.0,2.0,5.0,3.0,
+Rosalinde Smallshaw,19/07/2019,['Critical Thinking'],"['Impatient', 'Passive']",Yes,Yes,Yes,Pass,Engineering,,,4.0,2.0,,4.0,5.0,,
+Rosalinda Frizzell,26/07/2019,"['Reliable', 'Organisation']","['Distracted', 'Conventional', 'Immature']",Yes,Yes,Yes,Fail,Business,,,,,1.0,,,,1.0
+Wade Friedenbach,04/07/2019,"['Problem Solving', 'Empathy']",['Indifferent'],Yes,Yes,Yes,Pass,Engineering,,,,,,,4.0,1.0,2.0
+Guido Lassells,13/07/2019,"['Innovative', 'Courteous', 'Consistent']","['Passive', 'Competitive']",Yes,Yes,Yes,Pass,Business,,,5.0,,,4.0,,,1.0
+Shelden Sheraton,20/07/2019,"['Reliable', 'Versatile', 'Determined']","['Selfish', 'Competitive']",No,Yes,Yes,Fail,Data,1.0,,,,,1.0,3.0,,
+Kacey Smurthwaite,27/07/2019,['Rational'],['Indifferent'],Yes,Yes,Yes,Pass,Engineering,,4.0,,,,3.0,5.0,,
+Audrye Walkingshaw,13/07/2019,"['Reliable', 'Critical Thinking']","['Distracted', 'Chatty']",Yes,Yes,Yes,Pass,Business,,,2.0,,,,,1.0,
+Selle Mckeowon,20/07/2019,"['Passionate', 'Creative']","['Distracted', 'Introverted']",Yes,Yes,Yes,Pass,Data,3.0,3.0,,8.0,,,4.0,5.0,
+Bird Hatfield,20/07/2019,"['Curious', 'Ambitious']",['Chatty'],Yes,Yes,Yes,Pass,Engineering,1.0,6.0,,,,,6.0,,4.0
+Briant Pope,26/07/2019,"['Efficient', 'Competitive']","['Impatient', 'Controlling', 'Critical']",Yes,Yes,Yes,Fail,Data,6.0,,,7.0,,,2.0,,
+Vladamir Waddams,04/07/2019,"['Organisation', 'Consistent', 'Ambitious']",['Sensitive'],Yes,Yes,Yes,Pass,Business,1.0,,,3.0,2.0,,,,
+Jecho Rousel,05//07/2019,['Organisation'],"['Introverted', 'Impatient', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,,3.0,,,2.0,,,,
+Ronda Budcock,04/07/2019,['Ambitious'],['Controlling'],Yes,Yes,Yes,Pass,Business,,,,3.0,,,2.0,,
+Lexine Rapson,18/07/2019,"['Courteous', 'Creative', 'Versatile']","['Competitive', 'Selfish', 'Immature']",Yes,Yes,No,Fail,Business,,,,,,,,4.0,4.0
+Osbourne Witherdon,27/07/2019,['Organisation'],['Conventional'],Yes,Yes,Yes,Pass,Engineering,,2.0,,,2.0,,,,
+Cati Dumphries,18/07/2019,"['Consistent', 'Rational', 'Critical Thinking']","['Conventional', 'Controlling']",Yes,Yes,Yes,Pass,Data,3.0,,,,,,,,
+Jayne Andriveau,11/07/2019,"['Curious', 'Empathy', 'Determined']","['Sensitive', 'Intolerant', 'Immature']",Yes,No,Yes,Fail,Business,,,,,,,6.0,,
+Elliot Sarsfield,06/07/2019,['Problem Solving'],"['Immature', 'Perfectionist', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,2.0,6.0,,,4.0,,2.0,,4.0
+Tate Coade,06/07/2019,"['Rational', 'Empathy', 'Critical Thinking']","['Impulsive', 'Introverted']",Yes,Yes,Yes,Fail,Data,,,,3.0,,4.0,,4.0,
+Emeline Whistance,20/07/2019,"['Altruism', 'Innovative', 'Competitive']",['Distracted'],Yes,Yes,Yes,Pass,Data,,3.0,,,,,,6.0,5.0
+Conrad Chadney,06/07/2019,"['Listening', 'Altruism', 'Passionate']","['Impulsive', 'Intolerant', 'Procrastination']",No,Yes,Yes,Fail,Business,,2.0,,,,,8.0,4.0,
+Staffard Load,13/07/2019,"['Composure', 'Perfectionism']",['Conventional'],Yes,Yes,Yes,Pass,Data,,,7.0,3.0,,,3.0,,3.0
+Fraser Hurnell,04/07/2019,"['Innovative', 'Consistent']",['Distracted'],Yes,Yes,Yes,Pass,Business,,,2.0,2.0,2.0,,,,
+Worthington Richford,11/07/2019,"['Charisma', 'Collaboration', 'Problem Solving']",['Passive'],Yes,Yes,Yes,Pass,Engineering,,2.0,,,,,,,
+Robenia Landor,27/07/2019,"['Competitive', 'Versatile']",['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,3.0,,4.0,,4.0,4.0,,2.0,
+Claudio Handrick,05/07/2019,"['Composure', 'Organisation']","['Undisciplined', 'Controlling']",Yes,Yes,Yes,Pass,Data,,,,,,,,,1.0
+Nevil Rickerby,06/07/2019,['Determined'],"['Controlling', 'Overbearing', 'Intolerant']",Yes,Yes,Yes,Pass,Data,2.0,,,,5.0,,,,
+Prescott Alfuso,25/07/2019,"['Patient', 'Consistent']",['Intolerant'],Yes,Yes,Yes,Pass,Engineering,2.0,8.0,,,,,,2.0,1.0
+Herold Prudham,06/07/2019,"['Patient', 'Independent', 'Curious']","['Conventional', 'Indecisive']",Yes,Yes,Yes,Pass,Data,,1.0,4.0,2.0,3.0,,,,
+Shermy Swancock,19/07/2019,"['Innovative', 'Listening']","['Controlling', 'Anxious', 'Competitive']",Yes,Yes,Yes,Pass,Business,,5.0,1.0,,6.0,6.0,,,
+Terrell Orridge,18/07/2019,"['Creative', 'Innovative', 'Determined']","['Controlling', 'Slow', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering,,3.0,4.0,6.0,,3.0,,,
+Donalt Julyan,11/07/2019,"['Listening', 'Creative', 'Efficient']",['Immature'],Yes,Yes,Yes,Pass,Engineering,,,2.0,1.0,,,3.0,2.0,
+Dev Mcpherson,11/07/2019,['Independent'],['Indecisive'],No,Yes,Yes,Fail,Data,,,,,5.0,,3.0,,
+Muhammad Percy,12/07/2019,"['Curious', 'Perfectionism']",['Conventional'],Yes,Yes,Yes,Fail,Engineering,,,1.0,,4.0,4.0,,,
+Judie Lowy,25/07/2019,"['Collaboration', 'Determined', 'Independent']",['Impatient'],Yes,Yes,Yes,Pass,Engineering,,,,,,3.0,,,1.0
+Tadio Goullee,20/07/2019,['Patient'],['Procrastination'],Yes,Yes,Yes,Pass,Engineering,3.0,4.0,,,1.0,,1.0,1.0,
+Katalin Redley,04/07/2019,"['Critical Thinking', 'Determined', 'Curious']","['Impulsive', 'Undisciplined', 'Distracted']",Yes,Yes,Yes,Pass,Business,1.0,,,,,,2.0,,2.0
+Lea Normington,26/07/2019,"['Creative', 'Independent', 'Reliable']","['Chatty', 'Passive']",Yes,Yes,Yes,Pass,Business,,2.0,,,,,6.0,,
+Cornelia Artist,18/07/2019,"['Listening', 'Empathy']","['Overbearing', 'Slow']",Yes,Yes,Yes,Pass,Business,,,,,5.0,,,5.0,3.0
+Vincenty Roubay,11/07/2019,['Passionate'],"['Indecisive', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,,,,,7.0,,,
+Phineas Filshin,12/07/2019,"['Ambitious', 'Consistent', 'Passionate']",['Procrastination'],Yes,Yes,Yes,Pass,Engineering,3.0,,,,2.0,4.0,6.0,,
+Wilona Crean,26/07/2019,"['Patient', 'Ambitious']","['Controlling', 'Indecisive']",No,Yes,No,Fail,Engineering,,4.0,,2.0,5.0,4.0,,1.0,
+Carlynne Keal,26/07/2019,"['Altruism', 'Independent']","['Distracted', 'Procrastination']",Yes,Yes,Yes,Pass,Data,2.0,3.0,,,3.0,,,,2.0
+Westbrook Paynton,12/07/2019,"['Problem Solving', 'Innovative', 'Listening']","['Anxious', 'Distracted', 'Passive']",Yes,Yes,Yes,Pass,Engineering,1.0,,3.0,,,,,,
+Corby Mccambridge,06/07/2019,['Empathy'],"['Indecisive', 'Critical', 'Selfish']",Yes,Yes,Yes,Pass,Business,,,2.0,,,6.0,,,1.0
+Melamie Keers,11/07/2019,"['Rational', 'Reliable', 'Competitive']","['Selfish', 'Chaotic', 'Controlling']",Yes,Yes,Yes,Pass,Business,5.0,5.0,3.0,2.0,3.0,,4.0,,
+Marillin Rosendall,05/07/2019,['Empathy'],"['Selfish', 'Conventional']",Yes,Yes,Yes,Pass,Engineering,4.0,,,8.0,4.0,4.0,,,
+Keen Bentham3,19/07/2019,"['Courteous', 'Efficient', 'Problem Solving']",['Critical'],Yes,Yes,Yes,Pass,Data,7.0,,2.0,,5.0,,,,
+Homere Stentiford,25//07/2019,['Ambitious'],"['Slow', 'Critical', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,4.0,3.0,1.0,,,,,2.0,
+Muhammad Linn,18/07/2019,"['Composure', 'Courteous']","['Indifferent', 'Impulsive']",Yes,Yes,Yes,Pass,Data,,,,4.0,4.0,,1.0,2.0,2.0
+Barbette Sorton,27/07/2019,['Consistent'],"['Immature', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,,3.0,2.0,,3.0,,,
+Bax Sweetman,26/07/2019,['Creative'],"['Conventional', 'Immature', 'Critical']",Yes,Yes,Yes,Pass,Engineering,3.0,1.0,5.0,3.0,,3.0,,3.0,
+Ambrosi Carnow,04/07/2019,"['Reliable', 'Perfectionism', 'Ambitious']",['Indifferent'],Yes,No,Yes,Fail,Business,3.0,,,,2.0,1.0,,,2.0
+Kellen Bentick,25/07/2019,"['Organisation', 'Reliable', 'Creative']","['Chatty', 'Chaotic']",Yes,Yes,Yes,Pass,Data,,,,,,1.0,,2.0,
+Fleming Taillard,20/07/2019,['Reliable'],['Chaotic'],Yes,Yes,Yes,Pass,Business,,3.0,,,,,,6.0,2.0
+Elicia Broggio,18/07/2019,['Listening'],['Passive'],No,Yes,Yes,Fail,Data,,,7.0,,,,,,
+Paxton Mcginlay,25/07/2019,['Versatile'],"['Competitive', 'Conventional']",Yes,No,Yes,Fail,Business,,5.0,4.0,3.0,,,,5.0,
+Abbott Yea,12/07/2019,"['Innovative', 'Creative']",['Anxious'],Yes,Yes,Yes,Pass,Data,2.0,,,2.0,,5.0,4.0,1.0,
+Doy Tams,11/07/2019,"['Composure', 'Empathy', 'Courteous']","['Impulsive', 'Procrastination']",Yes,Yes,No,Fail,Data,,3.0,1.0,,,4.0,1.0,,
+Jon Raikes,04/07/2019,['Altruism'],['Selfish'],Yes,Yes,Yes,Pass,Engineering,,,2.0,2.0,1.0,3.0,2.0,3.0,
+Myrvyn Sutherns,06/07/2019,['Collaboration'],"['Chaotic', 'Critical']",Yes,Yes,Yes,Fail,Business,,3.0,,,1.0,6.0,4.0,,
+Adler Wingatt,18/07/2019,"['Courteous', 'Problem Solving']",['Indifferent'],Yes,Yes,Yes,Pass,Business,,,4.0,2.0,,,2.0,,
+Dermot Gunthorp,20/07/2019,"['Collaboration', 'Composure']","['Anxious', 'Controlling']",No,Yes,Yes,Fail,Business,,,,,,,,,
+Gavan Soltan,05/07/2019,"['Efficient', 'Empathy', 'Curious']",['Controlling'],Yes,Yes,No,Fail,Engineering,,,4.0,,3.0,,,1.0,
+Gavan Soltan,05/07/2019,"['Efficient', 'Empathy', 'Curious']",['Controlling'],Yes,Yes,No,Fail,Engineering,,,4.0,,3.0,,,1.0,
+Jamima Sturgess,26/07/2019,['Consistent'],"['Undisciplined', 'Impatient', 'Conventional']",Yes,Yes,Yes,Fail,Business,,,,3.0,,5.0,,,
+Athene Bozworth,06/07/2019,"['Curious', 'Versatile']","['Selfish', 'Impatient', 'Chaotic']",Yes,Yes,Yes,Pass,Business,,,,,3.0,,,,
+Opaline Gammon,12/07/2019,"['Patient', 'Courteous']",['Chatty'],Yes,Yes,Yes,Pass,Data,4.0,,4.0,,1.0,2.0,5.0,,
+Cari Bradlaugh,27/07/2019,"['Altruism', 'Efficient', 'Courteous']",['Anxious'],Yes,Yes,Yes,Pass,Business,,,2.0,3.0,5.0,1.0,5.0,,
+Daren Houson,13/07/2019,['Reliable'],"['Indifferent', 'Competitive']",Yes,Yes,No,Fail,Business,,2.0,1.0,,5.0,,,,
+Melony Tristram,19/07/2019,['Charisma'],['Controlling'],Yes,Yes,No,Fail,Engineering,,,,5.0,,,2.0,3.0,
+Ashbey Seakes,18/07/2019,['Innovative'],['Undisciplined'],Yes,Yes,No,Fail,Business,,,1.0,,,4.0,2.0,,1.0
+Philly Jerrim,25/07/2019,['Charisma'],"['Controlling', 'Conventional', 'Perfectionist']",Yes,Yes,Yes,Pass,Business,4.0,,,,,,2.0,,3.0
+Sandi Gurton,25/07/2019,['Versatile'],['Overbearing'],Yes,Yes,Yes,Pass,Data,,1.0,,,,,2.0,,
+Hilliard Brockett,05//07/2019,['Courteous'],['Chaotic'],Yes,Yes,Yes,Pass,Data,,1.0,4.0,,,,3.0,4.0,
+Berkie Brusby,06/07/2019,['Charisma'],"['Selfish', 'Indecisive', 'Intolerant']",Yes,Yes,Yes,Pass,Business,,,,,,2.0,3.0,,
+Bidget Macarthur,12/07/2019,"['Organisation', 'Charisma']",['Sensitive'],Yes,Yes,Yes,Pass,Business,2.0,,,3.0,,,,3.0,1.0
+Julie Condliffe,04/07/2019,"['Organisation', 'Efficient', 'Critical Thinking']",['Controlling'],Yes,Yes,Yes,Pass,Data,,,,,,,,,
+Andris Bradley,12/07/2019,"['Rational', 'Problem Solving', 'Critical Thinking']","['Anxious', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,1.0,,,,2.0,2.0,,,4.0
+Al Hugonet,04/07/2019,"['Innovative', 'Creative', 'Passionate']","['Impulsive', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,,4.0,1.0,5.0,7.0,,2.0,,
+Maryanna Seeney,11/07/2019,"['Organisation', 'Charisma']",['Slow'],Yes,Yes,Yes,Fail,Data,2.0,6.0,,,,,1.0,,
+Cassaundra Yuill,19/07/2019,['Patient'],"['Critical', 'Overbearing']",Yes,Yes,Yes,Fail,Business,,,,,3.0,,3.0,,
+Baily Camidge,20/07/2019,"['Determined', 'Perfectionism']","['Distracted', 'Critical', 'Indecisive']",Yes,Yes,Yes,Pass,Engineering,2.0,,,,,,,1.0,
+Padgett Crennan,12/07/2019,"['Courteous', 'Ambitious']","['Undisciplined', 'Chatty']",Yes,No,No,Fail,Data,,,,6.0,,,,2.0,4.0
+Gabrila Chasier,20/07/2019,['Listening'],"['Distracted', 'Intolerant', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,7.0,2.0,1.0,3.0,4.0,1.0,,8.0,
+Kimmi Edgecumbe,12/07/2019,"['Organisation', 'Collaboration']","['Indifferent', 'Competitive', 'Sensitive']",Yes,Yes,Yes,Pass,Business,3.0,,3.0,,,4.0,,,3.0
+Levy Standage,25/07/2019,['Reliable'],"['Controlling', 'Chaotic']",Yes,Yes,Yes,Pass,Data,2.0,7.0,,,5.0,,,,
+Muffin Jandel,20/07/2019,"['Independent', 'Creative', 'Composure']",['Impulsive'],Yes,Yes,Yes,Pass,Data,,1.0,,,3.0,,,4.0,
+Calida Behr,18/07/2019,"['Innovative', 'Empathy']","['Immature', 'Chaotic', 'Slow']",Yes,Yes,Yes,Pass,Engineering,6.0,1.0,3.0,3.0,2.0,1.0,3.0,2.0,
+Jeannette Willans,26/07/2019,"['Empathy', 'Critical Thinking']","['Distracted', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,,,,,,2.0,,
+Mora Joutapavicius,18/07/2019,['Critical Thinking'],"['Passive', 'Competitive', 'Overbearing']",Yes,No,Yes,Fail,Business,,5.0,1.0,,,,,,1.0
+Tadeas Bidmead,18/07/2019,"['Composure', 'Charisma']","['Chaotic', 'Procrastination', 'Critical']",Yes,Yes,Yes,Pass,Data,,,,1.0,1.0,1.0,,,
+Matthiew Tumbridge,04/07/2019,['Courteous'],"['Procrastination', 'Overbearing']",Yes,Yes,Yes,Pass,Data,2.0,,3.0,,6.0,3.0,,3.0,
+Orton Borer,12/07/2019,"['Perfectionism', 'Empathy']",['Immature'],Yes,Yes,No,Fail,Data,1.0,,,,,,,,
+Tirrell Tabart,26/07/2019,"['Critical Thinking', 'Courteous', 'Empathy']",['Selfish'],Yes,Yes,Yes,Pass,Data,5.0,,,2.0,,,2.0,,
+Leeanne Allsepp,06/07/2019,"['Versatile', 'Passionate']","['Undisciplined', 'Chatty']",Yes,Yes,Yes,Pass,Data,3.0,,3.0,5.0,,1.0,,2.0,
+Evangelin Gorges,11//07/2019,['Independent'],['Impulsive'],Yes,Yes,No,Fail,Engineering,1.0,,,,1.0,4.0,3.0,,
+Clywd Musgrove,18/07/2019,['Determined'],"['Chatty', 'Sensitive', 'Stubborn']",Yes,Yes,Yes,Pass,Data,2.0,,,1.0,,2.0,1.0,6.0,
+Lanni Otton,25/07/2019,['Altruism'],"['Anxious', 'Perfectionist', 'Indifferent']",Yes,Yes,Yes,Pass,Data,4.0,,,,,,6.0,,
+Yankee Reihm,05/07/2019,"['Rational', 'Determined', 'Charisma']","['Indecisive', 'Intolerant', 'Controlling']",Yes,Yes,Yes,Pass,Data,,6.0,,,,,,,1.0
+Alikee Sawood,12/07/2019,"['Versatile', 'Perfectionism', 'Critical Thinking']","['Chatty', 'Chaotic', 'Undisciplined']",Yes,Yes,Yes,Pass,Business,,,,6.0,,,1.0,,
+Roland Skeene,26/07/2019,['Patient'],"['Chaotic', 'Controlling']",Yes,Yes,Yes,Fail,Engineering,,,,,3.0,1.0,1.0,,1.0
+Chrissy Sate,20/07/2019,['Altruism'],"['Perfectionist', 'Procrastination']",Yes,Yes,Yes,Pass,Business,,,,,,,,,
+Eric Spritt,20/07/2019,"['Curious', 'Consistent']","['Overbearing', 'Selfish']",Yes,Yes,Yes,Pass,Business,,,,,,,2.0,5.0,2.0
+Farica Harding,19/07/2019,"['Perfectionism', 'Composure', 'Passionate']","['Sensitive', 'Introverted']",Yes,Yes,Yes,Pass,Data,2.0,3.0,4.0,4.0,,,,5.0,
+Kore Amburgy,06/07/2019,"['Curious', 'Creative', 'Critical Thinking']","['Conventional', 'Introverted', 'Chaotic']",Yes,Yes,Yes,Pass,Engineering,,,3.0,,,,,6.0,2.0
+Juli Ruler,12/07/2019,"['Listening', 'Independent']",['Passive'],Yes,Yes,Yes,Pass,Business,,,,,,4.0,,,
+Gery Beckenham,06/07/2019,"['Patient', 'Collaboration']","['Procrastination', 'Sensitive']",Yes,Yes,Yes,Pass,Engineering,,2.0,,3.0,2.0,5.0,2.0,6.0,
+Jacquelynn Banasiak,12/07/2019,"['Critical Thinking', 'Ambitious']",['Critical'],Yes,No,No,Fail,Business,,,,,2.0,,1.0,3.0,
+Krystalle Deeney,20/07/2019,['Ambitious'],"['Sensitive', 'Distracted']",Yes,No,Yes,Fail,Engineering,,,,3.0,1.0,,,,
+Gerianne Christoforou,13//07/2019,"['Critical Thinking', 'Passionate']","['Perfectionist', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,3.0,6.0,,,2.0,5.0,,
+Louella Cuppitt,05/07/2019,"['Versatile', 'Charisma', 'Collaboration']",['Perfectionist'],Yes,Yes,Yes,Pass,Business,,,,,,,,,2.0
+Clarke Whitelock,06/07/2019,"['Consistent', 'Creative', 'Passionate']","['Passive', 'Chatty', 'Immature']",No,No,Yes,Fail,Data,,,,,6.0,4.0,,,
+Farrel Bertl,04/07/2019,"['Listening', 'Critical Thinking', 'Consistent']",['Impatient'],No,Yes,Yes,Fail,Data,4.0,,6.0,,4.0,,,1.0,2.0
+Chadd Ellen,05/07/2019,['Critical Thinking'],['Chatty'],Yes,Yes,Yes,Pass,Data,2.0,,,3.0,,,4.0,,1.0
+Sean Dillaway,11/07/2019,['Curious'],"['Indecisive', 'Distracted']",Yes,Yes,No,Fail,Data,2.0,2.0,7.0,,1.0,,,,
+Adah Fost,13/07/2019,"['Courteous', 'Determined']","['Critical', 'Conventional']",Yes,Yes,Yes,Pass,Data,,,2.0,,,,4.0,,
+Abram Sueter,26/07/2019,['Independent'],"['Immature', 'Passive', 'Procrastination']",Yes,No,Yes,Fail,Data,4.0,1.0,,,2.0,3.0,,1.0,2.0
+Darn Kirkby,18/07/2019,"['Competitive', 'Patient', 'Problem Solving']",['Stubborn'],Yes,Yes,Yes,Pass,Engineering,3.0,,,,,,4.0,4.0,
+Darn Kirkby,18/07/2019,"['Competitive', 'Patient', 'Problem Solving']",['Stubborn'],Yes,Yes,Yes,Pass,Engineering,3.0,,,,,,4.0,4.0,
+Jessamyn Reightley,19/07/2019,['Reliable'],['Impulsive'],Yes,No,Yes,Fail,Data,3.0,,,,,,,,
+Rockwell Gutteridge,27/07/2019,['Courteous'],['Intolerant'],Yes,Yes,Yes,Pass,Engineering,,1.0,,,3.0,,4.0,,
+Serge Muehle,19/07/2019,['Reliable'],"['Chaotic', 'Introverted', 'Chatty']",Yes,Yes,Yes,Pass,Data,5.0,,,1.0,3.0,,,,
+Sydney Burchmore,19/07/2019,"['Perfectionism', 'Passionate']","['Stubborn', 'Overbearing', 'Chatty']",Yes,Yes,Yes,Pass,Data,,3.0,,4.0,6.0,,,,1.0
+Gisela Schachter,11/07/2019,"['Charisma', 'Reliable', 'Organisation']","['Slow', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,,,,,,,,3.0
+Abram Goldster,04/07/2019,"['Patient', 'Collaboration']","['Impatient', 'Impulsive']",Yes,Yes,Yes,Pass,Data,,,4.0,,,1.0,,,
+Yvor Shepstone,18/07/2019,['Consistent'],"['Indecisive', 'Selfish']",Yes,Yes,Yes,Fail,Data,6.0,,,3.0,,2.0,,,4.0
+Cosimo Labram,12/07/2019,['Efficient'],"['Passive', 'Impulsive', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering,3.0,,2.0,,,,,,1.0
+Maible Antic,18/07/2019,"['Versatile', 'Composure', 'Efficient']","['Perfectionist', 'Distracted']",Yes,Yes,Yes,Pass,Data,,,,6.0,6.0,3.0,,3.0,4.0
+Carlo Beekman,18/07/2019,"['Independent', 'Determined', 'Listening']","['Stubborn', 'Intolerant', 'Chaotic']",Yes,Yes,Yes,Fail,Data,8.0,,,,,4.0,7.0,,
+Cordie Bolduc,26/07/2019,['Critical Thinking'],"['Undisciplined', 'Competitive', 'Introverted']",Yes,Yes,Yes,Pass,Engineering,,2.0,,2.0,4.0,,,1.0,
+Bourke Belsey,19/07/2019,"['Versatile', 'Altruism', 'Critical Thinking']","['Chatty', 'Sensitive']",No,Yes,Yes,Fail,Data,,,3.0,6.0,,,6.0,4.0,1.0
+Phedra Berriball,11/07/2019,"['Empathy', 'Determined', 'Courteous']","['Competitive', 'Conventional']",Yes,Yes,No,Fail,Data,5.0,4.0,3.0,,3.0,,3.0,,
+Silvester Ondra,12/07/2019,"['Critical Thinking', 'Collaboration']","['Overbearing', 'Distracted', 'Impatient']",Yes,Yes,No,Fail,Business,,,,2.0,,,1.0,,5.0
+Clyve Bradden,05/07/2019,"['Competitive', 'Problem Solving']","['Slow', 'Indecisive', 'Selfish']",Yes,Yes,No,Fail,Business,,,,,,,1.0,,
+Winna Lemmertz,12/07/2019,"['Determined', 'Passionate', 'Rational']",['Chaotic'],Yes,Yes,Yes,Pass,Business,,,,,,3.0,2.0,2.0,
+Fremont Vicary,26/07/2019,"['Perfectionism', 'Versatile']","['Impatient', 'Selfish', 'Anxious']",Yes,No,Yes,Fail,Engineering,,1.0,5.0,4.0,,,,,4.0
+Byrom Sawday,11//07/2019,"['Consistent', 'Creative']","['Stubborn', 'Impatient']",Yes,Yes,Yes,Pass,Business,,,1.0,1.0,3.0,1.0,,,
+Kat Sutherland,18/07/2019,"['Competitive', 'Efficient']","['Distracted', 'Competitive', 'Intolerant']",Yes,Yes,No,Fail,Data,,2.0,,,3.0,,,6.0,
+Corby Torel,20/07/2019,['Altruism'],"['Indecisive', 'Slow']",Yes,Yes,No,Fail,Business,,,,6.0,,3.0,,,
+Corby Torel,20/07/2019,['Altruism'],"['Indecisive', 'Slow']",Yes,Yes,No,Fail,Business,,,,6.0,,3.0,,,
+Leland Wither,18/07/2019,"['Composure', 'Passionate', 'Courteous']","['Intolerant', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,,,5.0,3.0,2.0,,4.0,
+Clio Lafflina,26/07/2019,['Perfectionism'],"['Competitive', 'Distracted', 'Critical']",Yes,No,Yes,Fail,Business,,,,1.0,,,1.0,,
+Farlee Petren,20/07/2019,"['Independent', 'Perfectionism', 'Collaboration']",['Indifferent'],Yes,Yes,Yes,Pass,Business,,,,,,,,,
+Elisabeth Ebbutt,04/07/2019,['Creative'],['Anxious'],Yes,Yes,Yes,Pass,Data,2.0,1.0,,,2.0,2.0,,,
+Benedikt Cohani,06/07/2019,"['Critical Thinking', 'Courteous']","['Sensitive', 'Stubborn', 'Indecisive']",Yes,Yes,Yes,Pass,Data,,,,5.0,,3.0,2.0,3.0,
+Joanna Eggerton,11/07/2019,"['Listening', 'Perfectionism']","['Immature', 'Introverted', 'Indifferent']",Yes,Yes,Yes,Pass,Business,,,,,,3.0,3.0,2.0,3.0
+Candi Camillo,19/07/2019,"['Perfectionism', 'Collaboration', 'Ambitious']","['Sensitive', 'Distracted']",No,Yes,Yes,Fail,Engineering,,,,2.0,,,,,
+Augustin Tabrett,05/07/2019,['Competitive'],['Indecisive'],Yes,Yes,No,Fail,Engineering,,,,,,3.0,,2.0,
+Ervin Acosta,26/07/2019,"['Empathy', 'Composure']","['Anxious', 'Stubborn']",Yes,No,No,Fail,Data,,,,,,1.0,,,1.0
+Nanni Caldera,05/07/2019,"['Consistent', 'Charisma', 'Composure']","['Immature', 'Impatient']",Yes,No,No,Fail,Data,,,,4.0,,,,3.0,5.0
+Joachim Guslon,05/07/2019,"['Critical Thinking', 'Patient', 'Collaboration']",['Procrastination'],Yes,Yes,Yes,Pass,Data,,,7.0,,,,,3.0,5.0
+Dean Duchant,27/07/2019,['Independent'],"['Anxious', 'Chaotic', 'Passive']",No,Yes,Yes,Fail,Business,2.0,1.0,,,,,,,2.0
+Hartwell Jewess,04/07/2019,"['Empathy', 'Composure']",['Conventional'],Yes,Yes,Yes,Pass,Data,5.0,3.0,6.0,,,,2.0,,
+Allx Macdearmaid,25/07/2019,"['Determined', 'Charisma']",['Chatty'],Yes,Yes,Yes,Pass,Data,,,,,6.0,1.0,,,
+Derrek Scarce,27/07/2019,"['Creative', 'Innovative', 'Charisma']","['Chaotic', 'Immature']",Yes,Yes,Yes,Pass,Business,,,,,5.0,,4.0,,
+Aguie Prati,26/07/2019,['Charisma'],['Controlling'],Yes,No,Yes,Fail,Engineering,2.0,,2.0,,,,4.0,3.0,
+Shayne De Domenico,11/07/2019,['Creative'],"['Slow', 'Procrastination', 'Overbearing']",No,Yes,Yes,Fail,Engineering,,,8.0,,3.0,,,,
+Brandise Moston,18/07/2019,['Competitive'],['Intolerant'],Yes,Yes,Yes,Pass,Business,,,,,8.0,4.0,,,
+Petronilla Ziemens,11/07/2019,"['Listening', 'Ambitious', 'Efficient']","['Controlling', 'Indecisive', 'Chaotic']",Yes,Yes,Yes,Pass,Engineering,,2.0,2.0,,5.0,,,,4.0
+Jarrod Driffe,25/07/2019,['Courteous'],"['Procrastination', 'Distracted']",Yes,No,Yes,Fail,Data,,,3.0,2.0,,5.0,,,5.0
+Celestina Aysik,04/07/2019,"['Listening', 'Independent']","['Indifferent', 'Immature']",Yes,Yes,Yes,Pass,Engineering,5.0,2.0,,1.0,,4.0,,,1.0
+Nikolaus Gullefant,11/07/2019,['Competitive'],['Sensitive'],Yes,Yes,Yes,Pass,Business,2.0,4.0,,1.0,7.0,,,1.0,
+Palmer Snaddin,13/07/2019,['Curious'],"['Selfish', 'Slow', 'Critical']",Yes,Yes,Yes,Pass,Data,,,1.0,,3.0,3.0,,,
+Daniele Iskowicz,18/07/2019,['Creative'],"['Distracted', 'Controlling', 'Conventional']",Yes,Yes,Yes,Pass,Engineering,,3.0,,6.0,,3.0,5.0,,
+Brandy Iannazzi,04/07/2019,"['Perfectionism', 'Rational', 'Reliable']",['Selfish'],Yes,Yes,Yes,Pass,Data,,,,,3.0,,,,3.0
+Jerome Kasting,19/07/2019,"['Reliable', 'Problem Solving', 'Empathy']","['Impatient', 'Conventional', 'Procrastination']",Yes,Yes,Yes,Pass,Data,,5.0,,,,,,,
+Auberon Werny,11/07/2019,"['Listening', 'Competitive']","['Selfish', 'Impatient']",Yes,Yes,Yes,Pass,Business,,,,2.0,,,6.0,,2.0
+Eimile Sanper,27/07/2019,['Competitive'],"['Introverted', 'Impatient']",Yes,Yes,No,Fail,Data,,2.0,,2.0,,3.0,,,
+Wallas Hacket,06/07/2019,['Problem Solving'],"['Competitive', 'Impulsive', 'Conventional']",Yes,No,Yes,Fail,Data,,,,,,2.0,,,
+Devlen Froome,19/07/2019,"['Reliable', 'Critical Thinking', 'Organisation']",['Anxious'],Yes,Yes,No,Fail,Business,1.0,,4.0,,4.0,,,6.0,2.0
+Amalia Orris,06/07/2019,['Determined'],"['Passive', 'Indifferent']",Yes,Yes,Yes,Pass,Business,,2.0,5.0,,,,,,
+Kendra Twort,26/07/2019,"['Altruism', 'Independent', 'Ambitious']","['Perfectionist', 'Selfish']",Yes,Yes,Yes,Pass,Engineering,,,,,,4.0,,,
+Wilden Claisse,18/07/2019,"['Passionate', 'Competitive', 'Ambitious']","['Chatty', 'Passive', 'Distracted']",Yes,Yes,Yes,Pass,Engineering,3.0,,,3.0,,,2.0,,2.0
+Dulsea Westfalen,27/07/2019,"['Curious', 'Innovative']","['Controlling', 'Passive', 'Critical']",No,Yes,Yes,Fail,Data,,5.0,,,,,4.0,,
+Kendell Ruppele,06/07/2019,"['Listening', 'Innovative', 'Composure']","['Chaotic', 'Introverted']",Yes,No,Yes,Fail,Engineering,,,3.0,6.0,,,,,
+Kendell Ruppele,06/07/2019,"['Listening', 'Innovative', 'Composure']","['Chaotic', 'Introverted']",Yes,No,Yes,Fail,Engineering,,,3.0,6.0,,,,,
+Judd Abrahm,25/07/2019,"['Competitive', 'Creative']",['Procrastination'],Yes,Yes,Yes,Fail,Business,,1.0,,2.0,1.0,2.0,,,1.0
+Letizia Persence,20/07/2019,"['Efficient', 'Altruism']","['Anxious', 'Procrastination']",Yes,Yes,No,Fail,Engineering,3.0,,,2.0,2.0,4.0,1.0,,2.0
+Forster Clines,11/07/2019,"['Empathy', 'Listening']","['Impatient', 'Chatty', 'Conventional']",Yes,Yes,Yes,Pass,Data,,,4.0,,,,,4.0,
+Carly Assandri,27/07/2019,"['Critical Thinking', 'Consistent', 'Courteous']","['Passive', 'Critical', 'Anxious']",Yes,Yes,Yes,Pass,Data,2.0,7.0,2.0,,5.0,,,2.0,
+Tremain Barosch,27/07/2019,['Organisation'],"['Competitive', 'Perfectionist', 'Critical']",Yes,Yes,Yes,Pass,Business,,,3.0,1.0,,,,,
+Kyla Jankovsky,20/07/2019,"['Determined', 'Rational']",['Chatty'],Yes,No,Yes,Fail,Engineering,,2.0,,3.0,,,,,
+Kyla Jankovsky,20/07/2019,"['Determined', 'Rational']",['Chatty'],Yes,No,Yes,Fail,Engineering,,2.0,,3.0,,,,,
+Dixie Macrae,05/07/2019,"['Altruism', 'Critical Thinking']",['Competitive'],No,Yes,Yes,Fail,Engineering,,2.0,,3.0,,,,,1.0
+Lewiss Sabban,05/07/2019,"['Efficient', 'Charisma']",['Introverted'],Yes,Yes,Yes,Pass,Data,5.0,5.0,,,,,7.0,1.0,1.0
+Kat Rigard,25/07/2019,"['Competitive', 'Reliable', 'Listening']","['Distracted', 'Anxious', 'Conventional']",No,No,Yes,Fail,Data,,,4.0,1.0,2.0,,,,
+Belia Losseljong,27/07/2019,['Organisation'],['Impatient'],No,Yes,Yes,Fail,Business,8.0,,3.0,,,2.0,,3.0,
+Peggy Hariot,06/07/2019,['Passionate'],"['Competitive', 'Perfectionist', 'Impatient']",Yes,Yes,No,Fail,Data,,,,,,5.0,,,
+Selby Floyd,04/07/2019,"['Rational', 'Independent']",['Undisciplined'],Yes,Yes,Yes,Pass,Data,,4.0,2.0,1.0,4.0,,,1.0,
+Prentice Van Der Hoeven,11/07/2019,['Critical Thinking'],"['Chaotic', 'Conventional', 'Selfish']",Yes,Yes,Yes,Pass,Business,,,,,1.0,,,,
+Amos Debill,25/07/2019,"['Consistent', 'Ambitious', 'Critical Thinking']","['Intolerant', 'Distracted', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,,,3.0,,,2.0,5.0,3.0,
+Samson Mosen,26/07/2019,"['Organisation', 'Perfectionism']",['Indifferent'],Yes,Yes,Yes,Pass,Business,,,4.0,,,,,,
+Quint Pontain,06/07/2019,"['Empathy', 'Rational', 'Listening']","['Indecisive', 'Undisciplined', 'Impatient']",Yes,Yes,Yes,Pass,Business,,,,,5.0,,,,
+Tana Cullinane,12/07/2019,"['Ambitious', 'Organisation']","['Slow', 'Competitive']",Yes,Yes,Yes,Pass,Business,,,,1.0,2.0,,1.0,,3.0
+Costanza Pyke,25/07/2019,"['Passionate', 'Efficient', 'Independent']",['Anxious'],Yes,Yes,Yes,Pass,Engineering,,4.0,2.0,3.0,2.0,,2.0,,1.0
+Kenton Kilgrove,04/07/2019,"['Collaboration', 'Competitive']","['Selfish', 'Impulsive', 'Competitive']",Yes,Yes,Yes,Pass,Data,2.0,,3.0,,,,,,
+Darda Di Giacomo,06/07/2019,"['Passionate', 'Creative', 'Empathy']","['Undisciplined', 'Slow', 'Overbearing']",Yes,Yes,No,Fail,Engineering,4.0,2.0,2.0,3.0,,,2.0,,
+Othilia Hucker,25/07/2019,['Determined'],"['Perfectionist', 'Chaotic']",Yes,Yes,Yes,Pass,Engineering,1.0,1.0,,,,2.0,,7.0,1.0
+Lavinie Marshman,18/07/2019,['Composure'],"['Distracted', 'Anxious']",Yes,Yes,Yes,Pass,Business,,,1.0,,,7.0,3.0,,
+Silvain Kuhwald,25/07/2019,"['Organisation', 'Reliable']","['Introverted', 'Anxious']",Yes,Yes,Yes,Pass,Data,2.0,6.0,,,,,3.0,,
+Audra Boodell,20/07/2019,['Innovative'],"['Sensitive', 'Immature', 'Impatient']",Yes,Yes,Yes,Pass,Engineering,,,2.0,,3.0,,,3.0,
+Wilt Gotliffe,06/07/2019,"['Rational', 'Reliable']","['Immature', 'Introverted']",Yes,Yes,Yes,Pass,Business,4.0,1.0,,,1.0,2.0,3.0,,
+Rosene Yearnsley,27/07/2019,['Independent'],"['Impatient', 'Passive']",Yes,No,Yes,Fail,Business,,3.0,,,2.0,1.0,2.0,2.0,
+Larry Claridge,18/07/2019,"['Charisma', 'Curious']",['Anxious'],Yes,Yes,Yes,Pass,Engineering,,,,2.0,,,,,
+Hattie Dullard,05/07/2019,"['Curious', 'Consistent']","['Distracted', 'Overbearing']",Yes,Yes,Yes,Pass,Engineering,,6.0,,6.0,,2.0,5.0,,
+Dacy Pococke,13/07/2019,"['Independent', 'Passionate', 'Courteous']","['Passive', 'Critical', 'Selfish']",Yes,Yes,No,Fail,Engineering,,,,,,,1.0,,
+Kingsly Lowdwell,20/07/2019,"['Problem Solving', 'Composure']",['Chatty'],Yes,No,Yes,Fail,Data,1.0,,,2.0,,,,4.0,3.0
+Cleon Kemson,20/07/2019,"['Problem Solving', 'Curious', 'Independent']",['Overbearing'],Yes,Yes,Yes,Pass,Engineering,,2.0,,3.0,4.0,3.0,,,3.0
+Seymour Rodda,06/07/2019,"['Passionate', 'Courteous']","['Introverted', 'Conventional']",Yes,Yes,No,Fail,Engineering,2.0,,,,,3.0,,6.0,
+Linc Hallex,20/07/2019,"['Curious', 'Collaboration']","['Selfish', 'Immature']",Yes,Yes,Yes,Pass,Engineering,,,,3.0,2.0,4.0,,,
+Tobe Markovic,05//12/2019,"['Collaboration', 'Competitive']","['Anxious', 'Critical']",No,Yes,Yes,Fail,Data,6.0,,,,,,,3.0,3.0
+Candy Berends,10/12/2019,"['Passionate', 'Listening']","['Impulsive', 'Procrastination', 'Indifferent']",Yes,Yes,Yes,Pass,Business,,,,,,,,2.0,3.0
+Charmian Martinuzzi,17/12/2019,"['Consistent', 'Independent', 'Perfectionism']","['Critical', 'Conventional', 'Distracted']",No,Yes,Yes,Fail,Data,,,,,2.0,,5.0,,1.0
+Mirabelle Shakeshaft,18/12/2019,"['Empathy', 'Versatile', 'Consistent']","['Critical', 'Immature']",Yes,Yes,Yes,Pass,Engineering,4.0,,2.0,6.0,3.0,,,2.0,
+Benita Downgate,05/12/2019,"['Collaboration', 'Creative']","['Stubborn', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,,,,,2.0,,5.0,,
+Adolpho Litterick,10/12/2019,"['Consistent', 'Altruism']","['Indecisive', 'Indifferent', 'Sensitive']",Yes,Yes,No,Fail,Engineering,,,,,,,,,
+Rockey Courtes,10/12/2019,"['Organisation', 'Passionate', 'Curious']","['Selfish', 'Overbearing', 'Procrastination']",Yes,No,No,Fail,Business,,,5.0,8.0,2.0,,4.0,,
+Berry Gammel,11/12/2019,['Determined'],['Conventional'],Yes,No,Yes,Fail,Business,3.0,3.0,,,5.0,1.0,2.0,2.0,1.0
+Moritz Mosedall,11/12/2019,"['Reliable', 'Rational']","['Competitive', 'Indifferent']",Yes,Yes,Yes,Pass,Engineering,,,,5.0,,,2.0,2.0,
+Trefor Kalinowsky,04/12/2019,"['Organisation', 'Perfectionism']","['Chaotic', 'Indifferent']",Yes,Yes,Yes,Pass,Data,3.0,,,,,,3.0,,
+Gertruda Syddie,12/12/2019,"['Patient', 'Perfectionism', 'Empathy']","['Procrastination', 'Introverted', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering,8.0,6.0,,,,,,,
+Hersch Holburn,18/12/2019,"['Collaboration', 'Problem Solving']",['Anxious'],Yes,Yes,Yes,Pass,Business,4.0,,,,,4.0,1.0,5.0,
+Alayne Farrans,19/12/2019,"['Determined', 'Problem Solving', 'Ambitious']",['Intolerant'],Yes,Yes,Yes,Pass,Data,4.0,,,,,,,5.0,
+Adina Seton,18/12/2019,['Composure'],"['Undisciplined', 'Perfectionist']",Yes,Yes,Yes,Fail,Engineering,4.0,,,,,,,,
+Leighton Iddy,04/12/2019,"['Determined', 'Charisma']","['Slow', 'Conventional']",No,Yes,Yes,Fail,Engineering,1.0,,,5.0,,,,,
+Nerti Welfair,11//12/2019,"['Listening', 'Curious', 'Critical Thinking']",['Impatient'],No,Yes,Yes,Fail,Business,1.0,,,,1.0,3.0,,,
+Olly Lannen,19/12/2019,['Determined'],"['Competitive', 'Intolerant', 'Indecisive']",Yes,Yes,Yes,Pass,Business,,1.0,3.0,3.0,1.0,3.0,4.0,3.0,
+Ringo Goosey,03/12/2019,"['Passionate', 'Altruism', 'Creative']","['Impulsive', 'Passive']",Yes,No,Yes,Fail,Data,4.0,4.0,,,1.0,,,,1.0
+Sandro Pratchett,11/12/2019,"['Curious', 'Reliable']","['Sensitive', 'Impatient']",Yes,Yes,Yes,Pass,Business,,4.0,,,,,,,
+Reba Cosser,19/12/2019,"['Organisation', 'Critical Thinking', 'Curious']",['Chaotic'],Yes,Yes,Yes,Pass,Business,1.0,3.0,,1.0,5.0,,,11.0,
+Olia Lincoln,11/12/2019,"['Passionate', 'Courteous', 'Critical Thinking']","['Controlling', 'Introverted', 'Competitive']",Yes,Yes,Yes,Pass,Engineering,2.0,,,4.0,2.0,,,,
+Nady Smallpiece,18/12/2019,['Independent'],"['Anxious', 'Intolerant']",Yes,Yes,No,Fail,Engineering,3.0,,3.0,,4.0,,,7.0,
+Ali Bonds,03/12/2019,['Composure'],['Introverted'],Yes,Yes,No,Fail,Business,,,,,,3.0,1.0,2.0,
+Dniren Barlas,12/12/2019,['Collaboration'],"['Overbearing', 'Procrastination']",Yes,Yes,Yes,Pass,Data,4.0,,,,2.0,1.0,3.0,1.0,
+Leif Forsyth,19/12/2019,['Courteous'],"['Distracted', 'Selfish', 'Overbearing']",Yes,Yes,Yes,Pass,Business,2.0,,,2.0,1.0,,2.0,,2.0
+Salmon Glenfield,10/12/2019,['Composure'],['Chatty'],Yes,Yes,No,Fail,Business,4.0,,1.0,,1.0,,1.0,,5.0
+Jacquetta Pill,05/12/2019,"['Passionate', 'Courteous']","['Undisciplined', 'Anxious']",No,Yes,Yes,Fail,Data,3.0,,,,1.0,,4.0,,
+Caril Bayly,11/12/2019,"['Collaboration', 'Determined', 'Efficient']","['Chaotic', 'Impulsive']",Yes,Yes,Yes,Pass,Business,2.0,2.0,,,,,,2.0,
+Jordain Rochester,04/12/2019,['Independent'],"['Indifferent', 'Selfish', 'Impatient']",Yes,Yes,No,Fail,Data,,1.0,,2.0,,,3.0,,
+Clementia Beasleigh,04/12/2019,['Reliable'],['Conventional'],Yes,Yes,Yes,Pass,Business,5.0,3.0,,1.0,,,,,
+Vidovic Niblett,19/12/2019,"['Listening', 'Patient', 'Collaboration']","['Impatient', 'Indecisive', 'Overbearing']",Yes,No,No,Fail,Engineering,,,3.0,5.0,,,3.0,5.0,2.0
+Christian Tunny,04/12/2019,"['Composure', 'Efficient']",['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,1.0,,4.0,,,1.0,,,1.0
+Eba Tarbath,17/12/2019,['Patient'],"['Chaotic', 'Procrastination']",Yes,No,Yes,Fail,Data,,,4.0,,,,5.0,,
+Barton Moar,03/12/2019,['Listening'],"['Critical', 'Sensitive']",Yes,Yes,Yes,Pass,Business,,,,1.0,6.0,,,,
+Jo Ann Beeke,12/12/2019,"['Independent', 'Perfectionism']",['Intolerant'],No,Yes,No,Fail,Business,,,2.0,,,5.0,,,
+Terencio Mulles,05/12/2019,['Determined'],"['Intolerant', 'Controlling', 'Overbearing']",Yes,Yes,Yes,Pass,Data,,,,,4.0,,,5.0,
+Mart Haggerstone,12/12/2019,"['Organisation', 'Creative', 'Ambitious']","['Sensitive', 'Introverted']",Yes,Yes,Yes,Pass,Data,,,,,1.0,,2.0,3.0,
+Norean Caston,18/12/2019,"['Organisation', 'Creative', 'Consistent']",['Introverted'],Yes,Yes,Yes,Pass,Business,,,,,3.0,3.0,,,
+Tiphanie Selway,18/12/2019,['Altruism'],['Immature'],No,Yes,Yes,Fail,Business,,,,,,,,,
+Deeyn Klimkin,05/12/2019,['Problem Solving'],['Chatty'],Yes,No,Yes,Fail,Business,,,,,,,,,
+Charlotte Laxe,11/12/2019,"['Reliable', 'Creative']",['Competitive'],Yes,Yes,Yes,Pass,Engineering,,,,4.0,,,,,
+Trenna Mccurt,04/12/2019,"['Determined', 'Charisma']","['Intolerant', 'Introverted']",Yes,No,No,Fail,Engineering,,,1.0,,1.0,,4.0,,1.0
+Cori Docwra,11/12/2019,"['Independent', 'Organisation', 'Ambitious']","['Competitive', 'Introverted']",No,Yes,Yes,Fail,Business,,4.0,,,1.0,2.0,,,3.0
+Bessy Turpie,11/12/2019,"['Collaboration', 'Empathy']",['Distracted'],Yes,No,Yes,Fail,Data,5.0,,,4.0,,,1.0,,
+Whit Brisse,19/12/2019,"['Ambitious', 'Composure']","['Slow', 'Indifferent']",Yes,Yes,Yes,Pass,Business,2.0,,,1.0,,3.0,,,
+Bernhard Birchall,04/12/2019,['Independent'],['Controlling'],Yes,Yes,Yes,Pass,Data,3.0,1.0,,,,,,,
+Jena Livings,10/12/2019,['Altruism'],"['Critical', 'Conventional', 'Passive']",Yes,Yes,No,Fail,Business,,2.0,4.0,3.0,,,,1.0,2.0
+Kaitlyn Chagg,10/12/2019,"['Rational', 'Altruism']","['Distracted', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,2.0,4.0,3.0,2.0,3.0,,,,3.0
+Beilul Crannach,03/12/2019,"['Courteous', 'Independent', 'Critical Thinking']","['Stubborn', 'Impatient', 'Anxious']",Yes,Yes,Yes,Pass,Engineering,1.0,,,5.0,2.0,1.0,7.0,,
+El Shepstone,11/12/2019,['Empathy'],"['Chatty', 'Chaotic', 'Perfectionist']",Yes,Yes,Yes,Pass,Data,2.0,5.0,,,7.0,,,1.0,
+Patrice Milhench,12/12/2019,"['Independent', 'Listening', 'Passionate']",['Sensitive'],Yes,Yes,Yes,Pass,Business,,2.0,2.0,2.0,4.0,,,,
+Trudey Brockman,19/12/2019,"['Composure', 'Patient']","['Passive', 'Selfish']",Yes,Yes,Yes,Fail,Data,1.0,,,,6.0,,2.0,,
+Nahum Riddock,11/12/2019,"['Efficient', 'Passionate', 'Critical Thinking']","['Slow', 'Introverted', 'Selfish']",Yes,Yes,Yes,Pass,Business,,,,,,2.0,,2.0,
+Felicle Kops,04/12/2019,"['Critical Thinking', 'Composure', 'Perfectionism']","['Immature', 'Stubborn']",Yes,Yes,Yes,Pass,Business,,4.0,2.0,8.0,,,,2.0,5.0
+Berni Torra,11/12/2019,"['Versatile', 'Ambitious']",['Intolerant'],Yes,Yes,Yes,Pass,Data,3.0,3.0,,3.0,3.0,,,,
+Steffane Laity,10/12/2019,"['Independent', 'Ambitious', 'Charisma']","['Introverted', 'Indifferent']",Yes,Yes,Yes,Pass,Data,2.0,,,,1.0,1.0,,,
+Nobe Guerrazzi,17/12/2019,"['Competitive', 'Independent', 'Critical Thinking']","['Slow', 'Stubborn']",Yes,Yes,Yes,Pass,Business,7.0,,,4.0,1.0,,5.0,,
+Solly Reek,12/12/2019,"['Empathy', 'Courteous', 'Innovative']","['Critical', 'Indecisive', 'Slow']",Yes,Yes,No,Fail,Engineering,2.0,,,,,,2.0,,
+Harrie Chatin,10/12/2019,"['Problem Solving', 'Versatile', 'Consistent']","['Immature', 'Impulsive', 'Distracted']",Yes,Yes,Yes,Pass,Business,,,,2.0,,,4.0,,
+Horten Koomar,11/12/2019,['Innovative'],"['Chaotic', 'Introverted', 'Conventional']",Yes,Yes,Yes,Pass,Engineering,,2.0,,,4.0,6.0,,6.0,
+Brandon Lotherington,03/12/2019,"['Rational', 'Patient', 'Altruism']",['Introverted'],Yes,Yes,Yes,Pass,Data,3.0,,2.0,2.0,,2.0,,,
+Allie Sheber,05/12/2019,"['Courteous', 'Reliable']",['Chaotic'],Yes,Yes,Yes,Pass,Business,2.0,3.0,4.0,,5.0,,,3.0,
+Gunilla Lucken,19/12/2019,"['Organisation', 'Consistent']","['Intolerant', 'Impatient']",Yes,No,Yes,Fail,Data,7.0,2.0,,2.0,,,,,
+Yorgos O'Rourke,19/12/2019,"['Rational', 'Independent']","['Competitive', 'Anxious', 'Sensitive']",Yes,Yes,Yes,Pass,Data,,,1.0,4.0,,1.0,,,
+Finn Maasze,03/12/2019,"['Creative', 'Rational', 'Problem Solving']",['Impatient'],Yes,Yes,Yes,Pass,Data,2.0,2.0,,,,,3.0,,
+Bambi Earthfield,10/12/2019,"['Listening', 'Curious', 'Courteous']","['Stubborn', 'Undisciplined', 'Anxious']",Yes,Yes,Yes,Pass,Business,,,,,,,,,1.0
+Fair Ivashintsov,19/12/2019,"['Organisation', 'Ambitious', 'Rational']",['Distracted'],Yes,Yes,Yes,Pass,Data,,,2.0,,3.0,,,,
+Alexine Mcglue,03/12/2019,['Consistent'],"['Critical', 'Intolerant', 'Immature']",Yes,Yes,Yes,Pass,Data,4.0,,,,,1.0,,2.0,3.0
+Lethia Crow,19/12/2019,['Altruism'],['Procrastination'],Yes,Yes,Yes,Pass,Business,,1.0,5.0,4.0,3.0,,3.0,,
+Candy Vann,18/12/2019,"['Perfectionism', 'Organisation']","['Anxious', 'Critical']",Yes,Yes,Yes,Fail,Data,,,,,,3.0,,2.0,
+Fawne Keen,12/12/2019,"['Consistent', 'Collaboration']",['Undisciplined'],Yes,Yes,Yes,Pass,Engineering,,,1.0,,,,,3.0,
+Kenton Elvish,05/12/2019,"['Passionate', 'Independent']",['Selfish'],Yes,Yes,Yes,Pass,Data,3.0,,,6.0,4.0,2.0,,,
+Eyde Boughton,19/12/2019,"['Collaboration', 'Passionate', 'Versatile']","['Overbearing', 'Conventional']",Yes,Yes,Yes,Fail,Engineering,,,1.0,,1.0,,,,
+Allina Buttfield,11/12/2019,"['Composure', 'Determined']","['Anxious', 'Introverted', 'Sensitive']",Yes,No,Yes,Fail,Engineering,1.0,,4.0,,,1.0,4.0,,1.0
+Winona Strotton,18/12/2019,"['Reliable', 'Listening', 'Consistent']",['Selfish'],Yes,Yes,Yes,Pass,Business,,,4.0,,2.0,,,,
+Thom Derwin,19/12/2019,['Efficient'],"['Competitive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering,,1.0,,5.0,,,,1.0,
+Jacquelynn Savin,12/12/2019,['Competitive'],"['Overbearing', 'Impatient']",Yes,Yes,Yes,Pass,Business,2.0,,,,,,,,
