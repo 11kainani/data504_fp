@@ -1,11 +1,11 @@
 import boto3
 import pandas as pd
 
-from Importer import Importer
+from Extracter import Extracter
 
 
 def main():
-    imp = Importer()
+    imp = Extracter()
     imp.import_s3_file('Talent/10391.json')
 
 if __name__ == "__main__":
