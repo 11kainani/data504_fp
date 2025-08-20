@@ -10,3 +10,10 @@ git branch -r
 git checkout -b dev/xavier origin/dev/xavier
 ### Verify tracking
 git branch -vv
+### Here I am trying to add a README.md file
+git add README.md
+### Commit that to local repo
+git commit -m "READEME file"
+### push that to remote repo
+### Since the tracking is set up, it will automatically push to the branch
+git push
