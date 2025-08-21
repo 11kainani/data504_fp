@@ -1,8 +1,8 @@
 import re
 from collections import defaultdict
 
-from Extracter import Extracter
-from db.SQLConnector import SQLConnector
+from cloud.Extracter import Extracter
+from db.academy.SQLConnector import SQLConnector
 import time
 
 

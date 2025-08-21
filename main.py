@@ -1,9 +1,10 @@
 import time
 
-from db.Transformation import Transformer
+from db.academy.Transformation import Transformer
 
 
-def main():
+
+def academy_db():
     start = time.perf_counter()
     transformer = Transformer()
     transformer.academy_data_injection()
@@ -12,4 +13,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    academy_db()
