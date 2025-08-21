@@ -36,10 +36,6 @@ Our task was to design and implement an ETL pipeline that would clean, standardi
 
 ---
 
-## Project Introduction
-
----
-
 ## Credits
 [Martyna]() - Product Owner <br>
 [Firdaws](https://github.com/FirdawsYasmin) - Scrum Master <br> 
