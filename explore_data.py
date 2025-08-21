@@ -39,3 +39,14 @@ print(content)
 response = s3_client.get_object(Bucket='data-504-final-project', Key='Talent/Sparta Day 2 January 2019.txt')
 content = response['Body'].read().decode('utf-8')
 print(content)
+
+
+
+# Talent: combined data
+#response = s3_client.get_object(Bucket='data-504-final-project', Key='Talent_Combined/combined_talent_decision_scores.csv')
+#content = response['Body'].read().decode('utf-8')
+#print(content)
+
+
+
+
