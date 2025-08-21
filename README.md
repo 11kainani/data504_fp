@@ -10,7 +10,7 @@ This project was devised by Luke Fairbass of Sparta Global for Sparta UK’s Aca
 
 ## Project Introduction
 
-Sparta Global runs academies across different streams such as Business, Data, and Engineering. Candidate and academy information was stored in separate CSV files across folders like Academy and Talent. These contained details on applications, Sparta Day assessments, psychometric scores, training results, and talent decisions.
+Sparta Global runs academies across different streams such as Business, Data, and Engineering. Candidate and academy information was stored in separate CSV and JSON files across folders like Academy and Talent. These contained details on applications, Sparta Day assessments, psychometric scores, training results, and talent decisions.
 
 The problem was that the data was spread across many files, with duplicates and inconsistent formats. This made it difficult to:
 - See a single candidate’s full journey from application through training.
