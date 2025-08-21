@@ -10,11 +10,17 @@ class Extracter:
         self.s3 = boto3.client('s3')
         self.bucket = 'data-504-final-project'
         self.talent_keys = []
-        self.business_keys = []
+        self.academy_keys = []
         self.data_keys = []
         self.engineering_keys = []
         self.talent_applications = []
         self.sparta_days = []
+        self.courses_list = {'Business', 'Data','Engineering'}
+        self.skills_list = {'Analytic', 'Independent','Determined','Professional','Studious','Imaginative'}
+
+        key_list = self.bucket_key_names()
+        self.key_classification(key_list)
+
 
     def bucket_key_names(self):
         """
@@ -48,12 +54,8 @@ class Extracter:
         for key in key_list:
             if key.startswith('Talent/') and key.endswith('.json'):
                 self.talent_keys.append(key)
-            if key.startswith('Academy/Business') and key.endswith('.csv'):
-                self.business_keys.append(key)
-            if key.startswith('Academy/Engineering') and key.endswith('.csv'):
-                self.engineering_keys.append(key)
-            if key.startswith('Academy/Data') and key.endswith('.csv'):
-                self.data_keys.append(key)
+            if key.startswith('Academy/') and key.endswith('.csv'):
+                self.academy_keys.append(key)
             if key.startswith('Talent/') and key.endswith('Applicants.csv'):
                 self.talent_applications.append(key)
             if key.startswith('Talent/Sparta') and key.endswith('.txt'):
@@ -75,9 +77,9 @@ if __name__ == '__main__':
 
     imp.key_classification(keys)
     #print(keys)
-    #data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
+    data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
     #print(data.info())
-    print(imp.business_keys)
+    print(imp.academy_keys)
 
-    for key in imp.business_keys:
+    for key in imp.academy_keys:
         imp.key_classification(key)

@@ -1,3 +1,7 @@
+## Annexes 
+
+### ENV Template
+
 Create a .env file with these parameters to connect to your mysql database
 
 DB_DRIVER=
