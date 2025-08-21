@@ -209,5 +209,5 @@ __marimo__/
 
 # Custom
 .idea/
-cohort_info.csv
+files/cohort_info.csv
 test.sql

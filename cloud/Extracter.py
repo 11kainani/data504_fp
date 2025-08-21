@@ -77,9 +77,10 @@ if __name__ == '__main__':
 
     imp.key_classification(keys)
     #print(keys)
-    data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
+    #data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
     #print(data.info())
-    print(imp.academy_keys)
+    print(imp.talent_applications)
 
-    for key in imp.academy_keys:
-        imp.key_classification(key)
+    data = imp.import_s3_csv_file('Talent/Jan2019Applicants.csv')
+    print(data.columns)
+    data.to_csv('../files/Jan2019Applicants.csv')

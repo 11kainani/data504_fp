@@ -1,6 +1,6 @@
 import time
 
-from db.academy.Transformation import Transformer
+from db.Transformation import Transformer
 
 
 

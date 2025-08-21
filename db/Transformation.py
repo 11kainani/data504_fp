@@ -2,7 +2,7 @@ import re
 from collections import defaultdict
 
 from cloud.Extracter import Extracter
-from db.academy.SQLConnector import SQLConnector
+from db.SQLConnector import SQLConnector
 import time
 
 
