@@ -209,5 +209,5 @@ __marimo__/
 
 # Custom
 .idea/
-files/
-test.sql
+src/files/
+src/test.sql

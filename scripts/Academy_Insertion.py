@@ -2,20 +2,23 @@ from Academy_Transform import transform_dfs_for_db
 from Academy_DataFrames import S3DataFrames
 import urllib
 from sqlalchemy import create_engine, text
-
+from dotenv import load_dotenv
+import os
 # Load dataframes from S3
 handler = S3DataFrames()
 dfs = handler.get_csvs()
 tables = transform_dfs_for_db(dfs)
 
+load_dotenv()
 # Database connection
-server = 
-database = 
-username = 
-password = 
+driver = os.getenv("DB_DRIVER")
+server = os.getenv("DB_SERVER")
+database = os.getenv("DB_DATABASE")
+username = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
 
 conn_str = (
-    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+    f"DRIVER={driver};"
     f"SERVER={server};DATABASE={database};UID={username};PWD={password};"
     "TrustServerCertificate=yes;"
 )

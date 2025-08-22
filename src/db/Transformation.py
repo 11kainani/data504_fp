@@ -1,20 +1,9 @@
 import re
 from collections import defaultdict
 
-from cloud.Extracter import Extracter
-from db.SQLConnector import SQLConnector
+from src.cloud.Extracter import Extracter
+from src.db.SQLConnector import SQLConnector
 import time
-
-
-def skill_column_parser(text):
-    pattern = r'([a-zA-Z]+)_W(\d+)'
-    match = re.match(pattern, text)
-    if match:
-        letters = match.group(1)
-        digits = match.group(2)
-        print(letters)  # Something
-        print(digits)
-
 
 class Transformer:
     def __init__(self):
@@ -57,26 +46,40 @@ class Transformer:
         return trainer, transformed
 
     def data_transform(self, key_file):
-        key_info = transformer.academy_key_transformer(key_file)
-        trainer_info, data = transformer.dataframe_refactor(key_file)
+        session = self.sqlConnector.session()
+        try:
+            key_info = transformer.academy_key_transformer(key_file)
+            trainer_info, data = transformer.dataframe_refactor(key_file)
 
-        print(key_info['start_date'])
+            course = self.sqlConnector.create_course(key_info['course_name'])
+            trainer = self.sqlConnector.create_trainer(trainer_info)
+            cohort = self.sqlConnector.create_cohort(course_name=course.name, cohort_id=key_info['cohort_number'],
+                                                     start_date=key_info['start_date'], trainer_id=trainer.trainerID)
 
-        course = self.sqlConnector.create_course(key_info['course_name'])
-        trainer = self.sqlConnector.create_trainer(trainer_info)
-        cohort = self.sqlConnector.create_cohort(course_name=course.name, cohort_id=key_info['cohort_number'],
-                                                    start_date=key_info['start_date'], trainer_id=trainer.trainerID)
-        for entry in data:
-            student = self.sqlConnector.create_student(cohort_id=cohort.cohortID, name=entry['name'],
-                                                          course_id=cohort.courseID)
-            for skill_name in entry['skills']:
-                skill = self.sqlConnector.create_skill(skill_name=skill_name)
-                skills_dict = entry['skills'][skill_name]
-                days = self.sqlConnector.create_week(max(skills_dict.keys()))
-                for key, value in skills_dict.items():
+            unique_skills = {s for entry in data for s in entry['skills']}
+            unique_weeks = {w for entry in data for scores in entry['skills'].values() for w in scores}
+            maximum_week = max(unique_weeks)
 
-                    self.sqlConnector.create_score(skill_id=skill.skillID, student_id=student.studentID, week_id=key,
-                                                      grade=value if value != -1 else None)
+            skills_map = {s: self.sqlConnector.create_skill(skill_name=s) for s in unique_skills}
+            self.sqlConnector.create_week(maximum_week)
+
+            for entry in data:
+                student = self.sqlConnector.create_student(cohort_id=cohort.cohortID, name=entry['name'],
+                                                           course_id=cohort.courseID)
+                for skill_name, scores in entry['skills'].items():
+                    skill = skills_map[skill_name]
+
+                    for key, value in scores.items():
+                        self.sqlConnector.create_score(skill_id=skill.skillID, student_id=student.studentID,
+                                                       week_id=key,
+                                                       grade=value if value != -1 else None)
+            session.commit()
+        except Exception as e:
+            session.rollback()
+            print(e)
+        finally:
+            session.close()
+
 
     def academy_data_injection(self):
         for key_file in self.cloud_extractor.academy_keys:

@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from db.connexion import init_connexion
-from db.base import Base
-from db.models import Course, Week, Skill, Trainer, Cohort, Student, Score
+from src.db.connexion import init_connexion
+from src.db.base import Base
+from src.db.models import Course, Week, Skill, Trainer, Cohort, Student, Score
 
 
 class SQLConnector:
