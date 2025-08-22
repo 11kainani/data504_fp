@@ -48,8 +48,8 @@ class Transformer:
     def data_transform(self, key_file):
         session = self.sqlConnector.session()
         try:
-            key_info = transformer.academy_key_transformer(key_file)
-            trainer_info, data = transformer.dataframe_refactor(key_file)
+            key_info = self.academy_key_transformer(key_file)
+            trainer_info, data = self.dataframe_refactor(key_file)
 
             course = self.sqlConnector.create_course(key_info['course_name'])
             trainer = self.sqlConnector.create_trainer(trainer_info)
@@ -90,8 +90,8 @@ if __name__ == '__main__':
 
     start = time.perf_counter()
 
-    transformer = Transformer()
-    transformer.academy_data_injection()
+    self = Transformer()
+    self.academy_data_injection()
 
     end = time.perf_counter()
     print(f"Execution time: {end - start:.4f} seconds")
