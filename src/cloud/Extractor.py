@@ -5,19 +5,24 @@ import pandas as pd
 import re
 
 
-class Extracter:
+class Extractor:
+    """
+    This class is responsible for extracting data from the cloud. Most the interaction from the S3 bucket will be made here
+    """
     def __init__(self):
         self.s3 = boto3.client('s3')
-        self.bucket = 'data-504-final-project-v2'
+        self.bucket = 'data-504-final-project-v2' # Could be used as a param for the init but has been hard coded because this implementation as been designed for this project
         self.talent_keys = []
         self.academy_keys = []
         self.talent_applications = []
         self.sparta_days = []
-        self.courses_list = {'Business', 'Data','Engineering'}
-        self.skills_list = {'Analytic', 'Independent','Determined','Professional','Studious','Imaginative'}
+        self.courses_list = {'Business', 'Data','Engineering'} # Courses names but not really need since the creation the course is done automatically using the key name from the bucket
+        self.skills_list = {'Analytic', 'Independent','Determined','Professional','Studious','Imaginative'} #Names of the skills but also not as important since the skill creation has been automatised
+
         self.talent_combined = []
-        key_list = self.bucket_key_names()
-        self.key_classification(key_list)
+
+        key_list = self.bucket_key_names() # Get the names of all the keys (files) in the bucket
+        self.key_classification(key_list) # classifies all the keys into the correct list
 
 
     def bucket_key_names(self):
@@ -35,11 +40,21 @@ class Extracter:
 
 
     def import_s3_json_file(self,key):
+        """
+        Reads json file from the cloud inside the bucket
+        :param key:
+        :return: dataframe with the content of the file
+        """
         file = self.s3.get_object(Bucket=self.bucket, Key=key)
         obj = json.loads(file['Body'].read())
         return obj
 
     def import_s3_csv_file( self, key) -> pd.DataFrame:
+        """
+        Reads csv file from the cloud inside the bucket
+        :param key:
+        :return: Dataframe with the content of the file
+        """
         obj = self.s3.get_object(Bucket=self.bucket, Key=key)
         return pd.read_csv(obj['Body'])
 
@@ -61,21 +76,12 @@ class Extracter:
             if key.startswith('Talent_Combined') and key.endswith('.csv'):
                 self.talent_combined.append(key)
 
-
-    @staticmethod
-    def academy_table_transformer(key_list):
-        filename = key_list.split('/')[-1]
-        match = re.match(r'(.+)_(\d+)_(\d{4}-\d{2}-\d{2})\.csv', filename)
-        course_name, course_number, start_date = match.groups()
-        print(course_name, course_number, start_date)
-        return {'course_name':course_name, 'course_number':course_number, 'start_date':start_date}
-
-
 if __name__ == '__main__':
-    imp = Extracter()
+
+    imp = Extractor()
 
     keys = imp.bucket_key_names()
-    #print(keys)
+    print(keys)
 
     imp.key_classification(keys)
     print(imp.talent_combined)
