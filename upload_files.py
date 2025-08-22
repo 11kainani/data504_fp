@@ -2,7 +2,7 @@ import boto3
 
 s3 = boto3.client("s3")
 
-bucket_name = "data-504-final-project"
+bucket_name = "data-504-final-project-v2"
 local_file = "csv_files/combined_sparta_day_test_score.csv"
 s3_key = "Talent_Combined/Cleaned/combined_sparta_day_test_score.csv"
 
