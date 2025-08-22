@@ -20,7 +20,8 @@ class S3DataFrames:
                 dfs[key.split("/")[-1].replace(".csv", "")] = df
         return dfs
 
+s3dfs = S3DataFrames()
 
+dfs = s3dfs.get_csvs()
 
-
-
+print(dfs)

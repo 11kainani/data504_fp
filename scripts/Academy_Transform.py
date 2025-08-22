@@ -1,6 +1,7 @@
 from Academy_DataFrames import S3DataFrames
 import pandas as pd
 
+
 handler = S3DataFrames()
 dfs = handler.get_csvs()
 
@@ -95,3 +96,7 @@ def transform_dfs_for_db(dfs):
         tables['Score'] = pd.DataFrame(columns=['StudentID','SkillID','WeekID','Grade'])
 
     return tables
+
+transform_dfs_for_db(dfs)
+print(dfs)
+

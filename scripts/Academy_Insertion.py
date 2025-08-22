@@ -9,10 +9,10 @@ dfs = handler.get_csvs()
 tables = transform_dfs_for_db(dfs)
 
 # Database connection
-server = 
-database = 
-username = 
-password = 
+server ="."
+database ="Academy"
+username ="sa"
+password =""
 
 conn_str = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"
