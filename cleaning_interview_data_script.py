@@ -7,7 +7,7 @@ s3_resource = boto3.resource('s3')
 
 
 # Get data
-response = s3_client.get_object(Bucket='data-504-final-project', Key='Talent_Combined/combined_talent_decision_scores.csv')
+response = s3_client.get_object(Bucket='data-504-final-project-v2', Key='Talent_Combined/combined_talent_decision_scores.csv')
 content = response['Body'].read().decode('utf-8')
 
 
@@ -91,7 +91,7 @@ df.to_csv(csv_buffer, index=False)
 
 # Upload directly to S3
 s3 = boto3.client("s3")
-bucket_name = "data-504-final-project"
+bucket_name = "data-504-final-project-v2"
 s3_key = "Talent_Combined/Cleaned/cleaned_talent_decision_scores.csv"
 
 s3.put_object(
