@@ -54,12 +54,6 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-To execute the program, you will need to create a .env file in the main folder. An example of the .env file in the annexe of this file. After that all that is need is to run the main file and the extract, the transformation, the initialisation and the injection of the data will be done.
-
-```commandline
-python main.py
-```
-
 ## ERD : Academy 
 
 ![ERD Academy](img/academy_mld.png)
