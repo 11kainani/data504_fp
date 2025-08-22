@@ -28,6 +28,7 @@ Our task was to design and implement an ETL pipeline that would clean, standardi
 - Docker
 - Github
 - Git
+- Jupyter Notebook
 - Trello
 - Calendar for Meetings
 - Visual Paradigm / Looping
