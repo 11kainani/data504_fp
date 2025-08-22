@@ -1,4 +1,4 @@
-# Simple code for checking connection to AWS
+# Checking connection to AWS
 
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
