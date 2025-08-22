@@ -8,16 +8,14 @@ import re
 class Extracter:
     def __init__(self):
         self.s3 = boto3.client('s3')
-        self.bucket = 'data-504-final-project'
+        self.bucket = 'data-504-final-project-v2'
         self.talent_keys = []
         self.academy_keys = []
-        self.data_keys = []
-        self.engineering_keys = []
         self.talent_applications = []
         self.sparta_days = []
         self.courses_list = {'Business', 'Data','Engineering'}
         self.skills_list = {'Analytic', 'Independent','Determined','Professional','Studious','Imaginative'}
-
+        self.talent_combined = []
         key_list = self.bucket_key_names()
         self.key_classification(key_list)
 
@@ -60,6 +58,9 @@ class Extracter:
                 self.talent_applications.append(key)
             if key.startswith('Talent/Sparta') and key.endswith('.txt'):
                 self.sparta_days.append(key)
+            if key.startswith('Talent_Combined') and key.endswith('.csv'):
+                self.talent_combined.append(key)
+
 
     @staticmethod
     def academy_table_transformer(key_list):
@@ -74,13 +75,15 @@ if __name__ == '__main__':
     imp = Extracter()
 
     keys = imp.bucket_key_names()
+    #print(keys)
 
     imp.key_classification(keys)
-    #print(keys)
-    #data = imp.import_s3_csv_file('Academy/Data_36_2019-10-28.csv')
-    #print(data.info())
-    print(imp.talent_applications)
+    print(imp.talent_combined)
+    data = imp.import_s3_csv_file('Talent_Combined/Cleaned/combined_sparta_day_test_score.csv')
+    print(data.info())
+    data.to_csv('cleaned_sparta_day.csv')
+    #print(imp.talent_applications)
 
-    data = imp.import_s3_csv_file('Talent/Jan2019Applicants.csv')
-    print(data.columns)
-    data.to_csv('../files/Jan2019Applicants.csv')
+    #data = imp.import_s3_csv_file('Talent/Jan2019Applicants.csv')
+    #print(data.columns)
+    #data.to_csv('../files/Jan2019Applicants.csv')
