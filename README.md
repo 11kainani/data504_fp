@@ -13,6 +13,7 @@ This project was devised by Luke Fairbass of Sparta Global for Sparta UK’s Aca
 Sparta Global runs academies across different streams such as Business, Data, and Engineering. Candidate and academy information was stored in separate CSV and JSON files across folders like Academy and Talent. These contained details on applications, Sparta Day assessments, psychometric scores, training results, and talent decisions.
 
 The problem was that the data was spread across many files, with duplicates and inconsistent formats. This made it difficult to:
+
 - See a single candidate’s full journey from application through training.
 - Compare cohorts, streams, and trainers.
 - Analyse strengths, weaknesses, and technical skills across candidates.
@@ -21,8 +22,8 @@ Our task was to design and implement an ETL pipeline that would clean, standardi
 
 ---
 
-
 ## Software being used
+
 - Python
 - Amazon S3
 - SQL
@@ -36,11 +37,13 @@ Our task was to design and implement an ETL pipeline that would clean, standardi
 - Powerpoint
 
 ---
+
 ## How to execute the program
 
-### Virtual Environment 
+### Virtual Environment
 
 **For Linux:**
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -48,9 +51,10 @@ pip install -r requirements.txt
 ```
 
 **For Windows:**
+
 ```bash
 python -m venv .venv
-.venv\Scripts\activate     
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -60,18 +64,33 @@ To execute the program, you will need to create a .env file in the main folder. 
 python main.py
 ```
 
-## ERD : Academy 
+---
 
-![ERD Academy](img/academy_mld.png)
+## Entity Relationship Diagrams (ERDs)
+
+### Academy ERD:
+
+![Academy ERD](img/academy_mld.png)
+
+### Talent ERD:
+
+The ERD below shows the normalised schema for the Talent data.
+
+![Talent ERD](img/talent_erd.png)
+
+> A final combined ERD will be added once the Academy and Talent models are fully merged.
+
+---
 
 ## Tools
+
 You can install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Annexes 
+## Annexes
 
 ### ENV Template
 
@@ -85,8 +104,9 @@ DB_USER=
 ```
 
 ## Credits
+
 [Martyna]() - Product Owner <br>
-[Firdaws](https://github.com/FirdawsYasmin) - Scrum Master <br> 
+[Firdaws](https://github.com/FirdawsYasmin) - Scrum Master <br>
 [Noor](https://github.com/Hunzaa) <br>
 [Enrico](https://github.com/EnricoEmanuelObeng) <br>
 [Luke](https://github.com/LukeLondesbrough) <br>
