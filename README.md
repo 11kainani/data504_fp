@@ -77,10 +77,12 @@ pip install -r requirements.txt
 
 Create a .env file with these parameters to connect to your mysql database
 
+```
 DB_DRIVER=
 DB_SERVER=
 DB_DATABASE=
 DB_USER=
+```
 
 ## Credits
 [Martyna]() - Product Owner <br>
