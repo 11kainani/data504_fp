@@ -1,5 +1,5 @@
-from Academy_Transform import transform_dfs_for_db
-from Academy_DataFrames import S3DataFrames
+from scripts.s3_cleaner import transform_dfs_for_db
+from scripts.s3_extractor import S3DataFrames
 import urllib
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
