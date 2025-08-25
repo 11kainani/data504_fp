@@ -27,7 +27,7 @@ class S3Cleaner:
             - Sparta Day
             - Talent Decision
             
-        Dropped rows:
+        Dropped or Ignored rows:
             - 'invited_day', 'month' if NULL
             - 'date_of_birth', errors=coerce
             - 'date' in talent_df, errors=coerce
@@ -44,7 +44,30 @@ class S3Cleaner:
             
         # From the notebooks, were there any rows that were dropped or filled?
         # Mabye due to duplicates, missing values etc
-        # e.g. missing applicant names
+        # If so add to subset list in the correct DataFrame
+        
+        # Applicants Data
+        if 'combined_applicants_details' in dfs:
+          
+            df = dfs['combined_applicants_details']
+            
+            # Add more columns to list if required
+            df.dropna(subset=['invited_date', 'month'], inplace=True)
+        
+        # Talent Data
+        if 'combined_talent-decision_scores' in dfs:
+            
+            df = dfs['combined_talent-decision_scores']
+            
+            # Add more columns to list if required
+            
+        
+        if 'combined_sparta_day_test_score' in dfs:
+            
+            df = dfs['combined_sparta_day_test_score']
+            
+            # Add more columns to list if required
+            
             
         # ========================== Global Cleaning ==============================
         
@@ -115,8 +138,6 @@ class S3Cleaner:
 
             # Invitation date Interview date
             if 'invited_date' in df.columns and 'month' in df.columns:
-                # Drop if Null
-                df.dropna(subset=["invited_date", "month"]).reset_index(drop=True)
 
                 # Split month string into month and year
                 month_parts = df['month'].str.strip().str.split(' ', expand=True)
@@ -184,11 +205,11 @@ class S3Cleaner:
         return dfs
  
 
-# # Extract
-# extractor = S3Extractor()
-# dfs = extractor.get_csvs_to_dfs()
+# Extract
+extractor = S3Extractor()
+dfs = extractor.get_csvs_to_dfs()
 
-# # Clean
-# cleaner = S3Cleaner()
-# clean_dfs = cleaner.clean_dfs(dfs)
+# Clean
+cleaner = S3Cleaner()
+clean_dfs = cleaner.clean_dfs(dfs)
     
