@@ -22,11 +22,15 @@
 
 <br>
 
-## 21/06/2025
+## 21/08/2025
 
 QA cleaned_talent_decision_scores.csv
 
 - Drafted Talent data in an ERD
 
+
+## 22/08/2025
+
+- Creating scripting to get data from S3
 
 
