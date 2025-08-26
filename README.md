@@ -17,3 +17,6 @@ git commit -m "READEME file"
 ### push that to remote repo
 ### Since the tracking is set up, it will automatically push to the branch
 git push
+
+### The scripts for combining the json, txt, and csv files from the Talent Folder
+read_talent_csv_applicants_details.py
