@@ -63,8 +63,9 @@ An example of the `.env` file is in the annex at the end of this README.
 
 Once that's done, simply run the main file:
 
-````bash
+```bash
 python main.py
+```
 
 ## Entity Relationship Diagrams (ERDs)
 
@@ -92,7 +93,7 @@ You can install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
-````
+```
 
 ## Annexes
 
