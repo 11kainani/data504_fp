@@ -6,10 +6,14 @@ from src.db.models import Course, Week, Skill, Trainer, Cohort, Student, Score
 
 
 class SQLConnector:
+    """
+    Object responsible for communicating with the database
+    """
     def __init__(self):
         engine = create_engine(init_connexion())
         # create tables
         Base.metadata.create_all(bind=engine)
+        # Begins sessions and make it possible to use transactions
         self.session = sessionmaker(bind=engine)
 
 
@@ -35,7 +39,6 @@ class SQLConnector:
     def create_week(self, max_number_weeks : int):
         """
         We already know that we have around 10 week maximum so alleviate the coding process, we can hard code it then add a method after to add extra weeks.
-        TODO Make it so that if we can append more week if max_number_week > 10
         """
         session = self.session()
         try:
@@ -194,7 +197,7 @@ class SQLConnector:
             ).first()
 
             if existing_score:
-                print(f'Score for this {Score.studentID}, on week {Score.weekID} and for skill {Score.skillID} already exists')
+                print(f'Score for this {existing_score.studentID}, on week {existing_score.weekID} and for skill {existing_score.skillID} already exists')
                 return existing_score
             if not exisiting_student:
                 print(f'Student {student_id} does not exist')
