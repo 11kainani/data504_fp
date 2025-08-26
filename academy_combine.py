@@ -4,7 +4,7 @@
 
 import boto3, io, pandas as pd, os, re
 
-bucket = "data-504-final-project"
+bucket = "data-504-final-project-v2"
 prefix = "Academy/"
 s3 = boto3.client("s3")
 
