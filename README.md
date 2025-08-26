@@ -78,7 +78,11 @@ The ERD below shows the normalised schema for the Talent data.
 
 ![Talent ERD](img/talent_erd.png)
 
-> A final combined ERD will be added once the Academy and Talent models are fully merged.
+### Combined ERD
+
+This diagram shows the fully normalised, final data model combining both the Talent and Academy sides of the pipeline.
+
+![Combined ERD](img/combined_erd.png)
 
 ---
 
