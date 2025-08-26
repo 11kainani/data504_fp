@@ -58,13 +58,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-To execute the program, you will need to create a .env file in the main folder. An example of the .env file in the annexe of this file. After that all that is need is to run the main file and the extract, the transformation, the initialisation and the injection of the data will be done.
+To execute the program, you will need to create a `.env` file in the main folder.  
+An example of the `.env` file is in the annex at the end of this README.
 
-```commandline
+Once that's done, simply run the main file:
+
+````bash
 python main.py
-```
-
----
 
 ## Entity Relationship Diagrams (ERDs)
 
@@ -92,7 +92,7 @@ You can install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
-```
+````
 
 ## Annexes
 
@@ -105,6 +105,7 @@ DB_DRIVER=
 DB_SERVER=
 DB_DATABASE=
 DB_USER=
+DB_PASSWORD=
 ```
 
 ## Credits

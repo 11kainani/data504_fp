@@ -1,7 +1,12 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Date, ForeignKeyConstraint, Float
+from sqlalchemy import Column, Integer, String, ForeignKey, Date, ForeignKeyConstraint
 from sqlalchemy.orm import relationship
 
 from .base import Base
+
+"""
+Models class using the centralized base to validate the database tables schema
+"""
+
 
 class Course(Base):
     __tablename__ = "course"
@@ -29,7 +34,7 @@ class Cohort(Base):
     trainerID = Column(Integer, ForeignKey("trainer.trainerID"), nullable=False)
     start_date = Column(Date, nullable=False)
 
-    # Link back to the course
+    # Relationships
     course = relationship("Course", back_populates="cohorts")
     trainer = relationship("Trainer", back_populates="cohorts")
     students = relationship("Student", back_populates="cohort")
@@ -48,6 +53,7 @@ class Student(Base):
             ["cohort.cohortID", "cohort.courseID"]
         ),
     )
+    # Relationships
     cohort = relationship("Cohort", back_populates="students")
     scores = relationship("Score", back_populates="student")
 
@@ -62,6 +68,7 @@ class Skill(Base):
     skillID = Column(Integer, primary_key=True, autoincrement=True)
     skill_name = Column(String, nullable=False)
 
+    # Relationships
     scores = relationship("Score", back_populates="skill")
 
 class Score(Base):
@@ -71,6 +78,7 @@ class Score(Base):
     skillID = Column(Integer, ForeignKey("skill.skillID"), nullable=False, primary_key=True)
     grade = Column(Integer, nullable=True)
 
+    # Relationships
     student = relationship("Student", back_populates="scores")
     week = relationship("Week", back_populates="scores")
     skill = relationship("Skill", back_populates="scores")

@@ -5,6 +5,7 @@ from db.Transformation import Transformer
 
 
 def academy_db():
+
     start = time.perf_counter()
     transformer = Transformer()
     transformer.academy_data_injection()
