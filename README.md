@@ -94,6 +94,6 @@ DB_PASSWORD=
 [Mahdi]() <br>
 [Xavier](https://github.com/xavierfrancis1981) <br>
 [Kyle](https://github.com/kgodwinb44) <br>
-[Jesi](https://github.com/11kainani) <br>
+[Jesi](https://github.com/11kainani) - Developer
 
 ---

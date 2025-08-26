@@ -72,7 +72,7 @@ class Transformer:
             course = self.sqlConnector.create_course(key_info['course_name'])
             trainer = self.sqlConnector.create_trainer(trainer_info)
             cohort = self.sqlConnector.create_cohort(course_name=course.name, cohort_id=key_info['cohort_number'],
-                                                     start_date=key_info['start_date'], trainer_id=trainer.trainerID)
+                                                     start_date=key_info['start_date'], trainer_id=trainer.trainer_id)
 
             unique_skills = {s for entry in data for s in entry['skills']}
             unique_weeks = {w for entry in data for scores in entry['skills'].values() for w in scores}
@@ -82,13 +82,13 @@ class Transformer:
             self.sqlConnector.create_week(maximum_week)
 
             for entry in data:
-                student = self.sqlConnector.create_student(cohort_id=cohort.cohortID, name=entry['name'],
-                                                           course_id=cohort.courseID)
+                student = self.sqlConnector.create_student(cohort_id=cohort.cohort_id, name=entry['name'],
+                                                           course_id=cohort.course_id)
                 for skill_name, scores in entry['skills'].items():
                     skill = skills_map[skill_name]
 
                     for key, value in scores.items():
-                        self.sqlConnector.create_score(skill_id=skill.skillID, student_id=student.studentID,
+                        self.sqlConnector.create_score(skill_id=skill.skill_id, student_id=student.student_id,
                                                        week_id=key,
                                                        grade=value if value != -1 else None)
             session.commit()

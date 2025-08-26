@@ -28,7 +28,7 @@ class SQLConnector:
                 course = Course(name=name.lower())
                 session.add(course)
                 session.commit()
-                print(f"Course '{name}' added with ID {course.courseID}")
+                print(f"Course '{name}' added with ID {course.course_id}")
                 return course
         except Exception as e:
             session.rollback()
@@ -75,7 +75,7 @@ class SQLConnector:
                 session.add_all(unique_skill_names)
                 session.commit()
                 for skill in unique_skill_names:
-                    print(f'{skill.skill_name} added with ID {skill.skillID}')
+                    print(f'{skill.skill_name} added with ID {skill.skill_id}')
             else:
                 print("No new skills to add; all already exist.")
             return unique_skill_names
@@ -98,7 +98,7 @@ class SQLConnector:
                 session.add(skill)
                 session.commit()
 
-                print(f'{skill.skill_name} added with ID {skill.skillID}')
+                print(f'{skill.skill_name} added with ID {skill.skill_id}')
                 return skill
             else:
                 print("Skill already exist.")
@@ -120,7 +120,7 @@ class SQLConnector:
                 trainer = Trainer(name=name)
                 session.add(trainer)
                 session.commit()
-                print(f'Trainer {name} added with ID {trainer.trainerID}')
+                print(f'Trainer {name} added with ID {trainer.trainer_id}')
                 return trainer
         except Exception as e:
             session.rollback()
@@ -130,9 +130,9 @@ class SQLConnector:
 
     def create_cohort(self, course_name, cohort_id, start_date, trainer_id):
         session = self.session()
-        existing_trainer = session.query(Trainer).filter(Trainer.trainerID == trainer_id).first()
+        existing_trainer = session.query(Trainer).filter(Trainer.trainer_id == trainer_id).first()
         existing_course = session.query(Course).filter(Course.name == course_name.lower()).first()
-        existing_cohort = session.query(Cohort).filter(Cohort.cohortID == cohort_id).first()
+        existing_cohort = session.query(Cohort).filter(Cohort.cohort_id == cohort_id).first()
         if not existing_course:
             print(f'Course {course_name} does not exist')
         elif not existing_trainer:
@@ -142,10 +142,10 @@ class SQLConnector:
             return existing_cohort
         else:
             if cohort_id and start_date:
-                cohort = Cohort(cohortID = cohort_id ,courseID=existing_course.courseID, trainerID = trainer_id , start_date=start_date)
+                cohort = Cohort(cohortID = cohort_id, courseID=existing_course.course_id, trainerID = trainer_id, start_date=start_date)
                 session.add(cohort)
                 session.commit()
-                print(f'Cohort added with ID {cohort.cohortID}')
+                print(f'Cohort added with ID {cohort.cohort_id}')
                 return cohort
             else:
                 print(f'{cohort_id} and {start_date} are required')
@@ -160,8 +160,8 @@ class SQLConnector:
     def create_student(self, name, course_id, cohort_id):
         session = self.session()
         try:
-            exisiting_course = session.query(Course).filter(Course.courseID == course_id).first()
-            existing_cohort = session.query(Cohort).filter(Cohort.cohortID == cohort_id).first()
+            exisiting_course = session.query(Course).filter(Course.course_id == course_id).first()
+            existing_cohort = session.query(Cohort).filter(Cohort.cohort_id == cohort_id).first()
             existing_student = session.query(Student).filter(Student.name == name).first()
 
             if existing_student:
@@ -172,10 +172,10 @@ class SQLConnector:
             if not existing_cohort:
                 print(f'Cohort {cohort_id} does not exist')
             else:
-                student = Student(name=name, courseID=exisiting_course.courseID, cohortID=existing_cohort.cohortID)
+                student = Student(name=name, courseID=exisiting_course.course_id, cohortID=existing_cohort.cohort_id)
                 session.add(student)
                 session.commit()
-                print(f'Student added with ID {student.studentID}')
+                print(f'Student added with ID {student.student_id}')
                 return student
         except Exception as e:
             session.rollback()
@@ -186,18 +186,18 @@ class SQLConnector:
     def create_score(self, student_id, skill_id, week_id, grade:int):
         session = self.session()
         try:
-            exisiting_student = session.query(Student).filter(Student.studentID == student_id).first()
-            existing_week = session.query(Week).filter(Week.weekID == week_id).first()
-            exisiting_skill = session.query(Skill).filter(Skill.skillID == skill_id).first()
+            exisiting_student = session.query(Student).filter(Student.student_id == student_id).first()
+            existing_week = session.query(Week).filter(Week.week_id == week_id).first()
+            exisiting_skill = session.query(Skill).filter(Skill.skill_id == skill_id).first()
 
             existing_score = session.query(Score).filter(
-                Score.studentID == student_id,
-                Score.weekID == week_id,
-                Score.skillID == skill_id
+                Score.student_id == student_id,
+                Score.week_id == week_id,
+                Score.skill_id == skill_id
             ).first()
 
             if existing_score:
-                print(f'Score for this {existing_score.studentID}, on week {existing_score.weekID} and for skill {existing_score.skillID} already exists')
+                print(f'Score for this {existing_score.student_id}, on week {existing_score.week_id} and for skill {existing_score.skill_id} already exists')
                 return existing_score
             if not exisiting_student:
                 print(f'Student {student_id} does not exist')
@@ -206,7 +206,7 @@ class SQLConnector:
             if not exisiting_skill:
                 print(f'Skill {skill_id} does not exist')
             else:
-                score = Score(skillID=exisiting_skill.skillID,studentID=exisiting_student.studentID, weekID=existing_week.weekID, grade=grade)
+                score = Score(skillID=exisiting_skill.skill_id, studentID=exisiting_student.student_id, weekID=existing_week.week_id, grade=grade)
                 session.add(score)
                 session.commit()
                 print(f'Score added for {student_id}, week {week_id} with grade {grade} for skill {skill_id}')
@@ -219,4 +219,4 @@ if __name__ == "__main__":
     sql = SQLConnector()
     #sql.create_cohort_table('Data',3,'2023-03-22',1)
     #sql.create_student_table('Data',3,'3')
-    sql.create_score(1, 19, 2, 5)
+    #sql.create_score(1, 19, 2, 5)
