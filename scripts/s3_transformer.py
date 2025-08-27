@@ -1,6 +1,7 @@
 from s3_extractor import S3Extractor
 from s3_cleaner import S3Cleaner
 import pandas as pd
+from pandasgui import show
 
 
 class S3Transformer:
@@ -304,11 +305,15 @@ class S3Transformer:
         
         # -------------------------------------------------------- Sparta Day --------------------------------------------------
         
-        sparta_day_rows = sparta_df[['event_date', 'academy', 'presentation_result', 'psychometric_result']]
-        print(sparta_day_rows)
-        
-        
-        
+        sparta_day_rows = sparta_df[['event_date', 'academy', 'presentation_result', 'psychometric_result', 'candidate_first_name', 'candidate_last_name']]
+
+        sparta_day_df = sparta_day_rows.merge(
+            tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
+            on=['candidate_first_name', 'candidate_last_name'],
+            how='inner')
+
+        sparta_day_df = sparta_day_df.drop(columns=['candidate_first_name', 'candidate_last_name'])
+
 
         return tables
     

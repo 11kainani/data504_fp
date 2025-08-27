@@ -4,8 +4,6 @@ import boto3
 import io
 from pandasgui import show
 
-pd.set_option('display.max_columns', None)
-
 class S3Cleaner:
     
     """
@@ -156,6 +154,7 @@ class S3Cleaner:
             # Date
             if 'date' in df.columns:
                 df['date'] = pd.to_datetime(df['date'])
+                df['date'] = df['date'].dt.date
                 df.rename(columns={'date': 'event_date'}, inplace=True)
                 
             # Presentation
@@ -211,5 +210,3 @@ dfs = extractor.get_csvs_to_dfs()
 # Clean
 cleaner = S3Cleaner()
 clean_dfs = cleaner.clean_dfs(dfs)
-
-print(clean_dfs['combined_sparta_day_test_score'])
