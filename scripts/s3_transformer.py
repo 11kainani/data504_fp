@@ -100,9 +100,9 @@ class S3Transformer:
         for df in dfs.values()
             if {'talent_member_first_name', 'talent_member_last_name'}.issubset(df.columns)
             for row in df[['talent_member_first_name', 'talent_member_last_name']].dropna().to_dict(orient='records')}
-        trainers_df = pd.DataFrame(sorted(all_talent_members), columns=['talent_member_first_name', 'talent_member_last_name'])
-        trainers_df['talent_member_id'] = range(1, len(trainers_df) + 1)
-        tables['talent_member'] = trainers_df
+        talent_members_df = pd.DataFrame(sorted(all_talent_members), columns=['talent_member_first_name', 'talent_member_last_name'])
+        talent_members_df['talent_member_id'] = range(1, len(trainers_df) + 1)
+        tables['talent_member'] = talent_members_df
         
         # --------------------------------- Tech Skill  -----------------------------------------
         
@@ -128,7 +128,7 @@ class S3Transformer:
         # --------------------------------------------------- Candidate ---------------------------------------------------
         
         candidate_df = applicants_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'street_name', 'city', 'postcode']].dropna()
-        candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'], how='left')
+        candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'])
         candidate_df = candidate_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'address_id']]
         tables['candidate'] = candidate_df
         
@@ -171,7 +171,37 @@ class S3Transformer:
         
         # --------------------------------------------------- Cohort ------------------------------------------------------
         
+        # --------------------------------------------------- Cohort ------------------------------------------------------
         
+        # Collect cohort information: course_name, trainer names, and start_date
+        cohort_rows = []
+        for df in dfs.values():
+            if {'course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'}.issubset(df.columns):
+                cohort_rows.append(
+                    df[['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date']].dropna())
+
+        if cohort_rows:
+            cohort_df = pd.concat(cohort_rows, ignore_index=True)
+        else:
+            cohort_df = pd.DataFrame(columns=['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'])
+
+        # Map course_id (FK)
+        cohort_df = cohort_df.merge(course_df[['course_id', 'course_name']], on='course_name', how='left')
+
+        # Map trainer_id (FK)
+        cohort_df = cohort_df.merge(trainers_df[['trainer_id', 'trainer_first_name', 'trainer_last_name']],
+                                    on=['trainer_first_name', 'trainer_last_name'], how='left')
+
+        # Keep only relevant columns for Cohort table
+        cohort_df = cohort_df[['trainer_id', 'course_id', 'start_date']].drop_duplicates().reset_index(drop=True)
+
+        # Assign cohort_id as primary key AFTER selecting relevant columns
+        cohort_df['cohort_id'] = range(1, len(cohort_df) + 1)
+
+        # Reorder columns: cohort_id first
+        cohort_df = cohort_df[['cohort_id', 'trainer_id', 'course_id', 'start_date']]
+
+        tables['cohort'] = cohort_df
         
         # --------------------------------------------------- Student -------------------------------------------------------
         
@@ -205,6 +235,8 @@ class S3Transformer:
 
         return tables
     
+    
+    
 
 # Extract
 extractor = S3Extractor()
@@ -216,6 +248,6 @@ clean_dfs = cleaner.clean_dfs(dfs)
 
 # Transfrom
 transform = S3Transformer()
-transform_dfs = transform.transform_to_tables(clean_dfs)
+tables = transform.transform_to_tables(clean_dfs)
 
-print(transform_dfs)
+print(tables)

@@ -1,5 +1,10 @@
 from s3_extractor import S3Extractor
 import pandas as pd
+import boto3
+import io
+from pandasgui import show
+
+pd.set_option('display.max_columns', None)
 
 class S3Cleaner:
     
@@ -41,32 +46,69 @@ class S3Cleaner:
             df.columns = df.columns.str.strip().str.lower()
             
         # ======================== Global Dropping / Filling =====================
-            
-        # From the notebooks, were there any rows that were dropped or filled?
-        # Mabye due to duplicates, missing values etc
-        # If so add to subset list in the correct DataFrame
         
         # Applicants Data
         if 'combined_applicants_details' in dfs:
           
             df = dfs['combined_applicants_details']
             
-            # Add more columns to list if required
-            df.dropna(subset=['invited_date', 'month'], inplace=True)
+            # Repeated IDs
+            df['id'].duplicated(keep=False)
+            df['id'] = range(1, len(df) + 1)
+            
+            # Missing month
+            df['month'] = df['month'].fillna("Unknown")
+
+            # Missing invite date
+            #df['invited_date'] = df['invited_date'].fillna("Unknown")
+
+            # Missing dob
+            df['dob'] = df['dob'].fillna("Unknown")
+
+            # Missing addresses
+            df['address'] = df['address'].fillna("Unknown")
+
+            # Missing emails
+            df['email'] = df['email'].fillna("Unknown")
+
+            # Missing phone numbers
+            df['phone_number'] = df['phone_number'].fillna("Unknown")
+
+            # Missing degrees
+            df['degree'] = df['degree'].fillna("Unknown")
+
+            # Missing Universities
+            df['uni'] = df['uni'].fillna("Unknown")
+
+            # Missing invited_by - Talent member split into two
+            df['invited_by'] = df['invited_by'].fillna("Unknown")
+
+            # Missing City
+            df['city'] = df['city'].fillna("Unknown")
+
+            # Missing Postcode
+            df['postcode'] = df['postcode'].fillna("Unknown")
+
+            # Missing Gender
+            df['gender'] = df['gender'].fillna("Unknown")
+            
+            # Bruno Bellbrook - More records on Bellbrook
+            df['invited_by'] = df['invited_by'].replace('Bruno Belbrook', 'Bruno Bellbrook')
+            
+            # Fifi Etton - Assumption based on the chance of two people with same name
+            df['invited_by'] = df['invited_by'].replace('Fifi Eton', 'Fifi Etton')
+            
         
         # Talent Data
         if 'combined_talent-decision_scores' in dfs:
             
             df = dfs['combined_talent-decision_scores']
             
-            # Add more columns to list if required
-            
         
+        # Sparta Day
         if 'combined_sparta_day_test_score' in dfs:
             
             df = dfs['combined_sparta_day_test_score']
-            
-            # Add more columns to list if required
             
             
         # ========================== Global Cleaning ==============================
@@ -86,6 +128,7 @@ class S3Cleaner:
             
             # Trainer
             if 'trainer' in df.columns:
+                df['trainer'] = df['trainer'].replace('Ely Kely', 'Elly Kelly')
                 df[['trainer_first_name', 'trainer_last_name']] = df['trainer'].str.split(' ', n=1, expand=True)
                 df.drop(columns=['trainer'], inplace=True)
                 
@@ -96,6 +139,7 @@ class S3Cleaner:
             # Course
             if 'course' in df.columns:
                 df.rename(columns={'course': 'course_name'}, inplace=True)
+
         
         # ========================= Applicant Details =======================
         
@@ -121,11 +165,7 @@ class S3Cleaner:
             
             # Phone number
             if 'phone_number' in df.columns:
-                df['phone_number'] = df['phone_number'].str.replace(r'^=', '+', regex=True)
-                df['phone_number'] = df['phone_number'].str.replace(r'[\(\)\s\-]', '', regex=True)
-                df['phone_number'] = df['phone_number'].str.replace(
-                    r'(\+44)(\d{3})(\d{3})(\d{4})', r'\1-\2-\3-\4', regex=True
-                )
+                df['phone_number'] = (df['phone_number'].str.replace(r"[ \-\(\)]", "", regex=True).str.replace(r"^\+?44", "+44", regex=True))
 
             # University
             if 'uni' in df.columns:
@@ -138,21 +178,20 @@ class S3Cleaner:
 
             # Invitation date Interview date
             if 'invited_date' in df.columns and 'month' in df.columns:
-
                 # Split month string into month and year
                 month_parts = df['month'].str.strip().str.split(' ', expand=True)
                 month_str = month_parts[0].str.title().replace("Sept", "September")
-                # Convert month name to numeric month
-                month = pd.to_datetime(month_str, format='%B').dt.month
-                year = month_parts[1]
-                day = df['invited_date']
 
-                # Combine day, month, year into datetime
-                df['invitation_date'] = pd.to_datetime({'year': year, 'month': month, 'day': day})
-                
+                # Convert month name to numeric month, safely ignoring NaN
+                month = pd.to_datetime(month_str, format='%B', errors='coerce').dt.month
+                year = pd.to_numeric(month_parts[1], errors='coerce')
+                day = pd.to_numeric(df['invited_date'], errors='coerce')
+
+                df['invitation_date'] = pd.to_datetime({'year': year, 'month': month, 'day': day}, errors='coerce')
+
                 df.drop(columns=['invited_date', 'month'], inplace=True)
                 
-            # Talent Member name
+            # Talent Member name - Name plsit into two
             if 'invited_by' in df.columns:
                 df[['talent_member_first_name', 'talent_member_last_name']] = df['invited_by'].str.split(' ', n=1, expand=True)
                 df.drop(columns=['invited_by'], inplace=True)
@@ -178,9 +217,11 @@ class S3Cleaner:
             
             # Date
             if 'date' in df.columns:
-                df['date'] = pd.to_datetime(df['date'], dayfirst=True, errors='coerce')
+                df['date'] = df['date'].str.replace('//', '/', regex=False)
+                df['date'] = pd.to_datetime(df['date'], dayfirst=True)
                 df['date'] = df['date'].dt.strftime("%Y-%m-%d")
                 df.rename(columns={'date': 'interview_date'}, inplace=True)            
+            
             # Strengths
             if 'strengths' in df.columns:
                 df['strengths'] = df['strengths'].str.strip("[]").str.replace("'", "").str.replace('"', "")
@@ -212,4 +253,5 @@ dfs = extractor.get_csvs_to_dfs()
 # Clean
 cleaner = S3Cleaner()
 clean_dfs = cleaner.clean_dfs(dfs)
-    
+
+show(clean_dfs['combined_applicants_details'])
