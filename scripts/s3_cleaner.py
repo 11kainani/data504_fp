@@ -25,17 +25,15 @@ class S3Cleaner:
         
         Cleaning Order:
             - Global Standardisation
-            - Global Dropping / Filling
-            - Global Cleaning
             - Academy
             - Applicant Details
             - Sparta Day
             - Talent Decision
             
-        Dropped or Ignored rows:
-            - 'invited_day', 'month' if NULL
-            - 'date_of_birth', errors=coerce
-            - 'date' in talent_df, errors=coerce
+        Missing Data:
+            - NaN values in dates are left NaN
+            - String data is filled "Unknown"
+            
         """
         
         # ======================= Global Standardisation =========================
@@ -45,73 +43,6 @@ class S3Cleaner:
             # Standardise all columns
             df.columns = df.columns.str.strip().str.lower()
             
-        # ======================== Global Dropping / Filling =====================
-        
-        # Applicants Data
-        if 'combined_applicants_details' in dfs:
-          
-            df = dfs['combined_applicants_details']
-            
-            # Repeated IDs
-            df['id'].duplicated(keep=False)
-            df['id'] = range(1, len(df) + 1)
-            
-            # Missing month
-            df['month'] = df['month'].fillna("Unknown")
-
-            # Missing invite date
-            #df['invited_date'] = df['invited_date'].fillna("Unknown")
-
-            # Missing dob
-            df['dob'] = df['dob'].fillna("Unknown")
-
-            # Missing addresses
-            df['address'] = df['address'].fillna("Unknown")
-
-            # Missing emails
-            df['email'] = df['email'].fillna("Unknown")
-
-            # Missing phone numbers
-            df['phone_number'] = df['phone_number'].fillna("Unknown")
-
-            # Missing degrees
-            df['degree'] = df['degree'].fillna("Unknown")
-
-            # Missing Universities
-            df['uni'] = df['uni'].fillna("Unknown")
-
-            # Missing invited_by - Talent member split into two
-            df['invited_by'] = df['invited_by'].fillna("Unknown")
-
-            # Missing City
-            df['city'] = df['city'].fillna("Unknown")
-
-            # Missing Postcode
-            df['postcode'] = df['postcode'].fillna("Unknown")
-
-            # Missing Gender
-            df['gender'] = df['gender'].fillna("Unknown")
-            
-            # Bruno Bellbrook - More records on Bellbrook
-            df['invited_by'] = df['invited_by'].replace('Bruno Belbrook', 'Bruno Bellbrook')
-            
-            # Fifi Etton - Assumption based on the chance of two people with same name
-            df['invited_by'] = df['invited_by'].replace('Fifi Eton', 'Fifi Etton')
-            
-        
-        # Talent Data
-        if 'combined_talent-decision_scores' in dfs:
-            
-            df = dfs['combined_talent-decision_scores']
-            
-        
-        # Sparta Day
-        if 'combined_sparta_day_test_score' in dfs:
-            
-            df = dfs['combined_sparta_day_test_score']
-            
-            
-        # ========================== Global Cleaning ==============================
         
         for name, df in dfs.items():
 
@@ -120,6 +51,7 @@ class S3Cleaner:
                 df['name'] = df['name'].str.title()
                 df[['candidate_first_name', 'candidate_last_name']] = df['name'].str.split(' ', n=1, expand=True)
                 df.drop(columns=['name'], inplace=True)
+                    
                 
         # ========================= Academy ==============================
             
@@ -148,7 +80,23 @@ class S3Cleaner:
             
             df = dfs['combined_applicants_details']
             
-            # Candidate Name (done globaly)
+            # List of columns where missing values should become "Unknown"
+            string_cols = ["month", "address", "email", "phone_number", "degree", "uni", "city", "postcode", "gender"]
+            
+            # Fill missing values
+            for col in string_cols:
+                # Change from Nan to Unkown
+                df[col] = df[col].fillna("Unknown")
+            
+            # Repeated IDs
+            df['id'].duplicated(keep=False)
+            df['id'] = range(1, len(df) + 1)
+            
+            # Bruno Bellbrook - More records on Bellbrook
+            df['invited_by'] = df['invited_by'].replace('Bruno Belbrook', 'Bruno Bellbrook')
+            
+            # Fifi Etton - Assumption based on the chance of two people with same name
+            df['invited_by'] = df['invited_by'].replace('Fifi Eton', 'Fifi Etton')
 
             # Candidate ID
             if 'id' in df.columns:
@@ -188,12 +136,14 @@ class S3Cleaner:
                 day = pd.to_numeric(df['invited_date'], errors='coerce')
 
                 df['invitation_date'] = pd.to_datetime({'year': year, 'month': month, 'day': day}, errors='coerce')
+                df['invitation_date'] = df['invitation_date'].dt.date
 
                 df.drop(columns=['invited_date', 'month'], inplace=True)
                 
-            # Talent Member name - Name plsit into two
+            # Talent Member name - Name split into two
             if 'invited_by' in df.columns:
                 df[['talent_member_first_name', 'talent_member_last_name']] = df['invited_by'].str.split(' ', n=1, expand=True)
+                df[['talent_member_first_name', 'talent_member_last_name']] = df[['talent_member_first_name', 'talent_member_last_name']].fillna("Unknown")
                 df.drop(columns=['invited_by'], inplace=True)
             
         # ============================= Sparta Day ======================================
@@ -253,5 +203,3 @@ dfs = extractor.get_csvs_to_dfs()
 # Clean
 cleaner = S3Cleaner()
 clean_dfs = cleaner.clean_dfs(dfs)
-
-show(clean_dfs['combined_applicants_details'])
