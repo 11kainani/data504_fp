@@ -31,7 +31,7 @@ class S3Transformer:
         # Access to specific DataFrame
         applicants_df = dfs['combined_applicants_details']
         talent_df = dfs['combined_talent_decision_scores']
-        sparta_day_df = dfs['combined_sparta_day_test_score']
+        sparta_df = dfs['combined_sparta_day_test_score']
         
         # =================================================== Independant Tables =======================================================
         
@@ -304,6 +304,11 @@ class S3Transformer:
         
         # -------------------------------------------------------- Sparta Day --------------------------------------------------
         
+        sparta_day_rows = sparta_df[['event_date', 'academy', 'presentation_result', 'psychometric_result']]
+        print(sparta_day_rows)
+        
+        
+        
 
         return tables
     
@@ -321,5 +326,3 @@ clean_dfs = cleaner.clean_dfs(dfs)
 # Transfrom
 transform = S3Transformer()
 tables = transform.transform_to_tables(clean_dfs)
-
-print(tables['interview'])

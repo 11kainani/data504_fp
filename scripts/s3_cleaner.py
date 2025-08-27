@@ -156,7 +156,15 @@ class S3Cleaner:
             # Date
             if 'date' in df.columns:
                 df['date'] = pd.to_datetime(df['date'])
-                df.rename(columns={'date': 'event_date'})
+                df.rename(columns={'date': 'event_date'}, inplace=True)
+                
+            # Presentation
+            if 'presentation' in df.columns:
+                df.rename(columns={'presentation': 'presentation_result'}, inplace=True)
+
+            # Physcometric
+            if 'psychometrics' in df.columns:
+                df.rename(columns={'psychometrics': 'psychometric_result'}, inplace=True)
         
         # ============================== Talent Decision ================================
         
@@ -203,3 +211,5 @@ dfs = extractor.get_csvs_to_dfs()
 # Clean
 cleaner = S3Cleaner()
 clean_dfs = cleaner.clean_dfs(dfs)
+
+print(clean_dfs['combined_sparta_day_test_score'])
