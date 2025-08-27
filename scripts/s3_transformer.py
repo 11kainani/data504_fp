@@ -170,14 +170,74 @@ class S3Transformer:
         tables['invitation'] = invitation_df
         
         # --------------------------------------------------- Cohort ------------------------------------------------------
-        
-        
-        
+        # Collect cohort information: course_name, trainer names, and start_date
+        cohort_rows = []
+        for df in dfs.values():
+            if {'course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'}.issubset(df.columns):
+                cohort_rows.append(
+                    df[['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date']].dropna())
+
+        if cohort_rows:
+            cohort_df = pd.concat(cohort_rows, ignore_index=True)
+        else:
+            cohort_df = pd.DataFrame(columns=['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'])
+
+        # Map course_id (FK)
+        cohort_df = cohort_df.merge(course_df[['course_id', 'course_name']], on='course_name', how='left')
+
+        # Map trainer_id (FK)
+        cohort_df = cohort_df.merge(tables['trainer'][['trainer_id', 'trainer_first_name', 'trainer_last_name']],
+                                    on=['trainer_first_name', 'trainer_last_name'], how='left')
+
+        # Keep only relevant columns for Cohort table
+        cohort_df = cohort_df[['trainer_id', 'course_id', 'start_date']].drop_duplicates().reset_index(drop=True)
+
+        # Assign cohort_id as primary key AFTER selecting relevant columns
+        cohort_df['cohort_id'] = range(1, len(cohort_df) + 1)
+
+        # Reorder columns: cohort_id first
+        cohort_df = cohort_df[['cohort_id', 'trainer_id', 'course_id', 'start_date']]
+
+        tables['cohort'] = cohort_df
         # --------------------------------------------------- Student -------------------------------------------------------
-        
-        
-        
-        
+        talent_df = dfs['combined_talent_decision_scores']
+
+        # Filter only candidates that passed the interview through results
+        passed = talent_df[talent_df['interview_result'] == True].copy()
+
+        # Merge with candidate table for candidate id
+        passed = passed.merge(
+            tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
+            on=['candidate_first_name', 'candidate_last_name'],
+            how='inner'
+        )
+
+        # Map course interest to cohort id
+        cohort_mapping = {
+            tables['course'].loc[tables['course']['course_id'] == row['course_id'], 'course_name'].iloc[0]: row[
+                'cohort_id']
+            for _, row in tables['cohort'].iterrows()
+        }
+        passed['cohort_id'] = passed['course_interest'].map(cohort_mapping)
+
+        # Handle missing cohort assigmnets
+        if passed['cohort_id'].isna().any():
+            course_cohorts = tables['cohort'].merge(tables['course'], on='course_id')
+            for idx, row in passed[passed['cohort_id'].isna()].iterrows():
+                cc = course_cohorts[course_cohorts['course_name'] == row['course_interest']]
+                passed.at[idx, 'cohort_id'] = cc['cohort_id'].iloc[0] if not cc.empty else \
+                tables['cohort']['cohort_id'].iloc[0]
+
+        student_df = passed[
+            ['candidate_id', 'cohort_id', 'candidate_first_name', 'candidate_last_name']].drop_duplicates(
+            'candidate_id')
+        student_df = student_df.rename(columns={
+            'candidate_first_name': 'first_name',
+            'candidate_last_name': 'last_name'
+        })
+
+        tables['student'] = student_df
+
         # ============================================================= Junction Tables ======================================================
         
         # ------------------------------------------------- Candidate Tech Skill ---------------------------------------------
