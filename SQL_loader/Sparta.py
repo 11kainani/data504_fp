@@ -308,7 +308,6 @@ class S3Transformer:
             for row in df[['trainer_first_name', 'trainer_last_name']].dropna().to_dict(orient='records')}
         trainers_df = pd.DataFrame(sorted(all_trainers), columns=['trainer_first_name', 'trainer_last_name'])
         trainers_df['trainer_id'] = range(1, len(trainers_df) + 1)
-        trainers_df = trainers_df[['trainer_id', 'trainer_first_name', 'trainer_last_name']]
         tables['trainer'] = trainers_df
         
         # ------------------------------- Week -----------------------------------------------------------
@@ -357,9 +356,10 @@ class S3Transformer:
         for df in dfs.values()
             if {'talent_member_first_name', 'talent_member_last_name'}.issubset(df.columns)
             for row in df[['talent_member_first_name', 'talent_member_last_name']].dropna().to_dict(orient='records')}
-        trainers_df = pd.DataFrame(sorted(all_talent_members), columns=['talent_member_first_name', 'talent_member_last_name'])
-        trainers_df['talent_member_id'] = range(1, len(trainers_df) + 1)
-        tables['talent_member'] = trainers_df
+        talent_members_df = pd.DataFrame(sorted(all_talent_members),
+                                        columns=['talent_member_first_name', 'talent_member_last_name'])
+        talent_members_df['talent_member_id'] = range(1, len(talent_members_df) + 1)
+        tables['talent_member'] = talent_members_df
         
         # --------------------------------- Tech Skill  -----------------------------------------
         
@@ -385,7 +385,7 @@ class S3Transformer:
         # --------------------------------------------------- Candidate ---------------------------------------------------
         
         candidate_df = applicants_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'street_name', 'city', 'postcode']].dropna()
-        candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'], how='left')
+        candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'])
         candidate_df = candidate_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'address_id']]
         tables['candidate'] = candidate_df
         
@@ -428,11 +428,75 @@ class S3Transformer:
         
         # --------------------------------------------------- Cohort ------------------------------------------------------
         
-        
+        # Collect cohort information: course_name, trainer names, and start_date
+        cohort_rows = []
+        for df in dfs.values():
+            if {'course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'}.issubset(df.columns):
+                cohort_rows.append(
+                    df[['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date']].dropna())
+
+        if cohort_rows:
+            cohort_df = pd.concat(cohort_rows, ignore_index=True)
+        else:
+            cohort_df = pd.DataFrame(columns=['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'])
+
+        # Map course_id (FK)
+        cohort_df = cohort_df.merge(course_df[['course_id', 'course_name']], on='course_name', how='left')
+
+        # Map trainer_id (FK)
+        cohort_df = cohort_df.merge(trainers_df[['trainer_id', 'trainer_first_name', 'trainer_last_name']],
+                                    on=['trainer_first_name', 'trainer_last_name'], how='left')
+
+        # Keep only relevant columns for Cohort table
+        cohort_df = cohort_df[['trainer_id', 'course_id', 'start_date']].drop_duplicates().reset_index(drop=True)
+
+        # Assign cohort_id as primary key AFTER selecting relevant columns
+        cohort_df['cohort_id'] = range(1, len(cohort_df) + 1)
+
+        # Reorder columns: cohort_id first
+        cohort_df = cohort_df[['cohort_id', 'trainer_id', 'course_id', 'start_date']]
+
+        tables['cohort'] = cohort_df
         
         # --------------------------------------------------- Student -------------------------------------------------------
         
-        
+        talent_df = dfs['combined_talent_decision_scores']
+
+        # Filter only candidates that passed the interview through results
+        passed = talent_df[talent_df['interview_result'] == True].copy()
+
+        # Merge with candidate table for candidate id
+        passed = passed.merge(
+            tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
+            on=['candidate_first_name', 'candidate_last_name'],
+            how='inner'
+        )
+
+        # Map course interest to cohort id
+        cohort_mapping = {
+            tables['course'].loc[tables['course']['course_id'] == row['course_id'], 'course_name'].iloc[0]: row[
+                'cohort_id']
+            for _, row in tables['cohort'].iterrows()
+        }
+        passed['cohort_id'] = passed['course_interest'].map(cohort_mapping)
+
+        # Handle missing cohort assigmnets
+        if passed['cohort_id'].isna().any():
+            course_cohorts = tables['cohort'].merge(tables['course'], on='course_id')
+            for idx, row in passed[passed['cohort_id'].isna()].iterrows():
+                cc = course_cohorts[course_cohorts['course_name'] == row['course_interest']]
+                passed.at[idx, 'cohort_id'] = cc['cohort_id'].iloc[0] if not cc.empty else \
+                tables['cohort']['cohort_id'].iloc[0]
+
+        student_df = passed[
+            ['candidate_id', 'cohort_id', 'candidate_first_name', 'candidate_last_name']].drop_duplicates(
+            'candidate_id')
+        student_df = student_df.rename(columns={
+            'candidate_first_name': 'first_name',
+            'candidate_last_name': 'last_name'
+        })
+
+        tables['student'] = student_df
         
         
         # ============================================================= Junction Tables ======================================================
@@ -443,8 +507,45 @@ class S3Transformer:
         
         # ------------------------------------------------- Interview -------------------------------------------------------
         
-        
-        
+        talent_df = dfs['combined_talent_decision_scores'].copy()
+
+        # Bring in candidate_id by matching names to Candidate table
+        interv = talent_df.merge(tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
+            on=['candidate_first_name', 'candidate_last_name'],
+            how='inner'
+        )
+
+        # Keep only columns needed for Interview
+        needed_cols = [
+            'candidate_id',
+            'interview_date',
+            'course_interest',
+            'geo_flex',
+            'self_development',
+            'financial_support_self',
+            'interview_result'
+        ]
+        missing = [c for c in needed_cols if c not in interv.columns]
+        if missing:
+            raise KeyError(f"Interview build is missing columns: {missing}. Available: {list(interv.columns)}")
+
+        interv = interv[needed_cols].dropna(subset=['candidate_id', 'interview_date']).copy()
+
+        # (candidate_id + interview_date). Adjust if your ERD allows multiple interviews.
+        interv = interv.drop_duplicates(subset=['candidate_id', 'interview_date'])
+
+        # Assign interview_id (surrogate PK, sequential)
+        interv.insert(0, 'interview_id', range(1, len(interv) + 1))
+
+        # Strong types for FKs/IDs
+        interv['candidate_id'] = interv['candidate_id'].astype('int64')
+
+        # Save
+        tables['interview'] = interv[
+            ['interview_id', 'candidate_id', 'interview_date', 'course_interest',
+            'geo_flex', 'self_development', 'financial_support_self', 'interview_result']
+        ]
+ 
         # ----------------------------------------------------- Candidate Weakness ----------------------------------------------
         
         
@@ -527,9 +628,9 @@ clean_dfs = cleaner.clean_dfs(dfs)
 transform = S3Transformer()
 transform_dfs = transform.transform_to_tables(clean_dfs)
 
-# print(transform_dfs)
+print(transform_dfs)
 
-print(transform_dfs["weakness"])
+
 
 
 inserter = SpartaDBInserter(
@@ -539,6 +640,7 @@ inserter = SpartaDBInserter(
     password=""
 )
 
+# # Independent tables
 # inserter.insert_dataframe_with_id(transform_dfs['course'], "Course")
 # inserter.insert_dataframe_with_id(transform_dfs['trainer'], "Trainer")
 # inserter.insert_dataframe_with_id(transform_dfs['week'], "Week")
@@ -549,6 +651,11 @@ inserter = SpartaDBInserter(
 # inserter.insert_dataframe_with_id(transform_dfs['talent_member'], "TalentMember")
 # inserter.insert_dataframe_with_id(transform_dfs['tech_skill'], "TechSkill")
 # inserter.insert_dataframe_with_id(transform_dfs['address'], "Address")
+
+# # Dependent tables
 # inserter.insert_dataframe_with_id(transform_dfs['candidate'], "Candidate")
 # inserter.insert_dataframe_with_id(transform_dfs['candidate_university'], "CandidateUniversity")
 # inserter.insert_dataframe_with_id(transform_dfs['invitation'], "Invitation")
+# inserter.insert_dataframe_with_id(transform_dfs['cohort'], "Cohort")
+# inserter.insert_dataframe_with_id(transform_dfs['student'], "Student")
+# inserter.insert_dataframe_with_id(transform_dfs['interview'], "Interview")
