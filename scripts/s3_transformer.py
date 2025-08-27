@@ -39,7 +39,7 @@ class S3Transformer:
         # ---------------------------- Course -----------------------------------------------------------
         
         # Course ID start at 1 
-        all_courses = sorted({c for df in dfs.values() if 'course_name' in df.columns for c in df['course_name'].dropna().unique()})
+        all_courses = sorted({c for df in dfs.values() if 'course_name' in df.columns for c in df['course_name'].unique()})
         course_df = pd.DataFrame({'course_name': all_courses})
         course_df['course_id'] = range(1, len(course_df)+1)
         tables['course'] = course_df
@@ -50,7 +50,7 @@ class S3Transformer:
         all_trainers = {(row['trainer_first_name'], row['trainer_last_name'])
         for df in dfs.values()
             if {'trainer_first_name', 'trainer_last_name'}.issubset(df.columns)
-            for row in df[['trainer_first_name', 'trainer_last_name']].dropna().to_dict(orient='records')}
+            for row in df[['trainer_first_name', 'trainer_last_name']].to_dict(orient='records')}
         trainers_df = pd.DataFrame(sorted(all_trainers), columns=['trainer_first_name', 'trainer_last_name'])
         trainers_df['trainer_id'] = range(1, len(trainers_df) + 1)
         tables['trainer'] = trainers_df
@@ -73,7 +73,7 @@ class S3Transformer:
         # --------------------------------- Weakness -----------------------------------------------
         
         # Weakness ID starts at 1
-        all_weaknesses = sorted({w.strip() for df in dfs.values() if 'weaknesses' in df.columns for weaknesses in df['weaknesses'].dropna().unique() for w in weaknesses.split(',')})
+        all_weaknesses = sorted({w.strip() for df in dfs.values() if 'weaknesses' in df.columns for weaknesses in df['weaknesses'].unique() for w in weaknesses.split(',')})
         weakness_df = pd.DataFrame({'weakness_name': all_weaknesses})
         weakness_df['weakness_id'] = range(1, len(weakness_df)+1)
         tables['weakness'] = weakness_df
@@ -81,7 +81,7 @@ class S3Transformer:
         # ---------------------------------- Strengths --------------------------------------------
         
         # Strengths ID starts at 1
-        all_strengths = sorted({s.strip() for df in dfs.values() if 'strengths' in df.columns for strengths in df['strengths'].dropna().unique() for s in strengths.split(',')})
+        all_strengths = sorted({s.strip() for df in dfs.values() if 'strengths' in df.columns for strengths in df['strengths'].unique() for s in strengths.split(',')})
         strength_df = pd.DataFrame({'strength_name': all_strengths})
         strength_df['strength_id'] = range(1, len(strength_df) + 1)
         tables['strength'] = strength_df
@@ -89,7 +89,7 @@ class S3Transformer:
         # ---------------------------------- University ------------------------------------------
         
         # University ID starts at 1
-        all_universities = sorted({u.strip() for df in dfs.values() if 'university_name' in df.columns for universities in df['university_name'].dropna().unique() for u in universities.split(',')})
+        all_universities = sorted({u.strip() for df in dfs.values() if 'university_name' in df.columns for universities in df['university_name'].unique() for u in universities.split(',')})
         university_df = pd.DataFrame({'university_name': all_universities})
         university_df['university_id'] = range(1, len(university_df) + 1)
         tables['university'] = university_df
@@ -118,7 +118,7 @@ class S3Transformer:
         
         # Address ID starts at 1
         all_addresses = sorted({(row['street_name'].strip(), row['city'].strip(), row['postcode'].strip()) 
-            for df in dfs.values() if {'street_name', 'city', 'postcode'}.issubset(df.columns)for row in df[['street_name','city','postcode']].dropna().to_dict(orient='records')})
+            for df in dfs.values() if {'street_name', 'city', 'postcode'}.issubset(df.columns)for row in df[['street_name','city','postcode']].to_dict(orient='records')})
         address_df = pd.DataFrame(all_addresses, columns=['street_name','city','postcode'])
         address_df['address_id'] = range(1, len(address_df)+1)
         tables['address'] = address_df
@@ -129,14 +129,14 @@ class S3Transformer:
         
         # --------------------------------------------------- Candidate ---------------------------------------------------
         
-        candidate_df = applicants_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'street_name', 'city', 'postcode']].dropna()
+        candidate_df = applicants_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'street_name', 'city', 'postcode']]
         candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'])
         candidate_df = candidate_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'address_id']]
         tables['candidate'] = candidate_df
         
         # ---------------------------------------------------- Candidate University --------------------------------
         
-        cand_uni_rows = applicants_df[['candidate_id', 'classification', 'university_name']].dropna()
+        cand_uni_rows = applicants_df[['candidate_id', 'classification', 'university_name']]
         cand_uni_rows['university_name'] = cand_uni_rows['university_name'].astype(str).str.split(',')
         cand_uni_rows = cand_uni_rows.explode('university_name')
         cand_uni_df = cand_uni_rows.merge(university_df[['university_id', 'university_name']], on='university_name')
@@ -152,7 +152,7 @@ class S3Transformer:
         inv_rows = []
         for df in dfs.values():
             if {'candidate_id', 'talent_member_first_name', 'talent_member_last_name', 'invitation_date'}.issubset(df.columns):
-                inv_rows.append(df[['candidate_id', 'talent_member_first_name', 'talent_member_last_name', 'invitation_date']].dropna())
+                inv_rows.append(df[['candidate_id', 'talent_member_first_name', 'talent_member_last_name', 'invitation_date']])
                 
         # Combine all invitation rows
         if inv_rows:
@@ -178,7 +178,7 @@ class S3Transformer:
         for df in dfs.values():
             if {'course_name', 'trainer_first_name', 'trainer_last_name', 'start_date'}.issubset(df.columns):
                 cohort_rows.append(
-                    df[['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date']].dropna())
+                    df[['course_name', 'trainer_first_name', 'trainer_last_name', 'start_date']])
 
         if cohort_rows:
             cohort_df = pd.concat(cohort_rows, ignore_index=True)
@@ -313,11 +313,12 @@ class S3Transformer:
             how='inner')
 
         sparta_day_df = sparta_day_df.drop(columns=['candidate_first_name', 'candidate_last_name'])
+        tables['sparta_day'] = sparta_day_df
 
 
         return tables
     
-    
+
     
 
 # Extract
@@ -331,3 +332,5 @@ clean_dfs = cleaner.clean_dfs(dfs)
 # Transfrom
 transform = S3Transformer()
 tables = transform.transform_to_tables(clean_dfs)
+
+show(tables['candidate'])
