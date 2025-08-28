@@ -5,6 +5,8 @@ import urllib
 from sqlalchemy import create_engine, text
 import os
 import pandas as pd
+import dotenv
+#-------------------------------------
 
 class S3Loader:
     def __init__(self, server="localhost", database="Sparta", username=None, password=None, driver="ODBC+Driver+17+for+SQL+Server"):
@@ -68,16 +70,20 @@ clean_dfs = cleaner.clean_dfs(dfs)
 transform = S3Transformer()
 transform_dfs = transform.transform_to_tables(clean_dfs)
 
-print(transform_dfs)
+# print(transform_dfs)
 
-
+yourdriver   = os.getenv("DB_DRIVER")
+yourserver   = os.getenv("DB_SERVER")
+user     = os.getenv("DB_USER")
+urpassword = os.getenv("DB_PASSWORD")
 
 
 inserter = S3Loader(
-    server="localhost", 
+    driver=yourdriver,
+    server=yourserver, 
     database="Sparta",
-    username="",
-    password=""
+    username=user,
+    password=urpassword
 )
 
 # # Independent tables
