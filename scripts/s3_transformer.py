@@ -4,6 +4,7 @@ import pandas as pd
 from pandasgui import show
 
 
+
 class S3Transformer:
     
     """
@@ -245,9 +246,50 @@ class S3Transformer:
         
         
         # ============================================================= Junction Tables ======================================================
+
+        # ------------------------------------------------- Interview -------------------------------------------------------
         
+        talent_df = dfs['combined_talent_decision_scores'].copy()
+
+        # Bring in candidate_id by matching names to Candidate table
+        interv = talent_df.merge(tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
+            on=['candidate_first_name', 'candidate_last_name'],
+            how='inner'
+        )
+
+        # Keep only columns needed for Interview
+        needed_cols = [
+            'candidate_id',
+            'interview_date',
+            'course_interest',
+            'geo_flex',
+            'self_development',
+            'financial_support_self',
+            'interview_result'
+        ]
+        missing = [c for c in needed_cols if c not in interv.columns]
+        if missing:
+            raise KeyError(f"Interview build is missing columns: {missing}. Available: {list(interv.columns)}")
+
+        interv = interv[needed_cols].dropna(subset=['candidate_id', 'interview_date']).copy()
+
+        # (candidate_id + interview_date). Adjust if your ERD allows multiple interviews.
+        interv = interv.drop_duplicates(subset=['candidate_id', 'interview_date'])
+
+        # Assign interview_id (surrogate PK, sequential)
+        interv.insert(0, 'interview_id', range(1, len(interv) + 1))
+
+        # Strong types for FKs/IDs
+        interv['candidate_id'] = interv['candidate_id'].astype('int64')
+
+        # Save
+        tables['interview'] = interv[
+            ['interview_id', 'candidate_id', 'interview_date', 'course_interest',
+            'geo_flex', 'self_development', 'financial_support_self', 'interview_result']
+        ]
+
         # ------------------------------------------------- Candidate Tech Skill ---------------------------------------------
-        
+
         # Pick tech score columns
         tech_score_cols = [c for c in talent_df.columns if c.startswith('tech_self_score.')]
 
@@ -308,48 +350,7 @@ class S3Transformer:
             # Sort and final columns
             long_df = long_df.sort_values(['interview_id', 'tech_skill_id']).reset_index(drop=True)
             tables['candidate_tech_skill'] = long_df[['interview_id', 'tech_skill_id', 'self_score']]
-        
-        # ------------------------------------------------- Interview -------------------------------------------------------
-        
-        talent_df = dfs['combined_talent_decision_scores'].copy()
 
-        # Bring in candidate_id by matching names to Candidate table
-        interv = talent_df.merge(tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
-            on=['candidate_first_name', 'candidate_last_name'],
-            how='inner'
-        )
-
-        # Keep only columns needed for Interview
-        needed_cols = [
-            'candidate_id',
-            'interview_date',
-            'course_interest',
-            'geo_flex',
-            'self_development',
-            'financial_support_self',
-            'interview_result'
-        ]
-        missing = [c for c in needed_cols if c not in interv.columns]
-        if missing:
-            raise KeyError(f"Interview build is missing columns: {missing}. Available: {list(interv.columns)}")
-
-        interv = interv[needed_cols].dropna(subset=['candidate_id', 'interview_date']).copy()
-
-        # (candidate_id + interview_date). Adjust if your ERD allows multiple interviews.
-        interv = interv.drop_duplicates(subset=['candidate_id', 'interview_date'])
-
-        # Assign interview_id (surrogate PK, sequential)
-        interv.insert(0, 'interview_id', range(1, len(interv) + 1))
-
-        # Strong types for FKs/IDs
-        interv['candidate_id'] = interv['candidate_id'].astype('int64')
-
-        # Save
-        tables['interview'] = interv[
-            ['interview_id', 'candidate_id', 'interview_date', 'course_interest',
-            'geo_flex', 'self_development', 'financial_support_self', 'interview_result']
-        ]
- 
         # ----------------------------------------------------- Candidate Weakness ----------------------------------------------
         
         weak_rows = []

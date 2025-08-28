@@ -201,3 +201,12 @@ class S3Cleaner:
                 df.rename(columns={'result': 'interview_result'}, inplace=True)
 
         return dfs
+ 
+
+# Extract
+extractor = S3Extractor()
+dfs = extractor.get_csvs_to_dfs()
+
+# Clean
+cleaner = S3Cleaner()
+clean_dfs = cleaner.clean_dfs(dfs)
