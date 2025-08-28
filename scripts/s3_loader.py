@@ -89,4 +89,3 @@ inserter.insert_dataframe_with_id(transform_dfs['candidate_weakness'], "Candidat
 inserter.insert_dataframe_with_id(transform_dfs['candidate_strength'], "CandidateStrength")
 inserter.insert_dataframe_with_id(transform_dfs['score'], "Score")
 inserter.insert_dataframe_with_id(transform_dfs['sparta_day'], "SpartaDay")
-

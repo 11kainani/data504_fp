@@ -1,6 +1,7 @@
 from s3_extractor import S3Extractor
 from s3_cleaner import S3Cleaner
 import pandas as pd
+from pandasgui import show
 
 
 
@@ -245,7 +246,6 @@ class S3Transformer:
         
         
         # ============================================================= Junction Tables ======================================================
-        
 
         # ------------------------------------------------- Interview -------------------------------------------------------
         
