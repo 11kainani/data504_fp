@@ -1,1 +1,1 @@
-# Required for Python to recognise the folders as packages
+"""Tests for scripts (cleaner, transformer, etc.)."""

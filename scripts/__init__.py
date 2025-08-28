@@ -1,1 +1,1 @@
-# Required for Python to recognise the folders as packages
+"""Scripts for extraction, cleaning, transformation, and loading."""
