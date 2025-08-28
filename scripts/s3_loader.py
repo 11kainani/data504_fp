@@ -63,29 +63,5 @@ inserter = SpartaDBInserter(
     password=""
 )
 
-# # Independent tables
-inserter.insert_dataframe_with_id(transform_dfs['course'], "Course")
-inserter.insert_dataframe_with_id(transform_dfs['trainer'], "Trainer")
-inserter.insert_dataframe_with_id(transform_dfs['week'], "Week")
-inserter.insert_dataframe_with_id(transform_dfs['skill'], "Skill")
-inserter.insert_dataframe_with_id(transform_dfs['weakness'], "Weakness")
-inserter.insert_dataframe_with_id(transform_dfs['strength'], "Strength")
-inserter.insert_dataframe_with_id(transform_dfs['university'], "University")
-inserter.insert_dataframe_with_id(transform_dfs['talent_member'], "TalentMember")
-inserter.insert_dataframe_with_id(transform_dfs['tech_skill'], "TechSkill")
-inserter.insert_dataframe_with_id(transform_dfs['address'], "Address")
-
-# # Dependent tables
-inserter.insert_dataframe_with_id(transform_dfs['candidate'], "Candidate")
-inserter.insert_dataframe_with_id(transform_dfs['candidate_university'], "CandidateUniversity")
-inserter.insert_dataframe_with_id(transform_dfs['invitation'], "Invitation")
-inserter.insert_dataframe_with_id(transform_dfs['cohort'], "Cohort")
-inserter.insert_dataframe_with_id(transform_dfs['student'], "Student")
-
-# # Junction + fact tables
-inserter.insert_dataframe_with_id(transform_dfs['interview'], "Interview")
-inserter.insert_dataframe_with_id(transform_dfs['candidate_tech_skill'], "CandidateTechSkill")
-inserter.insert_dataframe_with_id(transform_dfs['candidate_weakness'], "CandidateWeakness")
-inserter.insert_dataframe_with_id(transform_dfs['candidate_strength'], "CandidateStrength")
-inserter.insert_dataframe_with_id(transform_dfs['score'], "Score")
-inserter.insert_dataframe_with_id(transform_dfs['sparta_day'], "SpartaDay")
+for table_name, df in transform_dfs.items():
+    inserter.insert_dataframe(df, table_name)
