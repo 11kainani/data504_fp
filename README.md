@@ -114,12 +114,12 @@ DB_PASSWORD=
 
 [Martyna]() - Product Owner <br>
 [Firdaws](https://github.com/FirdawsYasmin) - Scrum Master <br>
-[Noor](https://github.com/Hunzaa) <br>
-[Enrico](https://github.com/EnricoEmanuelObeng) <br>
-[Luke](https://github.com/LukeLondesbrough) <br>
-[Mahdi]() <br>
-[Xavier](https://github.com/xavierfrancis1981) <br>
-[Kyle](https://github.com/kgodwinb44) <br>
-[Jesi](https://github.com/11kainani) <br>
+[Noor](https://github.com/Hunzaa) Tester / Developer <br> 
+[Enrico](https://github.com/EnricoEmanuelObeng) Tester / Developer <br>
+[Luke](https://github.com/LukeLondesbrough) Developer <br>
+[Mahdi]() Business Analyst <br>
+[Xavier](https://github.com/xavierfrancis1981) Developer <br>
+[Kyle](https://github.com/kgodwinb44) Developer <br>
+[Jesie](https://github.com/11kainani) Developer <br>
 
 ---
