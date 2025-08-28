@@ -3,61 +3,89 @@ from s3_cleaner import S3Cleaner
 from s3_transformer import S3Transformer
 import urllib
 from sqlalchemy import create_engine, text
-from dotenv import load_dotenv
 import os
+import pandas as pd
+import pymysql
+import dotenv
+#-------------------------------------
 
-class S3Loader:
+class SpartaDBInserter:
+    def __init__(self, server="localhost", database="Sparta", username="root", password="", driver="mysql+pymysql"):
+        """
+        Initialise SQLAlchemy engine for MySQL.
+        """
+        # MySQL connection string
+        conn_str = f"{driver}://{username}:{password}@{server}:3306/{database}"
+        self.engine = create_engine(conn_str)
+
+        # Test connection
+        try:
+            with self.engine.connect() as conn:
+                conn.execute(text("SELECT 1"))
+            print(f"Connected to MySQL database '{database}' on server '{server}'")
+        except Exception as e:
+            print(f"Connection failed: {e}")
+
+    def insert_dataframe(self, df: pd.DataFrame, table_name: str, if_exists="append"):
+        """
+        Insert DataFrame into MySQL (auto IDs handled by MySQL).
+        """
+        df.to_sql(table_name, con=self.engine, if_exists=if_exists, index=False)
+        print(f"Inserted {len(df)} rows into {table_name}")
+
+    def insert_dataframe_with_id(self, df: pd.DataFrame, table_name: str):
+        """
+        Insert DataFrame with explicit IDs into MySQL.
+        """
+        df = df.where(pd.notnull(df), None)  # Replace NaN with None
+        with self.engine.begin() as conn:
+            df.to_sql(table_name, con=conn, if_exists="append", index=False, method="multi")
+        print(f"Inserted {len(df)} rows into '{table_name}' with explicit IDs")
     
-    """
-    Class for loading DataFrames(tabel formatted) from S3Transformer into MY_DATABASE.
-    """
-    
-    def load_tables_to_db(self, tables):
-        
-        load_dotenv()
 
-        # Database connection
-        driver = os.getenv("DB_DRIVER")
-        server = os.getenv("DB_SERVER")
-        database = os.getenv("DB_DATABASE")
-        username = os.getenv("DB_USER")
-        password = os.getenv("DB_PASSWORD")
-        
-        conn_str = (
-            f"DRIVER={driver};"
-            f"SERVER={server};DATABASE={database};UID={username};PWD={password};"
-            "TrustServerCertificate=yes;"
-        )
-        
-        params = urllib.parse.quote_plus(conn_str)
+# Extract
+extractor = S3Extractor()
+dfs = extractor.get_csvs_to_dfs()
 
-        engine = create_engine(f"mssql+pyodbc:///?odbc_connect={params}")
+# Clean
+cleaner = S3Cleaner()
+clean_dfs = cleaner.clean_dfs(dfs)
 
-        # Reset tables (delete in correct order)
-        reset_order = ["Score", "Student", "Cohort", "Course", "Trainer", "Skill", "Week"]
+# Transform
+transformer = S3Transformer()
+transform_dfs = transformer.transform_to_tables(clean_dfs)
 
-        with engine.begin() as conn:
-            for table in reset_order:
-                print(f"Clearing table: {table}")
-                conn.execute(text(f"IF OBJECT_ID('dbo.{table}', 'U') IS NOT NULL DELETE FROM dbo.{table};"))
+# Insert into MySQL
+inserter = SpartaDBInserter(
+    server="",
+    database="",
+    username="",
+    password=""
+)
 
+# # Independent tables
+inserter.insert_dataframe_with_id(transform_dfs['course'], "Course")
+inserter.insert_dataframe_with_id(transform_dfs['trainer'], "Trainer")
+inserter.insert_dataframe_with_id(transform_dfs['week'], "Week")
+inserter.insert_dataframe_with_id(transform_dfs['skill'], "Skill")
+inserter.insert_dataframe_with_id(transform_dfs['weakness'], "Weakness")
+inserter.insert_dataframe_with_id(transform_dfs['strength'], "Strength")
+inserter.insert_dataframe_with_id(transform_dfs['university'], "University")
+inserter.insert_dataframe_with_id(transform_dfs['talent_member'], "TalentMember")
+inserter.insert_dataframe_with_id(transform_dfs['tech_skill'], "TechSkill")
+inserter.insert_dataframe_with_id(transform_dfs['address'], "Address")
 
-        # Insert data back
-        insert_order = ["Course", "Trainer", "Skill", "Week", "Cohort", "Student", "Score"]
+# # Dependent tables
+inserter.insert_dataframe_with_id(transform_dfs['candidate'], "Candidate")
+inserter.insert_dataframe_with_id(transform_dfs['candidate_university'], "CandidateUniversity")
+inserter.insert_dataframe_with_id(transform_dfs['invitation'], "Invitation")
+inserter.insert_dataframe_with_id(transform_dfs['cohort'], "Cohort")
+inserter.insert_dataframe_with_id(transform_dfs['student'], "Student")
 
-        with engine.begin() as conn:
-            for table_name in insert_order:
-                if table_name in tables:
-                    print(f"Inserting into table: {table_name}")
-                    tables[table_name].to_sql(table_name, conn, if_exists="append", index=False)
-                    
-
-        # Load Tables
-        extractor = S3Extractor()
-        dfs = extractor.get_csvs_to_dfs()
-
-        cleaner = S3Cleaner()
-        clean_dfs = cleaner.clean_dfs(dfs)
-
-        transformer = S3Transformer()
-        tables = transformer.transform_to_tables(clean_dfs)
+# # Junction + fact tables
+inserter.insert_dataframe_with_id(transform_dfs['interview'], "Interview")
+inserter.insert_dataframe_with_id(transform_dfs['candidate_tech_skill'], "CandidateTechSkill")
+inserter.insert_dataframe_with_id(transform_dfs['candidate_weakness'], "CandidateWeakness")
+inserter.insert_dataframe_with_id(transform_dfs['candidate_strength'], "CandidateStrength")
+inserter.insert_dataframe_with_id(transform_dfs['score'], "Score")
+inserter.insert_dataframe_with_id(transform_dfs['sparta_day'], "SpartaDay")
