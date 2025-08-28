@@ -141,7 +141,7 @@ CREATE TABLE Interview (
     self_development VARCHAR(3),
     financial_support VARCHAR(3),
     geo_flex VARCHAR(3),
-    result VARCHAR(4),
+    interview_result VARCHAR(4),
     course_interest VARCHAR(50),
     FOREIGN KEY (candidate_id) REFERENCES Candidate(candidate_id)
 );
