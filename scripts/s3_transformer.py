@@ -331,3 +331,10 @@ clean_dfs = cleaner.clean_dfs(dfs)
 # Transfrom
 transform = S3Transformer()
 tables = transform.transform_to_tables(clean_dfs)
+
+print("DEBUG course names:", tables["course"]["course_name"].unique())
+print("DEBUG cohort table:", tables["cohort"])
+
+
+candidate_df = tables['cohort']
+show(candidate_df)
