@@ -1,7 +1,7 @@
 from s3_extractor import S3Extractor
 from s3_cleaner import S3Cleaner
 import pandas as pd
-from pandasgui import show
+# from pandasgui import show
 
 
 class S3Transformer:
@@ -332,5 +332,3 @@ clean_dfs = cleaner.clean_dfs(dfs)
 # Transfrom
 transform = S3Transformer()
 tables = transform.transform_to_tables(clean_dfs)
-
-show(tables['candidate'])

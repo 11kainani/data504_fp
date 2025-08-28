@@ -2,7 +2,7 @@ from s3_extractor import S3Extractor
 import pandas as pd
 import boto3
 import io
-from pandasgui import show
+
 
 class S3Cleaner:
     
