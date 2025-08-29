@@ -33,6 +33,7 @@ QA cleaned_talent_decision_scores.csv
 ## 22/08/2025
 
 - Creating scripting to get data from S3
+
 ![](README_images/image4.png)
 
 <br>
@@ -43,8 +44,11 @@ QA cleaned_talent_decision_scores.csv
 - Building testing cases suites
 
 ![](README_images/image9.png)
+
 ![](README_images/image7.png)
+
 ![](README_images/image6.png)
+
 ![](README_images/image8.png)
 
 <br>
