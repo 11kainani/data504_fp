@@ -28,9 +28,39 @@ QA cleaned_talent_decision_scores.csv
 
 - Drafted Talent data in an ERD
 
+<br>
 
 ## 22/08/2025
 
 - Creating scripting to get data from S3
+![](README_images/image4.png)
 
+<br>
 
+## 26/08/2025
+
+- Started working on testing other people code
+- Building testing cases suites
+
+![](README_images/image9.png)
+![](README_images/image7.png)
+![](README_images/image6.png)
+![](README_images/image8.png)
+
+<br>
+
+## 27/08/2025
+
+- More testing and spotting errors from the scripts 
+  - cleaner and transformer especially
+- Sorting out GitHub pull requests and merge conflicts
+
+<br>
+
+## 28/08/2025
+
+- Finalising presentation slides
+- - Doing a few queries
+- Working on making the demo work
+
+![](README_images/image11.png)
