@@ -1,9 +1,4 @@
-from s3_extractor import S3Extractor
-from s3_cleaner import S3Cleaner
 import pandas as pd
-from pandasgui import show
-
-
 
 class S3Transformer:
     
@@ -134,13 +129,14 @@ class S3Transformer:
         candidate_df = candidate_df.merge(tables['address'], on=['street_name', 'city', 'postcode'])
         candidate_df = candidate_df[['candidate_id', 'candidate_first_name', 'candidate_last_name','email', 'phone_number', 'date_of_birth', 'gender', 'address_id']]
         tables['candidate'] = candidate_df
-        
+
         # ---------------------------------------------------- Candidate University --------------------------------
-        
+
         cand_uni_rows = applicants_df[['candidate_id', 'classification', 'university_name']].copy()
         cand_uni_rows['university_name'] = cand_uni_rows['university_name'].astype(str).str.split(',')
         cand_uni_rows = cand_uni_rows.explode('university_name')
         cand_uni_df = cand_uni_rows.merge(university_df[['university_id', 'university_name']], on='university_name')
+        cand_uni_df = cand_uni_df[['candidate_id', 'university_id', 'classification']]
         tables['candidate_university'] = cand_uni_df
         
         # ------------------------------------------------------- Invitation ------------------------------------------
@@ -237,10 +233,6 @@ class S3Transformer:
         student_df = passed[
             ['candidate_id', 'cohort_id', 'candidate_first_name', 'candidate_last_name']].drop_duplicates(
             'candidate_id')
-        student_df = student_df.rename(columns={
-            'candidate_first_name': 'first_name',
-            'candidate_last_name': 'last_name'
-        })
 
         tables['student'] = student_df
         
@@ -264,7 +256,7 @@ class S3Transformer:
             'course_interest',
             'geo_flex',
             'self_development',
-            'financial_support_self',
+            'financial_support',
             'interview_result'
         ]
         missing = [c for c in needed_cols if c not in interv.columns]
@@ -281,12 +273,11 @@ class S3Transformer:
 
         # Strong types for FKs/IDs
         interv['candidate_id'] = interv['candidate_id'].astype('int64')
+        
+        interv = interv[['interview_id', 'candidate_id', 'interview_date', 'course_interest','geo_flex', 'self_development', 'financial_support', 'interview_result']]
 
         # Save
-        tables['interview'] = interv[
-            ['interview_id', 'candidate_id', 'interview_date', 'course_interest',
-            'geo_flex', 'self_development', 'financial_support_self', 'interview_result']
-        ]
+        tables['interview'] = interv
 
         # ------------------------------------------------- Candidate Tech Skill ---------------------------------------------
 
@@ -295,7 +286,7 @@ class S3Transformer:
 
         if not tech_score_cols:
             tables['candidate_tech_skill'] = pd.DataFrame(
-                columns=['interview_id', 'tech_skill_id', 'self_score']
+                columns=['interview_id', 'tech_skill_id', 'tech_self_score']
             )
         else:
             # Add candidate_id (join by name)
@@ -319,9 +310,9 @@ class S3Transformer:
                 id_vars=id_vars,
                 value_vars=tech_score_cols,
                 var_name='tech_skill_col',
-                value_name='self_score'
+                value_name='tech_self_score'
             )
-            long_df['self_score'] = pd.to_numeric(long_df['self_score'], errors='coerce')
+            long_df['tech_self_score'] = pd.to_numeric(long_df['tech_self_score'], errors='coerce')
 
             # Get skill name from column and map to tech_skill_id
             long_df['tech_skill'] = long_df['tech_skill_col'].str.split('.', n=1).str[1].str.title()
@@ -343,13 +334,13 @@ class S3Transformer:
                 )
 
             # Filter and tidy
-            long_df = long_df.dropna(subset=['interview_id', 'tech_skill_id', 'self_score'])
+            long_df = long_df.dropna(subset=['interview_id', 'tech_skill_id', 'tech_self_score'])
             long_df['interview_id'] = long_df['interview_id'].astype('int64')
             long_df['tech_skill_id'] = long_df['tech_skill_id'].astype('int64')
 
             # Sort and final columns
             long_df = long_df.sort_values(['interview_id', 'tech_skill_id']).reset_index(drop=True)
-            tables['candidate_tech_skill'] = long_df[['interview_id', 'tech_skill_id', 'self_score']]
+            tables['candidate_tech_skill'] = long_df[['interview_id', 'tech_skill_id', 'tech_self_score']]
 
         # ----------------------------------------------------- Candidate Weakness ----------------------------------------------
         
@@ -517,14 +508,16 @@ class S3Transformer:
         
         # -------------------------------------------------------- Sparta Day --------------------------------------------------
         
+        # Select relevant columns from sparta_df
         sparta_day_rows = sparta_df[['event_date', 'academy', 'presentation_result', 'psychometric_result', 'candidate_first_name', 'candidate_last_name']]
 
-        sparta_day_df = sparta_day_rows.merge(
-            tables['candidate'][['candidate_id', 'candidate_first_name', 'candidate_last_name']],
-            on=['candidate_first_name', 'candidate_last_name'],
-            how='inner')
+        sparta_day_rows = sparta_day_rows.merge(applicants_df[['candidate_id', 'invitation_date', 'candidate_first_name', 'candidate_last_name']],
+            right_on = ['invitation_date', 'candidate_first_name', 'candidate_last_name'], left_on = ['event_date', 'candidate_first_name', 'candidate_last_name'],
+            how = 'inner')
 
-        sparta_day_df = sparta_day_df.drop(columns=['candidate_first_name', 'candidate_last_name'])
+        sparta_day_df = sparta_day_rows[['candidate_id', 'event_date', 'academy', 'presentation_result', 'psychometric_result']]
+
+        # Assign to tables dict
         tables['sparta_day'] = sparta_day_df
 
 
