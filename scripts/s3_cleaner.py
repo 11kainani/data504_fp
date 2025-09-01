@@ -1,8 +1,4 @@
-from s3_extractor import S3Extractor
 import pandas as pd
-import boto3
-import io
-from pandasgui import show
 
 class S3Cleaner:
     
@@ -195,18 +191,13 @@ class S3Cleaner:
             if 'geo_flex' in df.columns:
                 df['geo_flex'] = df['geo_flex'].map({'Yes': True, 'No': False})
                 
+            # Financial Support
+            if 'financial_support_self' in df.columns:
+                df.rename(columns={'financial_support_self': 'financial_support'}, inplace=True)
+                
             # Result
             if 'result' in df.columns:
                 df['result'] = df['result'].map({'Pass': True, 'Fail': False})
                 df.rename(columns={'result': 'interview_result'}, inplace=True)
 
         return dfs
- 
-
-# Extract
-extractor = S3Extractor()
-dfs = extractor.get_csvs_to_dfs()
-
-# Clean
-cleaner = S3Cleaner()
-clean_dfs = cleaner.clean_dfs(dfs)
